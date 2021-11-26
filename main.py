@@ -770,11 +770,37 @@ class PagePirates(tk.Frame):
 
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
-        label = tk.Label(self, text="Pirates Filters", font=("Courier", 30))
-        label.place(x = 205, y = 0)
+        divider1 = tk.Label(self, text="______________________________________", font=("Courier", 30))
+        divider1.place(x = 0, y = 200)
 
-        pirates_go_button = tk.Button(self, text="GO!", command=lambda: controller.show_frame(StartPage))
-        pirates_go_button.place(x = 620, y = 650)
+        divider2 = tk.Label(self, text="______________________________________", font=("Courier", 30))
+        divider2.place(x = 0, y = 440)
+
+        label1 = tk.Label(self, text="Pirates current 40 man roster", font=("Courier", 20))
+        label1.place(x = 155, y = 0)
+
+        player_label = tk.Label(self, text="Select a player:", font=("Courier", 18))
+        player_label.place(x = 80, y = 80)
+
+        player_variable = StringVar(self)
+        player_variable.set("") # default value
+        player_options = OptionMenu(self, player_variable, "", "Tanner Anderson", "Anthony Banda", "David Bednar", "Steven Brault", "J.T. Brubaker", "Blake Cederlind", "Roansy Contreras", "Wil Crowe", "Eric Hanhold", "Sam Howard", "Mitch Keller", "Max Kranick", "Chad Kuhl", "Nick Mears", "Luis Oviedo", "Dillon Peters", "Cody Ponce", "Chris Stratton", "Duane Underwood Jr.", "Bryse Wilson", "Miguel Yajure", "Taylor Davis", "Michael Perez", "Jacob Stallings", "Diego Castillo", "Rodolfo Castro", "Michael Chavis", "Oneil Cruz", "Ke'Bryan Hayes", "Tucupita Marcano", "Colin Moran", "Kevin Newman", "Hoy Park", "Cole Tucker", "Anthony Alford", "Greg Allen", "Phillip Evans", "Ben Gamel", "Jared Oliva", "Bryan Reynolds")
+        player_options.place(x = 80, y = 110)
+
+        action_label = tk.Label(self, text="Select an action:", font=("Courier", 18))
+        action_label.place(x = 400, y = 80)
+
+        profile_button = tk.Button(self, text="Profile", command=lambda: controller.show_frame(StartPage))
+        profile_button.place(x = 400, y = 120)
+
+        stats_button = tk.Button(self, text="Stats", command=lambda: controller.show_frame(StartPage))
+        stats_button.place(x = 400, y = 170)
+
+        highlights_button = tk.Button(self, text="Highlights", command=lambda: controller.show_frame(StartPage))
+        highlights_button.place(x = 490, y = 120)
+
+        music_button = tk.Button(self, text="Music", command=lambda: controller.show_frame(StartPage))
+        music_button.place(x = 490, y = 170)
 
         main_button = tk.Button(self, text="Back to Main", command=lambda: controller.show_frame(StartPage))
         main_button.place(x = 280, y = 700)
