@@ -554,6 +554,46 @@ class PagePitching(tk.Frame):
         whip_input = Text(self, height = 1, width = 5)
         whip_input.place(x = 210, y = 630)
 
+        # Checkboxes
+        also_label = tk.Label(self, text="Also include: ", font=("Courier", 18))
+        also_label.place(x = 450, y = 280)
+
+        city = Checkbutton(self, text="City", variable = IntVar())
+        city.place(x = 450, y = 300)
+
+        nickname = Checkbutton(self, text="Team Name", variable = IntVar())
+        nickname.place(x = 450, y = 320)
+
+        league = Checkbutton(self, text="League", variable = IntVar())
+        league.place(x = 450, y = 340)
+
+        division = Checkbutton(self, text="Division", variable = IntVar())
+        division.place(x = 450, y = 360)
+
+        gm = Checkbutton(self, text="General Manager", variable = IntVar())
+        gm.place(x = 450, y = 380)
+
+        man = Checkbutton(self, text="Manger", variable = IntVar())
+        man.place(x = 450, y = 400)
+
+        stadium = Checkbutton(self, text="Home Stadium", variable = IntVar())
+        stadium.place(x = 450, y = 420)
+
+        cap = Checkbutton(self, text="Stadium Capacity", variable = IntVar())
+        cap.place(x = 450, y = 440)
+
+        syear = Checkbutton(self, text="Stadium Year", variable = IntVar())
+        syear.place(x = 450, y = 460)
+
+        address = Checkbutton(self, text="Address", variable = IntVar())
+        address.place(x = 450, y = 480)
+
+        phone = Checkbutton(self, text="Phone Number", variable = IntVar())
+        phone.place(x = 450, y = 500)
+
+        web = Checkbutton(self, text="Website", variable = IntVar())
+        web.place(x = 450, y = 520)
+
         batting_go_button = tk.Button(self, text="GO!", command=lambda: controller.show_frame(StartPage))
         batting_go_button.place(x = 620, y = 650)
 
@@ -759,6 +799,46 @@ class PageFielding(tk.Frame):
 
         cspct_input = Text(self, height = 1, width = 5)
         cspct_input.place(x = 210, y = 600)
+
+        # Checkboxes
+        also_label = tk.Label(self, text="Also include: ", font=("Courier", 18))
+        also_label.place(x = 450, y = 280)
+
+        city = Checkbutton(self, text="City", variable = IntVar())
+        city.place(x = 450, y = 300)
+
+        nickname = Checkbutton(self, text="Team Name", variable = IntVar())
+        nickname.place(x = 450, y = 320)
+
+        league = Checkbutton(self, text="League", variable = IntVar())
+        league.place(x = 450, y = 340)
+
+        division = Checkbutton(self, text="Division", variable = IntVar())
+        division.place(x = 450, y = 360)
+
+        gm = Checkbutton(self, text="General Manager", variable = IntVar())
+        gm.place(x = 450, y = 380)
+
+        man = Checkbutton(self, text="Manger", variable = IntVar())
+        man.place(x = 450, y = 400)
+
+        stadium = Checkbutton(self, text="Home Stadium", variable = IntVar())
+        stadium.place(x = 450, y = 420)
+
+        cap = Checkbutton(self, text="Stadium Capacity", variable = IntVar())
+        cap.place(x = 450, y = 440)
+
+        syear = Checkbutton(self, text="Stadium Year", variable = IntVar())
+        syear.place(x = 450, y = 460)
+
+        address = Checkbutton(self, text="Address", variable = IntVar())
+        address.place(x = 450, y = 480)
+
+        phone = Checkbutton(self, text="Phone Number", variable = IntVar())
+        phone.place(x = 450, y = 500)
+
+        web = Checkbutton(self, text="Website", variable = IntVar())
+        web.place(x = 450, y = 520)
 
         fielding_go_button = tk.Button(self, text="GO!", command=lambda: controller.show_frame(StartPage))
         fielding_go_button.place(x = 620, y = 650)
