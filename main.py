@@ -503,6 +503,46 @@ class PagePitching(tk.Frame):
         whip_input = Text(self, height = 1, width = 5)
         whip_input.place(x = 210, y = 630)
 
+        # Checkboxes
+        also_label = tk.Label(self, text="Also include: ", font=("Courier", 18))
+        also_label.place(x = 450, y = 280)
+
+        city = Checkbutton(self, text="City", variable = IntVar())
+        city.place(x = 450, y = 300)
+
+        nickname = Checkbutton(self, text="Team Name", variable = IntVar())
+        nickname.place(x = 450, y = 320)
+
+        league = Checkbutton(self, text="League", variable = IntVar())
+        league.place(x = 450, y = 340)
+
+        division = Checkbutton(self, text="Division", variable = IntVar())
+        division.place(x = 450, y = 360)
+
+        gm = Checkbutton(self, text="General Manager", variable = IntVar())
+        gm.place(x = 450, y = 380)
+
+        man = Checkbutton(self, text="Manger", variable = IntVar())
+        man.place(x = 450, y = 400)
+
+        stadium = Checkbutton(self, text="Home Stadium", variable = IntVar())
+        stadium.place(x = 450, y = 420)
+
+        cap = Checkbutton(self, text="Stadium Capacity", variable = IntVar())
+        cap.place(x = 450, y = 440)
+
+        syear = Checkbutton(self, text="Stadium Year", variable = IntVar())
+        syear.place(x = 450, y = 460)
+
+        address = Checkbutton(self, text="Address", variable = IntVar())
+        address.place(x = 450, y = 480)
+
+        phone = Checkbutton(self, text="Phone Number", variable = IntVar())
+        phone.place(x = 450, y = 500)
+
+        web = Checkbutton(self, text="Website", variable = IntVar())
+        web.place(x = 450, y = 520)
+
         batting_go_button = tk.Button(self, text="GO!", command=lambda: controller.show_frame(StartPage))
         batting_go_button.place(x = 620, y = 650)
 
@@ -709,6 +749,46 @@ class PageFielding(tk.Frame):
         cspct_input = Text(self, height = 1, width = 5)
         cspct_input.place(x = 210, y = 600)
 
+        # Checkboxes
+        also_label = tk.Label(self, text="Also include: ", font=("Courier", 18))
+        also_label.place(x = 450, y = 280)
+
+        city = Checkbutton(self, text="City", variable = IntVar())
+        city.place(x = 450, y = 300)
+
+        nickname = Checkbutton(self, text="Team Name", variable = IntVar())
+        nickname.place(x = 450, y = 320)
+
+        league = Checkbutton(self, text="League", variable = IntVar())
+        league.place(x = 450, y = 340)
+
+        division = Checkbutton(self, text="Division", variable = IntVar())
+        division.place(x = 450, y = 360)
+
+        gm = Checkbutton(self, text="General Manager", variable = IntVar())
+        gm.place(x = 450, y = 380)
+
+        man = Checkbutton(self, text="Manger", variable = IntVar())
+        man.place(x = 450, y = 400)
+
+        stadium = Checkbutton(self, text="Home Stadium", variable = IntVar())
+        stadium.place(x = 450, y = 420)
+
+        cap = Checkbutton(self, text="Stadium Capacity", variable = IntVar())
+        cap.place(x = 450, y = 440)
+
+        syear = Checkbutton(self, text="Stadium Year", variable = IntVar())
+        syear.place(x = 450, y = 460)
+
+        address = Checkbutton(self, text="Address", variable = IntVar())
+        address.place(x = 450, y = 480)
+
+        phone = Checkbutton(self, text="Phone Number", variable = IntVar())
+        phone.place(x = 450, y = 500)
+
+        web = Checkbutton(self, text="Website", variable = IntVar())
+        web.place(x = 450, y = 520)
+
         fielding_go_button = tk.Button(self, text="GO!", command=lambda: controller.show_frame(StartPage))
         fielding_go_button.place(x = 620, y = 650)
 
@@ -719,11 +799,44 @@ class PagePirates(tk.Frame):
 
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
-        label = tk.Label(self, text="Pirates Filters", font=("Courier", 30))
-        label.place(x = 205, y = 0)
 
-        pirates_go_button = tk.Button(self, text="GO!", command=lambda: controller.show_frame(StartPage))
-        pirates_go_button.place(x = 620, y = 650)
+        label1 = tk.Label(self, text="Pirates current 40 man roster", font=("Courier", 20))
+        label1.place(x = 155, y = 0)
+
+        divider1 = tk.Label(self, text="______________________________________", font=("Courier", 30))
+        divider1.place(x = 0, y = 200)
+
+        filters_label = tk.Label(self, text="Roster Filters:", font=("Courier", 20))
+        filters_label.place(x = 250, y = 240)
+
+        divider2 = tk.Label(self, text="______________________________________", font=("Courier", 30))
+        divider2.place(x = 0, y = 440)
+
+        filters_label = tk.Label(self, text="2021 Schedule Filters:", font=("Courier", 20))
+        filters_label.place(x = 200, y = 480)
+
+        player_label = tk.Label(self, text="Select a player:", font=("Courier", 18))
+        player_label.place(x = 80, y = 80)
+
+        player_variable = StringVar(self)
+        player_variable.set("") # default value
+        player_options = OptionMenu(self, player_variable, "", "Tanner Anderson", "Anthony Banda", "David Bednar", "Steven Brault", "J.T. Brubaker", "Blake Cederlind", "Roansy Contreras", "Wil Crowe", "Eric Hanhold", "Sam Howard", "Mitch Keller", "Max Kranick", "Chad Kuhl", "Nick Mears", "Luis Oviedo", "Dillon Peters", "Cody Ponce", "Chris Stratton", "Duane Underwood Jr.", "Bryse Wilson", "Miguel Yajure", "Taylor Davis", "Michael Perez", "Jacob Stallings", "Diego Castillo", "Rodolfo Castro", "Michael Chavis", "Oneil Cruz", "Ke'Bryan Hayes", "Tucupita Marcano", "Colin Moran", "Kevin Newman", "Hoy Park", "Cole Tucker", "Anthony Alford", "Greg Allen", "Phillip Evans", "Ben Gamel", "Jared Oliva", "Bryan Reynolds")
+        player_options.place(x = 80, y = 110)
+
+        action_label = tk.Label(self, text="Select an action:", font=("Courier", 18))
+        action_label.place(x = 400, y = 80)
+
+        profile_button = tk.Button(self, text="Profile", command=lambda: controller.show_frame(StartPage))
+        profile_button.place(x = 400, y = 120)
+
+        stats_button = tk.Button(self, text="Stats", command=lambda: controller.show_frame(StartPage))
+        stats_button.place(x = 400, y = 170)
+
+        highlights_button = tk.Button(self, text="Highlights", command=lambda: controller.show_frame(StartPage))
+        highlights_button.place(x = 490, y = 120)
+
+        music_button = tk.Button(self, text="Music", command=lambda: controller.show_frame(StartPage))
+        music_button.place(x = 490, y = 170)
 
         main_button = tk.Button(self, text="Back to Main", command=lambda: controller.show_frame(StartPage))
         main_button.place(x = 280, y = 700)
