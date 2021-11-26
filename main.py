@@ -145,8 +145,8 @@ class Baseball(tk.Tk):
 
         frame = self.frames[cont]
         frame.tkraise()
+      
 
-        
 class StartPage(tk.Frame):
 
     def __init__(self, parent, controller):
@@ -536,20 +536,20 @@ class PagePirates(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
 
-        label1 = tk.Label(self, text="Pirates current 40 man roster", font=("Courier", 20))
-        label1.place(x = 155, y = 0)
+        label1 = tk.Label(self, text="View a Pirates Player:", font=("Courier", 20))
+        label1.place(x = 210, y = 0)
 
         divider1 = tk.Label(self, text="______________________________________", font=("Courier", 30))
         divider1.place(x = 0, y = 200)
 
-        filters_label = tk.Label(self, text="Roster Filters:", font=("Courier", 20))
-        filters_label.place(x = 250, y = 240)
+        filters_label = tk.Label(self, text="Pirates 2021 Roster Filters:", font=("Courier", 20))
+        filters_label.place(x = 190, y = 240)
 
         divider2 = tk.Label(self, text="______________________________________", font=("Courier", 30))
         divider2.place(x = 0, y = 440)
 
-        filters_label = tk.Label(self, text="2021 Schedule Filters:", font=("Courier", 20))
-        filters_label.place(x = 200, y = 480)
+        filters_label = tk.Label(self, text="Pirates 2021 Schedule Filters:", font=("Courier", 20))
+        filters_label.place(x = 190, y = 480)
 
         player_label = tk.Label(self, text="Select a player:", font=("Courier", 18))
         player_label.place(x = 80, y = 80)
