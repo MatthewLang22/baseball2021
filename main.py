@@ -97,6 +97,7 @@ def clear_batting_pitching_fielding(self, lablesVariables,lablesOptions,lableInp
         gp_options = OptionMenu(self, lablesVariables[num], "", "=", "<", ">")
         lablesOptions[num]= gp_options
         lableInput[num].delete('1.0', END)
+    for num in range(len(lablesVariables)+2):
         checkBoxsOG[num].deselect()
 def batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, name):
     querey = ("SELECT * from " + name  + " INNER JOIN teams ON (" + name + ".TEAM = teams.TEAM)" + " where ")
