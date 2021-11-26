@@ -3,6 +3,7 @@
 # CS 4620 Final Project
 
 import sqlite3
+from sqlite3 import Error
 import tkinter as tk
 from tkinter import *
 
@@ -11,6 +12,45 @@ LARGE_FONT= ("Verdana", 12)
 
 connection = sqlite3.connect("baseball.db")
 cursor = connection.cursor()
+
+
+def create_connection(path):
+    connection = None
+    try:
+        connection = sqlite3.connect(path)
+        print("Connection to SQLite DB successful")
+    except Error as e:
+        print(f"The error '{e}' occurred")
+
+    return connection
+
+def execute_query(connection, query):
+    cursor = connection.cursor()
+    try:
+        cursor.execute(query)
+        connection.commit()
+        print("Query executed successfully")
+    except Error as e:
+        print(f"The error '{e}' occurred")
+        
+def execute_queries(connection, queries):
+    cursor = connection.cursor()
+    try:
+        cursor.executescript(queries)
+        connection.commit()
+        print("Queries executed successfully")
+    except Error as e:
+        print(f"The error '{e}' occurred")
+        
+def execute_read_query(connection, query):
+    cursor = connection.cursor()
+    result = None
+    try:
+        cursor.execute(query)
+        result = cursor.fetchall()
+        return result
+    except Error as e:
+        print(f"The error '{e}' occurred")
 
 def hitting_query():
     print("Players who hit above .300 and had over 200 At-Bats:")
@@ -31,6 +71,38 @@ def pirates_query():
     print("Pirates 40 man roster: ")
     testing = cursor.execute("SELECT FNAME, LNAME FROM Pirates").fetchall()
     print(testing)
+
+def clear_batting(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options):
+    fname_input.delete('1.0', END)
+    lname_input.delete('1.0', END)
+    position_variable.set("") # default value
+    position_options = OptionMenu(self, position_variable, "", "P", "C", "1B", "2B", "3B", "SS", "LF", "CF", "RF", "DH")
+    team_variable.set("")
+    team_options = OptionMenu(self, team_variable, "", "ARI", "ATL", "BAL", "BOS", "CHC", "CHW", "CIN", "CLE", "COL", "DET", "HOU" , "KCR", "LAA", "LAD", "MIA", "MIL", "MIN", "NYM", "NYY", "OAK", "PHI", "PIT" , "SDP", "SFG", "SEA", "STL", "TBR", "TEX", "TOR", "WAS")
+
+    for num in range(16):
+        lablesVariables[num].set("")
+        gp_options = OptionMenu(self, lablesVariables[num], "", "=", "<", ">")
+        lablesOptions[num]= gp_options
+        lableInput[num].delete('1.0', END)
+def batting_q(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options):
+    querey = "SELECT * from batting where "
+    count = 0
+    if(fname_input.get("1.0",'end-1c') != ""):
+        querey += ("FNAME = " + "\'" + fname_input.get("1.0",'end-1c') + "\'")
+        count += 1
+    if(lname_input.get("1.0",'end-1c') != ""):
+        if( count != 0):
+            querey += " AND LNAME = "
+            querey += ("\'" +lname_input.get("1.0",'end-1c') + "\'")
+        else:
+            count += 1
+            querey += (" LNAME = " + "\'" + lname_input.get("1.0",'end-1c') + "\'")
+    print("Querey: " , querey)
+    users = execute_read_query(connection,querey)
+    for user in users:
+        print(user) 
+    
 
 class Baseball(tk.Tk):
 
@@ -99,25 +171,25 @@ class StartPage(tk.Frame):
         blank1.config(font =("Courier", 30))
         blank1.pack()
 
-        Button(self, text = 'Click Me !', image = batting_pic, command=lambda:[controller.show_frame(PageBatting), hitting_query()]).pack()
+        Button(self, text = 'Click Me !', image = batting_pic, command=lambda:[controller.show_frame(PageBatting)]).pack()
 
         blank1 = tk.Label(self, text = "")
         blank1.config(font =("Courier", 30))
         blank1.pack()
 
-        Button(self, text = 'Click Me !', image = pitching_pic, command=lambda:[controller.show_frame(PagePitching), pitching_query()]).pack()
+        Button(self, text = 'Click Me !', image = pitching_pic, command=lambda:[controller.show_frame(PagePitching)]).pack()
 
         blank1 = tk.Label(self, text = "")
         blank1.config(font =("Courier", 30))
         blank1.pack()
 
-        Button(self, text = 'Click Me !', image = fielding_pic, command=lambda:[controller.show_frame(PageFielding), fielding_query()]).pack()
+        Button(self, text = 'Click Me !', image = fielding_pic, command=lambda:[controller.show_frame(PageFielding)]).pack()
 
         blank1 = tk.Label(self, text = "")
         blank1.config(font =("Courier", 30))
         blank1.pack()
 
-        Button(self, text = 'Click Me !', image = pirates_pic, command=lambda:[controller.show_frame(PagePirates), pirates_query()]).pack()
+        Button(self, text = 'Click Me !', image = pirates_pic, command=lambda:[controller.show_frame(PagePirates)]).pack()
 
         blank1 = tk.Label(self, text = "")
         blank1.config(font =("Courier", 30))
@@ -131,7 +203,7 @@ class PageBatting(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
         label = tk.Label(self, text="Batting Filters", font=("Courier", 30))
-        label.place(x = 200, y = 0)
+        label.place(x = 200, y = 0)    
 
         fname_label = tk.Label(self, text="First name: ", font=("Courier", 18))
         fname_label.place(x = 25, y = 55)
@@ -161,187 +233,64 @@ class PageBatting(tk.Frame):
         team_options = OptionMenu(self, team_variable, "", "ARI", "ATL", "BAL", "BOS", "CHC", "CHW", "CIN", "CLE", "COL", "DET", "HOU" , "KCR", "LAA", "LAD", "MIA", "MIL", "MIN", "NYM", "NYY", "OAK", "PHI", "PIT" , "SDP", "SFG", "SEA", "STL", "TBR", "TEX", "TOR", "WAS")
         team_options.place(x = 160, y = 150)
 
+        lables = [] 
+        lablesVariables = [] 
+        lablesOptions = []
+        lableInput = []
+
         gp_label = tk.Label(self, text="GP: ", font=("Courier", 18))
-        gp_label.place(x = 25, y = 175)
-
-        gp_variable = StringVar(self)
-        gp_variable.set("") # default value
-        gp_options = OptionMenu(self, gp_variable, "", "=", "<", ">")
-        gp_options.place(x = 160, y = 180)
-
-        gp_input = Text(self, height = 1, width = 5)
-        gp_input.place(x = 210, y = 180)
-
+        lables.append(gp_label)
         avg_label = tk.Label(self, text="AVG: ", font=("Courier", 18))
-        avg_label.place(x = 25, y = 205)
-
-        avg_variable = StringVar(self)
-        avg_variable.set("") # default value
-        avg_options = OptionMenu(self, avg_variable, "", "=", "<", ">")
-        avg_options.place(x = 160, y = 210)
-
-        avg_input = Text(self, height = 1, width = 5)
-        avg_input.place(x = 210, y = 210)
-
+        lables.append(avg_label)
         ab_label = tk.Label(self, text="AB: ", font=("Courier", 18))
-        ab_label.place(x = 25, y = 235)
-
-        ab_variable = StringVar(self)
-        ab_variable.set("") # default value
-        ab_options = OptionMenu(self, ab_variable, "", "=", "<", ">")
-        ab_options.place(x = 160, y = 240)
-
-        ab_input = Text(self, height = 1, width = 5)
-        ab_input.place(x = 210, y = 240)
-
+        lables.append(ab_label)
         r_label = tk.Label(self, text="R: ", font=("Courier", 18))
-        r_label.place(x = 25, y = 265)
-
-        r_variable = StringVar(self)
-        r_variable.set("") # default value
-        r_options = OptionMenu(self, r_variable, "", "=", "<", ">")
-        r_options.place(x = 160, y = 270)
-
-        r_input = Text(self, height = 1, width = 5)
-        r_input.place(x = 210, y = 270)
-
+        lables.append(r_label)
         h_label = tk.Label(self, text="H: ", font=("Courier", 18))
-        h_label.place(x = 25, y = 295)
-
-        h_variable = StringVar(self)
-        h_variable.set("") # default value
-        h_options = OptionMenu(self, h_variable, "", "=", "<", ">")
-        h_options.place(x = 160, y = 300)
-
-        h_input = Text(self, height = 1, width = 5)
-        h_input.place(x = 210, y = 300)
-
+        lables.append(h_label)
         b2_label = tk.Label(self, text="2B: ", font=("Courier", 18))
-        b2_label.place(x = 25, y = 325)
-
-        b2_variable = StringVar(self)
-        b2_variable.set("") # default value
-        b2_options = OptionMenu(self, b2_variable, "", "=", "<", ">")
-        b2_options.place(x = 160, y = 330)
-
-        b2_input = Text(self, height = 1, width = 5)
-        b2_input.place(x = 210, y = 330)
-
+        lables.append(b2_label)
         b3_label = tk.Label(self, text="3B: ", font=("Courier", 18))
-        b3_label.place(x = 25, y = 355)
-
-        b3_variable = StringVar(self)
-        b3_variable.set("") # default value
-        b3_options = OptionMenu(self, b3_variable, "", "=", "<", ">")
-        b3_options.place(x = 160, y = 360)
-
-        b3_input = Text(self, height = 1, width = 5)
-        b3_input.place(x = 210, y = 360)
-
+        lables.append(b3_label)
         hr_label = tk.Label(self, text="HR: ", font=("Courier", 18))
-        hr_label.place(x = 25, y = 385)
-
-        hr_variable = StringVar(self)
-        hr_variable.set("") # default value
-        hr_options = OptionMenu(self, hr_variable, "", "=", "<", ">")
-        hr_options.place(x = 160, y = 390)
-
-        hr_input = Text(self, height = 1, width = 5)
-        hr_input.place(x = 210, y = 390)
-
+        lables.append(hr_label)
         rbi_label = tk.Label(self, text="RBI: ", font=("Courier", 18))
-        rbi_label.place(x = 25, y = 415)
-
-        rbi_variable = StringVar(self)
-        rbi_variable.set("") # default value
-        rbi_options = OptionMenu(self, rbi_variable, "", "=", "<", ">")
-        rbi_options.place(x = 160, y = 420)
-
-        rbi_input = Text(self, height = 1, width = 5)
-        rbi_input.place(x = 210, y = 420)
-
+        lables.append(rbi_label)
         sb_label = tk.Label(self, text="SB: ", font=("Courier", 18))
-        sb_label.place(x = 25, y = 445)
-
-        sb_variable = StringVar(self)
-        sb_variable.set("") # default value
-        sb_options = OptionMenu(self, sb_variable, "", "=", "<", ">")
-        sb_options.place(x = 160, y = 450)
-
-        sb_input = Text(self, height = 1, width = 5)
-        sb_input.place(x = 210, y = 450)
-
+        lables.append(sb_label)
         cs_label = tk.Label(self, text="CS: ", font=("Courier", 18))
-        cs_label.place(x = 25, y = 475)
-
-        cs_variable = StringVar(self)
-        cs_variable.set("") # default value
-        cs_options = OptionMenu(self, cs_variable, "", "=", "<", ">")
-        cs_options.place(x = 160, y = 480)
-
-        cs_input = Text(self, height = 1, width = 5)
-        cs_input.place(x = 210, y = 480)
-
+        lables.append(cs_label)
         bb_label = tk.Label(self, text="BB: ", font=("Courier", 18))
-        bb_label.place(x = 25, y = 505)
-
-        bb_variable = StringVar(self)
-        bb_variable.set("") # default value
-        bb_options = OptionMenu(self, bb_variable, "", "=", "<", ">")
-        bb_options.place(x = 160, y = 510)
-
-        bb_input = Text(self, height = 1, width = 5)
-        bb_input.place(x = 210, y = 510)
-
+        lables.append(bb_label)
         so_label = tk.Label(self, text="SO: ", font=("Courier", 18))
-        so_label.place(x = 25, y = 535)
-
-        so_variable = StringVar(self)
-        so_variable.set("") # default value
-        so_options = OptionMenu(self, so_variable, "", "=", "<", ">")
-        so_options.place(x = 160, y = 540)
-
-        so_input = Text(self, height = 1, width = 5)
-        so_input.place(x = 210, y = 540)
-
+        lables.append(so_label)
         obp_label = tk.Label(self, text="OBP: ", font=("Courier", 18))
-        obp_label.place(x = 25, y = 565)
-
-        obp_variable = StringVar(self)
-        obp_variable.set("") # default value
-        obp_options = OptionMenu(self, obp_variable, "", "=", "<", ">")
-        obp_options.place(x = 160, y = 570)
-
-        obp_input = Text(self, height = 1, width = 5)
-        obp_input.place(x = 210, y = 570)
-
+        lables.append(obp_label)
         slg_label = tk.Label(self, text="SLG: ", font=("Courier", 18))
-        slg_label.place(x = 25, y = 595)
-
-        slg_variable = StringVar(self)
-        slg_variable.set("") # default value
-        slg_options = OptionMenu(self, slg_variable, "", "=", "<", ">")
-        slg_options.place(x = 160, y = 600)
-
-        slg_input = Text(self, height = 1, width = 5)
-        slg_input.place(x = 210, y = 600)
-
+        lables.append(slg_label)
         ops_label = tk.Label(self, text="OPS: ", font=("Courier", 18))
-        ops_label.place(x = 25, y = 625)
+        lables.append(ops_label)
 
-        ops_variable = StringVar(self)
-        ops_variable.set("") # default value
-        ops_options = OptionMenu(self, ops_variable, "", "=", "<", ">")
-        ops_options.place(x = 160, y = 630)
+        for num in range(16):
+            gp_variable = StringVar(self)
+            gp_variable.set("") # default value
+            lablesVariables.append(gp_variable)
+            gp_options = OptionMenu(self, lablesVariables[num], "", "=", "<", ">")
+            lablesOptions.append(gp_options)
+            lablesOptions[num].place(x = 160, y = 180 + (30 * num))
+            gp_input = Text(self, height = 1, width = 5)
+            lableInput.append(gp_input)
+            lableInput[num].place(x = 210, y = 180 + (30 * num))
+            lables[num].place(x = 25, y = 175 + (30*num))
 
-        ops_input = Text(self, height = 1, width = 5)
-        ops_input.place(x = 210, y = 630)
-
-        batting_go_button = tk.Button(self, text="GO!", command=lambda: controller.show_frame(StartPage))
+        batting_go_button = tk.Button(self, text="GO!", command=lambda: [controller.show_frame(StartPage),batting_q(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options)])
         batting_go_button.place(x = 620, y = 650)
 
-        main_button = tk.Button(self, text="Back to Main", command=lambda: controller.show_frame(StartPage))
+        main_button = tk.Button(self, text="Back to Main", command=lambda: [controller.show_frame(StartPage),clear_batting(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options)])
         main_button.place(x = 280, y = 700)
+
+        clear_button = tk.Button(self, text="clear", command=lambda: clear_batting(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options))
+        clear_button.place(x = 500, y = 100)
 
 class PagePitching(tk.Frame):
 
