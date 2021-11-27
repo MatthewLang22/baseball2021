@@ -112,9 +112,9 @@ def batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, 
         if(checkBoxsAnsw[num].get() == 1):
             querey += ", " + table2name[num]
     count = 0
-    querey += " from " + name  + " INNER JOIN teams ON (" + name + ".TEAM = teams.TEAM)" + " where "
+    querey += " from " + name  + " INNER JOIN teams ON (" + name + ".TEAM = teams.TEAM)"
     if(fname_input.get("1.0",'end-1c') != ""):
-        querey += ("FNAME = " + "\'" + fname_input.get("1.0",'end-1c') + "\'")
+        querey += (" where FNAME = " + "\'" + fname_input.get("1.0",'end-1c') + "\'")
         count += 1
     if(lname_input.get("1.0",'end-1c') != ""):
         if(count != 0):
@@ -122,18 +122,18 @@ def batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, 
             querey += ("\'" +lname_input.get("1.0",'end-1c') + "\'")
         else:
             count += 1
-            querey += (" LNAME = " + "\'" + lname_input.get("1.0",'end-1c') + "\'")
+            querey += (" where LNAME = " + "\'" + lname_input.get("1.0",'end-1c') + "\'")
     if position_variable.get() != "":
         if(count != 0) :
             querey += " AND POSITION = " + "\'" + position_variable.get() +"\'"
         else:
-            querey += "POSITION = " + "\'" + position_variable.get() +"\' "
+            querey += " where POSITION = " + "\'" + position_variable.get() +"\' "
             count += 1
     if team_variable.get() != "":
         if(count != 0) :
             querey += " AND teams.TEAM = " + "\'" + team_variable.get() +"\'"
         else:
-            querey += "teams.TEAM = " + "\'" + team_variable.get() +"\'"
+            querey += " where teams.TEAM = " + "\'" + team_variable.get() +"\'"
             count += 1
     for num in range(len(lables)):
         if lablesVariables[num].get() != "":
@@ -141,7 +141,7 @@ def batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, 
                 querey += " AND " + lables[num].cget('text') + " " + lablesVariables[num].get() + " \'" + lableInput[num].get("1.0",'end-1c') + "\'"
             else:
                 count +=1
-                querey += "" + lables[num].cget('text') + " " + lablesVariables[num].get() + " \'" + lableInput[num].get("1.0",'end-1c') + "\'"
+                querey += " where " + lables[num].cget('text') + " " + lablesVariables[num].get() + " \'" + lableInput[num].get("1.0",'end-1c') + "\'"
 
     print("Querey: " , querey)
 
@@ -292,8 +292,8 @@ class PageBatting(tk.Frame):
         lables.append(tk.Label(self, text="AB", font=("Courier", 18)))
         lables.append(tk.Label(self, text="R", font=("Courier", 18)))
         lables.append(tk.Label(self, text="H", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="2B", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="3B", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="DOU", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="TRIP", font=("Courier", 18)))
         lables.append(tk.Label(self, text="HR", font=("Courier", 18)))
         lables.append(tk.Label(self, text="RBI", font=("Courier", 18)))
         lables.append(tk.Label(self, text="SB", font=("Courier", 18)))
