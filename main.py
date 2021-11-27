@@ -7,7 +7,6 @@ from sqlite3 import Error
 import tkinter as tk
 from tkinter import *
 
-
 LARGE_FONT= ("Verdana", 12)
 
 connection = sqlite3.connect("baseball.db")
@@ -90,7 +89,7 @@ def clear_batting_pitching_fielding(self, lablesVariables,lablesOptions,lableInp
     position_options = OptionMenu(self, position_variable, "", "P", "C", "1B", "2B", "3B", "SS", "LF", "CF", "RF", "DH")
     team_variable.set("")
     team_options = OptionMenu(self, team_variable, "", "ARI", "ATL", "BAL", "BOS", "CHC", "CHW", "CIN", "CLE", "COL", "DET", "HOU" , "KCR", "LAA", "LAD", "MIA", "MIL", "MIN", "NYM", "NYY", "OAK", "PHI", "PIT" , "SDP", "SFG", "SEA", "STL", "TBR", "TEX", "TOR", "WAS")
-    for num in range(10):
+    for num in range(12):
         checkBoxs[num].deselect()
     for num in range(len(lablesVariables)):
         lablesVariables[num].set("")
@@ -99,11 +98,23 @@ def clear_batting_pitching_fielding(self, lablesVariables,lablesOptions,lableInp
         lableInput[num].delete('1.0', END)
     for num in range(len(lablesVariables)+2):
         checkBoxsOG[num].deselect()
-def batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, name):
-    querey = ("SELECT * from " + name  + " INNER JOIN teams ON (" + name + ".TEAM = teams.TEAM)" + " where ")
+def batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, name, lables, checkBoxsAnswOG, checkBoxsAnsw):
+    querey = "SELECT FNAME, LNAME"
+    if checkBoxsAnswOG[0].get() == 1:
+        querey += ", POSITION"
+    if checkBoxsAnswOG[1].get() == 1:
+        querey += ", teams.TEAM"
+    for num in range(len(checkBoxsAnswOG) - 2):
+        if(checkBoxsAnswOG[num + 2].get() == 1):
+            querey += ", " + lables[num].cget('text')
+    table2name = ["CITY", "NICKNAME", "LEAGUE", "DIV", "GM","MANAGER", "STADIUM", "CAPACITY","SYEAR", "ADDRESS","PHONE", "WEBSITE"]
+    for num in range(12):
+        if(checkBoxsAnsw[num].get() == 1):
+            querey += ", " + table2name[num]
     count = 0
+    querey += " from " + name  + " INNER JOIN teams ON (" + name + ".TEAM = teams.TEAM)"
     if(fname_input.get("1.0",'end-1c') != ""):
-        querey += ("FNAME = " + "\'" + fname_input.get("1.0",'end-1c') + "\'")
+        querey += (" where FNAME = " + "\'" + fname_input.get("1.0",'end-1c') + "\'")
         count += 1
     if(lname_input.get("1.0",'end-1c') != ""):
         if(count != 0):
@@ -111,13 +122,34 @@ def batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, 
             querey += ("\'" +lname_input.get("1.0",'end-1c') + "\'")
         else:
             count += 1
-            querey += (" LNAME = " + "\'" + lname_input.get("1.0",'end-1c') + "\'")
+            querey += (" where LNAME = " + "\'" + lname_input.get("1.0",'end-1c') + "\'")
+    if position_variable.get() != "":
+        if(count != 0) :
+            querey += " AND POSITION = " + "\'" + position_variable.get() +"\'"
+        else:
+            querey += " where POSITION = " + "\'" + position_variable.get() +"\' "
+            count += 1
+    if team_variable.get() != "":
+        if(count != 0) :
+            querey += " AND teams.TEAM = " + "\'" + team_variable.get() +"\'"
+        else:
+            querey += " where teams.TEAM = " + "\'" + team_variable.get() +"\'"
+            count += 1
+    for num in range(len(lables)):
+        if lablesVariables[num].get() != "":
+            if count != 0:
+                querey += " AND " + lables[num].cget('text') + " " + lablesVariables[num].get() + " \'" + lableInput[num].get("1.0",'end-1c') + "\'"
+            else:
+                count +=1
+                querey += " where " + lables[num].cget('text') + " " + lablesVariables[num].get() + " \'" + lableInput[num].get("1.0",'end-1c') + "\'"
+
     print("Querey: " , querey)
+
     users = execute_read_query(connection,querey)
+
     for user in users:
         print(user) 
     
-
 class Baseball(tk.Tk):
 
     def __init__(self, *args, **kwargs):
@@ -255,45 +287,50 @@ class PageBatting(tk.Frame):
         lablesOptions = []
         lableInput = []
 
-        lables.append(tk.Label(self, text="GP: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="AVG: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="AB: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="R: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="H: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="2B: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="3B: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="HR: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="RBI: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="SB: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="CS: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="BB: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="SO: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="OBP: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="SLG: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="OPS: ", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="GP", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="AVG", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="AB", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="R", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="H", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="DOU", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="TRIP", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="HR", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="RBI", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="SB", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="CS", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="BB", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="SO", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="OBP", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="SLG", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="OPS", font=("Courier", 18)))
 
         # Checkboxes
+        checkBoxsAnswOG = []
         for num in range(len(lables) + 2):
-            checkBoxsOG.append(Checkbutton(self, text=" ", variable = IntVar()))
-            checkBoxsOG[num].place(x = 0, y = 115 + (30 * num))
+            checkBoxsAnswOG.append(IntVar())
+            checkBoxsOG.append(Checkbutton(self, text=" ", variable = checkBoxsAnswOG[num]))
+            checkBoxsOG[num].place(x = 0, y = 115 + (30 * num)) # ohwefioheoifehiofehfoiehfioehfioefheoifheoifheiohfeoifheiowf
 
         also_label = tk.Label(self, text="Also include: ", font=("Courier", 18))
         also_label.place(x = 450, y = 280)
 
-        checkBoxs.append(Checkbutton(self, text="City", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="Team Name", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="League", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="Division", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="General Manager", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="Manger", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="Home Stadium", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="Stadium Capacity", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="Stadium Year", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="Address", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="Phone Number", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="Website", variable = IntVar()))
+        checkBoxsAnsw = []
+        for num in range(12):
+            checkBoxsAnsw.append(IntVar())
+        checkBoxs.append(Checkbutton(self, text="City", variable = checkBoxsAnsw[0]))
+        checkBoxs.append(Checkbutton(self, text="Team Name", variable = checkBoxsAnsw[1]))
+        checkBoxs.append(Checkbutton(self, text="League", variable = checkBoxsAnsw[2]))
+        checkBoxs.append(Checkbutton(self, text="Division", variable = checkBoxsAnsw[3]))
+        checkBoxs.append(Checkbutton(self, text="General Manager", variable = checkBoxsAnsw[4]))
+        checkBoxs.append(Checkbutton(self, text="Manger", variable = checkBoxsAnsw[5]))
+        checkBoxs.append(Checkbutton(self, text="Home Stadium", variable = checkBoxsAnsw[6]))
+        checkBoxs.append(Checkbutton(self, text="Stadium Capacity", variable = checkBoxsAnsw[7]))
+        checkBoxs.append(Checkbutton(self, text="Stadium Year", variable = checkBoxsAnsw[8]))
+        checkBoxs.append(Checkbutton(self, text="Address", variable =checkBoxsAnsw[9]))
+        checkBoxs.append(Checkbutton(self, text="Phone Number", variable = checkBoxsAnsw[10]))
+        checkBoxs.append(Checkbutton(self, text="Website", variable = checkBoxsAnsw[11]))
 
-        for num in range(10):
+        for num in range(12):
             checkBoxs[num].place(x = 450, y = 300 + (20 * num))
         for num in range(len(lables)):
             gp_variable = StringVar(self)
@@ -307,7 +344,7 @@ class PageBatting(tk.Frame):
             lableInput[num].place(x = 220, y = 180 + (30 * num))
             lables[num].place(x = 35, y = 175 + (30*num))
 
-        batting_go_button = tk.Button(self, text="GO!", command=lambda: [controller.show_frame(StartPage),batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, name)])
+        batting_go_button = tk.Button(self, text="GO!", command=lambda: [controller.show_frame(StartPage),batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, name,lables, checkBoxsAnswOG, checkBoxsAnsw)])
         batting_go_button.place(x = 620, y = 650)
 
 
@@ -364,44 +401,49 @@ class PagePitching(tk.Frame):
         lablesOptions = []
         lableInput = []
 
-        lables.append(tk.Label(self, text="GP: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="GS: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="IP: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="W: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="L: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="SV: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="SVO: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="H: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="R: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="HR: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="ER: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="ERA: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="BB: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="SO: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="TP: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="WHIP: ", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="GP", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="GS", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="IP", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="W", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="L", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="SV", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="SVO", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="H", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="R", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="HR", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="ER", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="ERA", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="BB", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="SO", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="TP", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="WHIP", font=("Courier", 18)))
 
         # Checkboxes
         also_label = tk.Label(self, text="Also include: ", font=("Courier", 18))
         also_label.place(x = 450, y = 280)
 
-        checkBoxs.append(Checkbutton(self, text="City", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="Team Name", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="League", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="Division", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="General Manager", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="Manger", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="Home Stadium", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="Stadium Capacity", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="Stadium Year", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="Address", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="Phone Number", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="Website", variable = IntVar()))
+        checkBoxsAnsw = []
+        for num in range(12):
+            checkBoxsAnsw.append(IntVar())
+        checkBoxs.append(Checkbutton(self, text="City", variable = checkBoxsAnsw[0]))
+        checkBoxs.append(Checkbutton(self, text="Team Name", variable = checkBoxsAnsw[1]))
+        checkBoxs.append(Checkbutton(self, text="League", variable = checkBoxsAnsw[2]))
+        checkBoxs.append(Checkbutton(self, text="Division", variable = checkBoxsAnsw[3]))
+        checkBoxs.append(Checkbutton(self, text="General Manager", variable = checkBoxsAnsw[4]))
+        checkBoxs.append(Checkbutton(self, text="Manger", variable = checkBoxsAnsw[5]))
+        checkBoxs.append(Checkbutton(self, text="Home Stadium", variable = checkBoxsAnsw[6]))
+        checkBoxs.append(Checkbutton(self, text="Stadium Capacity", variable = checkBoxsAnsw[7]))
+        checkBoxs.append(Checkbutton(self, text="Stadium Year", variable = checkBoxsAnsw[8]))
+        checkBoxs.append(Checkbutton(self, text="Address", variable =checkBoxsAnsw[9]))
+        checkBoxs.append(Checkbutton(self, text="Phone Number", variable = checkBoxsAnsw[10]))
+        checkBoxs.append(Checkbutton(self, text="Website", variable = checkBoxsAnsw[11]))
 
+        checkBoxsAnswOG = []
         for num in range(len(lables) + 2):
-            checkBoxsOG.append(Checkbutton(self, text=" ", variable = IntVar()))
-            checkBoxsOG[num].place(x = 0, y = 115 + (30 * num))
-        for num in range(10):
+            checkBoxsAnswOG.append(IntVar())
+            checkBoxsOG.append(Checkbutton(self, text=" ", variable = checkBoxsAnswOG[num]))
+            checkBoxsOG[num].place(x = 0, y = 115 + (30 * num)) # hefgiouehwfioewhfioehfoiehfioehfeiohfeiohfoiehfoiefheoifheiofwhieo
+        for num in range(12):
             checkBoxs[num].place(x = 450, y = 300 + (20 * num))
         for num in range(len(lables)):
             gp_variable = StringVar(self)
@@ -415,7 +457,7 @@ class PagePitching(tk.Frame):
             lableInput[num].place(x = 220, y = 180 + (30 * num))
             lables[num].place(x = 35, y = 175 + (30*num))
 
-        batting_go_button = tk.Button(self, text="GO!", command=lambda: [controller.show_frame(StartPage),batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, name)])
+        batting_go_button = tk.Button(self, text="GO!", command=lambda: [controller.show_frame(StartPage),batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, name, lables, checkBoxsAnswOG, checkBoxsAnsw)])
         batting_go_button.place(x = 620, y = 650)
         selectALL = tk.Button(self, text=" Select All ", command=lambda:  select_all(checkBoxs,checkBoxsOG))
         selectALL.place(x = 450, y = 130)
@@ -469,43 +511,48 @@ class PageFielding(tk.Frame):
         lablesOptions = []
         lableInput = []
 
-        lables.append(tk.Label(self, text="GP: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="GS: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="FULL: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="TC: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="PO: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="A: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="E: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="DP: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="FPCT: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="RF: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="DWAR: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="PB: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="CSB: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="CS: ", font=("Courier", 18)))
-        lables.append(tk.Label(self, text="CSPCT: ", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="GP", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="GS", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="FULL", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="TC", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="PO", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="A", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="E", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="DP", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="FPCT", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="RF", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="DWAR", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="PB", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="CSB", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="CS", font=("Courier", 18)))
+        lables.append(tk.Label(self, text="CSPCT", font=("Courier", 18)))
 
         # Checkboxes
         also_label = tk.Label(self, text="Also include: ", font=("Courier", 18))
         also_label.place(x = 450, y = 280)
 
-        checkBoxs.append(Checkbutton(self, text="City", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="Team Name", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="League", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="Division", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="General Manager", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="Manger", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="Home Stadium", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="Stadium Capacity", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="Stadium Year", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="Address", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="Phone Number", variable = IntVar()))
-        checkBoxs.append(Checkbutton(self, text="Website", variable = IntVar()))
+        checkBoxsAnsw = []
+        for num in range(12):
+            checkBoxsAnsw.append(IntVar())
+        checkBoxs.append(Checkbutton(self, text="City", variable = checkBoxsAnsw[0]))
+        checkBoxs.append(Checkbutton(self, text="Team Name", variable = checkBoxsAnsw[1]))
+        checkBoxs.append(Checkbutton(self, text="League", variable = checkBoxsAnsw[2]))
+        checkBoxs.append(Checkbutton(self, text="Division", variable = checkBoxsAnsw[3]))
+        checkBoxs.append(Checkbutton(self, text="General Manager", variable = checkBoxsAnsw[4]))
+        checkBoxs.append(Checkbutton(self, text="Manger", variable = checkBoxsAnsw[5]))
+        checkBoxs.append(Checkbutton(self, text="Home Stadium", variable = checkBoxsAnsw[6]))
+        checkBoxs.append(Checkbutton(self, text="Stadium Capacity", variable = checkBoxsAnsw[7]))
+        checkBoxs.append(Checkbutton(self, text="Stadium Year", variable = checkBoxsAnsw[8]))
+        checkBoxs.append(Checkbutton(self, text="Address", variable =checkBoxsAnsw[9]))
+        checkBoxs.append(Checkbutton(self, text="Phone Number", variable = checkBoxsAnsw[10]))
+        checkBoxs.append(Checkbutton(self, text="Website", variable = checkBoxsAnsw[11]))
 
+        checkBoxsAnswOG = []
         for num in range(len(lables) + 2):
-            checkBoxsOG.append(Checkbutton(self, text=" ", variable = IntVar()))
-            checkBoxsOG[num].place(x = 0, y = 115 + (30 * num))
-        for num in range(10):
+            checkBoxsAnswOG.append(IntVar())
+            checkBoxsOG.append(Checkbutton(self, text=" ", variable = checkBoxsAnswOG[num]))
+            checkBoxsOG[num].place(x = 0, y = 115 + (30 * num)) # woeufhewuoifheuiwfhoeifheoihfioehfioehfiohewoifheiofheiofheiofhioew
+        for num in range(12):
             checkBoxs[num].place(x = 450, y = 300 + (20 * num))
         for num in range(len(lables)):
             gp_variable = StringVar(self)
@@ -519,7 +566,7 @@ class PageFielding(tk.Frame):
             lableInput[num].place(x = 220, y = 180 + (30 * num))
             lables[num].place(x = 35, y = 175 + (30*num))
 
-        batting_go_button = tk.Button(self, text="GO!", command=lambda: [controller.show_frame(StartPage),batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, name)])
+        batting_go_button = tk.Button(self, text="GO!", command=lambda: [controller.show_frame(StartPage),batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, name, lables, checkBoxsAnswOG, checkBoxsAnsw)])
         batting_go_button.place(x = 620, y = 650)
 
         selectALL = tk.Button(self, text=" Select All ", command=lambda:  select_all(checkBoxs,checkBoxsOG))
