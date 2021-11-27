@@ -82,6 +82,15 @@ def deselect_all(checkBoxs, checkBoxsOG):
     for num in range(len(checkBoxsOG)):
         checkBoxsOG[num].deselect()
 
+def highlights(self, player_variable):
+    splitting = str(player_variable.get()).split(" ", 1)
+    firstname = splitting[0]
+    lastname = splitting[1]
+
+    print("First name: ", firstname)
+    print("Last name: ", lastname)
+
+
 def clear_batting_pitching_fielding(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, checkBoxs, checkBoxsOG):
     fname_input.delete('1.0', END)
     lname_input.delete('1.0', END)
@@ -442,7 +451,7 @@ class PagePitching(tk.Frame):
         for num in range(len(lables) + 2):
             checkBoxsAnswOG.append(IntVar())
             checkBoxsOG.append(Checkbutton(self, text=" ", variable = checkBoxsAnswOG[num]))
-            checkBoxsOG[num].place(x = 0, y = 115 + (30 * num)) # hefgiouehwfioewhfioehfoiehfioehfeiohfeiohfoiehfoiefheoifheiofwhieo
+            checkBoxsOG[num].place(x = 0, y = 115 + (30 * num)) 
         for num in range(12):
             checkBoxs[num].place(x = 450, y = 300 + (20 * num))
         for num in range(len(lables)):
@@ -551,7 +560,7 @@ class PageFielding(tk.Frame):
         for num in range(len(lables) + 2):
             checkBoxsAnswOG.append(IntVar())
             checkBoxsOG.append(Checkbutton(self, text=" ", variable = checkBoxsAnswOG[num]))
-            checkBoxsOG[num].place(x = 0, y = 115 + (30 * num)) # woeufhewuoifheuiwfhoeifheoihfioehfioehfiohewoifheiofheiofheiofhioew
+            checkBoxsOG[num].place(x = 0, y = 115 + (30 * num))
         for num in range(12):
             checkBoxs[num].place(x = 450, y = 300 + (20 * num))
         for num in range(len(lables)):
@@ -618,7 +627,7 @@ class PagePirates(tk.Frame):
         profile_button = tk.Button(self, text="Profile", command=lambda: controller.show_frame(StartPage))
         profile_button.place(x = 400, y = 170)
 
-        highlights_button = tk.Button(self, text="Highlights", command=lambda: controller.show_frame(StartPage))
+        highlights_button = tk.Button(self, text="Highlights", command=lambda:[controller.show_frame(StartPage), highlights(self, player_variable)])
         highlights_button.place(x = 490, y = 120)
 
         music_button = tk.Button(self, text="Music", command=lambda: controller.show_frame(StartPage))
@@ -666,49 +675,61 @@ class PagePirates(tk.Frame):
         for num in range(5):
             rostercheckBoxs[num].place(x = 400, y = 330 + (20 * num))
 
+        morerostercheckBoxs = []
+        morerostercheckBoxsAnsw = []
+
+        for num in range(3):
+            morerostercheckBoxsAnsw.append(IntVar())
+        morerostercheckBoxs.append(Checkbutton(self, text="", variable = morerostercheckBoxsAnsw[0]))
+        morerostercheckBoxs.append(Checkbutton(self, text="", variable = morerostercheckBoxsAnsw[1]))
+        morerostercheckBoxs.append(Checkbutton(self, text="", variable = morerostercheckBoxsAnsw[2]))
+
+        for num in range(3):
+            morerostercheckBoxs[num].place(x = 0, y = 315 + (30 * num))
+        
         roster_go_button = tk.Button(self, text="GO!", command=lambda: [controller.show_frame(StartPage),batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, name, lables, checkBoxsAnswOG, checkBoxsAnsw)])
         roster_go_button.place(x = 600, y = 400)
 
         # ------ Section 3 -------
         location_label = tk.Label(self, text="Location: ", font=("Courier", 18))
-        location_label.place(x = 30, y = 515)
+        location_label.place(x = 30, y = 530)
 
         location_variable = StringVar(self)
         location_variable.set("") # default value
         location_options = OptionMenu(self, location_variable, "", "Home", "Away")
-        location_options.place(x = 160, y = 518)
+        location_options.place(x = 160, y = 533)
 
         opp_label = tk.Label(self, text="Opponent: ", font=("Courier", 18))
-        opp_label.place(x = 30, y = 545)
+        opp_label.place(x = 30, y = 560)
 
         opp_variable = StringVar(self)
         opp_variable.set("") # default value
         opp_options = OptionMenu(self, opp_variable, "", "ARI", "ATL", "CHC", "CHW", "CIN", "CLE", "COL", "DET", "KCR", "LAD", "MIA", "MIL", "MIN", "NYM", "PHI", "SDP", "SFG", "STL", "WAS")
-        opp_options.place(x = 160, y = 548)
+        opp_options.place(x = 160, y = 563)
 
         result_label = tk.Label(self, text="Result: ", font=("Courier", 18))
-        result_label.place(x = 30, y = 575)
+        result_label.place(x = 30, y = 590)
 
         result_variable = StringVar(self)
         result_variable.set("") # default value
         result_options = OptionMenu(self, result_variable, "", "Win", "Loss")
-        result_options.place(x = 160, y = 578)
+        result_options.place(x = 160, y = 593)
 
         rdiff_label = tk.Label(self, text="Run Diff: ", font=("Courier", 18))
-        rdiff_label.place(x = 30, y = 605)
+        rdiff_label.place(x = 30, y = 620)
 
         rdiff_variable = StringVar(self)
         rdiff_variable.set("") # default value
         rdiff_options = OptionMenu(self, rdiff_variable, "", "-19", "-13", "-12", "-11", "-10", "-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1", "1", "2", "3", "4", "5", "6", "7", "8", "10")
-        rdiff_options.place(x = 160, y = 608)
+        rdiff_options.place(x = 160, y = 623)
 
         inn_label = tk.Label(self, text="Innings: ", font=("Courier", 18))
-        inn_label.place(x = 30, y = 635)
+        inn_label.place(x = 30, y = 650)
 
         inn_variable = StringVar(self)
         inn_variable.set("") # default value
         inn_options = OptionMenu(self, inn_variable, "", "7", "8", "9", "9+")
-        inn_options.place(x = 160, y = 638)
+        inn_options.place(x = 160, y = 653)
 
         checkboxes_label = tk.Label(self, text="Also Include: ", font=("Courier", 18))
         checkboxes_label.place(x = 300, y = 525)
@@ -745,6 +766,20 @@ class PagePirates(tk.Frame):
         for num2 in range(10, 15):
             schedulecheckBoxs[num2].place(x = 490, y = 560 + (20 * count))
             count += 1
+
+        moreschedulecheckBoxs = []
+        moreschedulecheckBoxsAnsw = []
+
+        for num in range(5):
+            moreschedulecheckBoxsAnsw.append(IntVar())
+        moreschedulecheckBoxs.append(Checkbutton(self, text="", variable = moreschedulecheckBoxsAnsw[0]))
+        moreschedulecheckBoxs.append(Checkbutton(self, text="", variable = moreschedulecheckBoxsAnsw[1]))
+        moreschedulecheckBoxs.append(Checkbutton(self, text="", variable = moreschedulecheckBoxsAnsw[2]))
+        moreschedulecheckBoxs.append(Checkbutton(self, text="", variable = moreschedulecheckBoxsAnsw[3]))
+        moreschedulecheckBoxs.append(Checkbutton(self, text="", variable = moreschedulecheckBoxsAnsw[4]))
+
+        for num in range(5):
+            moreschedulecheckBoxs[num].place(x = 0, y = 530 + (30 * num))
 
         schedule_count_button = tk.Button(self, text="Count!", command=lambda: [controller.show_frame(StartPage),batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, name, lables, checkBoxsAnswOG, checkBoxsAnsw)])
         schedule_count_button.place(x = 600, y = 600)
