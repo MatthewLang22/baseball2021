@@ -597,8 +597,8 @@ class PagePirates(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
 
-        label1 = tk.Label(self, text="View a Pirates Player:", font=("Courier", 20))
-        label1.place(x = 210, y = 0)
+        label1 = tk.Label(self, text="View a Current Pirates Player:", font=("Courier", 20))
+        label1.place(x = 170, y = 0)
 
         divider1 = tk.Label(self, text="______________________________________", font=("Courier", 30))
         divider1.place(x = 0, y = 200)
@@ -612,6 +612,8 @@ class PagePirates(tk.Frame):
         filters_label = tk.Label(self, text="Pirates 2021 Schedule Filters:", font=("Courier", 20))
         filters_label.place(x = 190, y = 480)
 
+
+        # ------ Section 1 -------
         player_label = tk.Label(self, text="Select a player:", font=("Courier", 18))
         player_label.place(x = 80, y = 80)
 
@@ -635,35 +637,139 @@ class PagePirates(tk.Frame):
         music_button = tk.Button(self, text="Music", command=lambda: controller.show_frame(StartPage))
         music_button.place(x = 490, y = 170)
 
+
+        # ------ Section 2 -------
         position_label = tk.Label(self, text="Position: ", font=("Courier", 18))
         position_label.place(x = 30, y = 315)
 
         position_variable = StringVar(self)
         position_variable.set("") # default value
         position_options = OptionMenu(self, position_variable, "", "Pitcher", "Catcher", "Infielder", "Outfielder")
-        position_options.place(x = 175, y = 320)
+        position_options.place(x = 160, y = 320)
 
-        bats_label = tk.Label(self, text="Bats (L/R): ", font=("Courier", 18))
+        bats_label = tk.Label(self, text="Bats: ", font=("Courier", 18))
         bats_label.place(x = 30, y = 345)
 
         bats_variable = StringVar(self)
         bats_variable.set("") # default value
-        bats_options = OptionMenu(self, bats_variable, "", "Left", "Right")
-        bats_options.place(x = 175, y = 350)
+        bats_options = OptionMenu(self, bats_variable, "", "Left", "Right", "Switch")
+        bats_options.place(x = 160, y = 350)
 
-        throws_label = tk.Label(self, text="Throws (L/R): ", font=("Courier", 18))
+        throws_label = tk.Label(self, text="Throws: ", font=("Courier", 18))
         throws_label.place(x = 30, y = 375)
 
         throws_variable = StringVar(self)
         throws_variable.set("") # default value
         throws_options = OptionMenu(self, throws_variable, "", "Left", "Right")
-        throws_options.place(x = 175, y = 380)
+        throws_options.place(x = 160, y = 380)
 
         checkboxes_label = tk.Label(self, text="Also Include: ", font=("Courier", 18))
-        checkboxes_label.place(x = 400, y = 285)
+        checkboxes_label.place(x = 400, y = 305)
+
+        rostercheckBoxs = []
+        rostercheckBoxsAnsw = []
+        for num in range(5):
+            rostercheckBoxsAnsw.append(IntVar())
+        rostercheckBoxs.append(Checkbutton(self, text="Jersey Number", variable = rostercheckBoxsAnsw[0]))
+        rostercheckBoxs.append(Checkbutton(self, text="Height", variable = rostercheckBoxsAnsw[1]))
+        rostercheckBoxs.append(Checkbutton(self, text="Weight", variable = rostercheckBoxsAnsw[2]))
+        rostercheckBoxs.append(Checkbutton(self, text="Date of Birth", variable = rostercheckBoxsAnsw[3]))
+        rostercheckBoxs.append(Checkbutton(self, text="2021 Stats", variable = rostercheckBoxsAnsw[4]))
+
+        for num in range(5):
+            rostercheckBoxs[num].place(x = 400, y = 330 + (20 * num))
+
+        roster_go_button = tk.Button(self, text="GO!", command=lambda: [controller.show_frame(StartPage),batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, name, lables, checkBoxsAnswOG, checkBoxsAnsw)])
+        roster_go_button.place(x = 600, y = 400)
+
+        # ------ Section 3 -------
+        location_label = tk.Label(self, text="Location: ", font=("Courier", 18))
+        location_label.place(x = 30, y = 515)
+
+        location_variable = StringVar(self)
+        location_variable.set("") # default value
+        location_options = OptionMenu(self, location_variable, "", "Home", "Away")
+        location_options.place(x = 160, y = 518)
+
+        opp_label = tk.Label(self, text="Opponent: ", font=("Courier", 18))
+        opp_label.place(x = 30, y = 545)
+
+        opp_variable = StringVar(self)
+        opp_variable.set("") # default value
+        opp_options = OptionMenu(self, opp_variable, "", "ARI", "ATL", "CHC", "CHW", "CIN", "CLE", "COL", "DET", "KCR", "LAD", "MIA", "MIL", "MIN", "NYM", "PHI", "SDP", "SFG", "STL", "WAS")
+        opp_options.place(x = 160, y = 548)
+
+        result_label = tk.Label(self, text="Result: ", font=("Courier", 18))
+        result_label.place(x = 30, y = 575)
+
+        result_variable = StringVar(self)
+        result_variable.set("") # default value
+        result_options = OptionMenu(self, result_variable, "", "Win", "Loss")
+        result_options.place(x = 160, y = 578)
+
+        rdiff_label = tk.Label(self, text="Run Diff: ", font=("Courier", 18))
+        rdiff_label.place(x = 30, y = 605)
+
+        rdiff_variable = StringVar(self)
+        rdiff_variable.set("") # default value
+        rdiff_options = OptionMenu(self, rdiff_variable, "", "-19", "-13", "-12", "-11", "-10", "-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1", "1", "2", "3", "4", "5", "6", "7", "8", "10")
+        rdiff_options.place(x = 160, y = 608)
+
+        inn_label = tk.Label(self, text="Innings: ", font=("Courier", 18))
+        inn_label.place(x = 30, y = 635)
+
+        inn_variable = StringVar(self)
+        inn_variable.set("") # default value
+        inn_options = OptionMenu(self, inn_variable, "", "7", "8", "9", "9+")
+        inn_options.place(x = 160, y = 638)
+
+        checkboxes_label = tk.Label(self, text="Also Include: ", font=("Courier", 18))
+        checkboxes_label.place(x = 300, y = 525)
+
+        schedulecheckBoxs = []
+        schedulecheckBoxsAnsw = []
+        for num in range(15):
+            schedulecheckBoxsAnsw.append(IntVar())
+        schedulecheckBoxs.append(Checkbutton(self, text="Date", variable = schedulecheckBoxsAnsw[0]))
+        schedulecheckBoxs.append(Checkbutton(self, text="Runs Scored", variable = schedulecheckBoxsAnsw[1]))
+        schedulecheckBoxs.append(Checkbutton(self, text="Runs Against", variable = schedulecheckBoxsAnsw[2]))
+        schedulecheckBoxs.append(Checkbutton(self, text="Record", variable = schedulecheckBoxsAnsw[3]))
+        schedulecheckBoxs.append(Checkbutton(self, text="Division rank", variable = schedulecheckBoxsAnsw[4]))
+        schedulecheckBoxs.append(Checkbutton(self, text="Games Back", variable = schedulecheckBoxsAnsw[5]))
+        schedulecheckBoxs.append(Checkbutton(self, text="Winning Pitcher", variable = schedulecheckBoxsAnsw[6]))
+        schedulecheckBoxs.append(Checkbutton(self, text="Losing Pitcher", variable = schedulecheckBoxsAnsw[7]))
+        schedulecheckBoxs.append(Checkbutton(self, text="Save", variable = schedulecheckBoxsAnsw[8]))
+        schedulecheckBoxs.append(Checkbutton(self, text="Time", variable = schedulecheckBoxsAnsw[9]))
+        schedulecheckBoxs.append(Checkbutton(self, text="Day/Night", variable = schedulecheckBoxsAnsw[10]))
+        schedulecheckBoxs.append(Checkbutton(self, text="Attendance", variable = schedulecheckBoxsAnsw[11]))
+        schedulecheckBoxs.append(Checkbutton(self, text="CLI", variable = schedulecheckBoxsAnsw[12]))
+        schedulecheckBoxs.append(Checkbutton(self, text="Streak", variable = schedulecheckBoxsAnsw[13]))
+        schedulecheckBoxs.append(Checkbutton(self, text="Boxscore", variable = schedulecheckBoxsAnsw[14]))
+
+        for num in range(0, 5):
+            schedulecheckBoxs[num].place(x = 250, y = 560 + (20 * num))
+
+        count = 0
+        for num1 in range(5, 10):
+            schedulecheckBoxs[num1].place(x = 360, y = 560 + (20 * count))
+            count += 1
+
+        count = 0
+        for num2 in range(10, 15):
+            schedulecheckBoxs[num2].place(x = 490, y = 560 + (20 * count))
+            count += 1
+
+        schedule_count_button = tk.Button(self, text="Count!", command=lambda: [controller.show_frame(StartPage),batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, name, lables, checkBoxsAnswOG, checkBoxsAnsw)])
+        schedule_count_button.place(x = 600, y = 600)
+
+        schedule_go_button = tk.Button(self, text="GO!", command=lambda: [controller.show_frame(StartPage),batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, name, lables, checkBoxsAnswOG, checkBoxsAnsw)])
+        schedule_go_button.place(x = 600, y = 630)
 
         main_button = tk.Button(self, text="Back to Main", command=lambda: controller.show_frame(StartPage))
-        main_button.place(x = 280, y = 700)
+        main_button.place(x = 220, y = 700)
+
+        clear_button = tk.Button(self, text="Clear All", command=lambda: controller.show_frame(StartPage))
+        clear_button.place(x = 340, y = 700)
         
 
 app = Baseball()
