@@ -221,32 +221,32 @@ class PageBatting(tk.Frame):
         name = "batting"
 
         fname_label = tk.Label(self, text="First name: ", font=("Courier", 18))
-        fname_label.place(x = 25, y = 55)
+        fname_label.place(x = 35, y = 55)
 
         fname_input = Text(self, height = 1, width = 30)
         fname_input.place(x = 160, y = 60)
 
         lname_label = tk.Label(self, text="Last name: ", font=("Courier", 18))
-        lname_label.place(x = 25, y = 85)
+        lname_label.place(x = 35, y = 85)
 
         lname_input = Text(self, height = 1, width = 30)
         lname_input.place(x = 160, y = 90)
 
         position_label = tk.Label(self, text="Position: ", font=("Courier", 18))
-        position_label.place(x = 25, y = 115)
+        position_label.place(x = 35, y = 115)
 
         position_variable = StringVar(self)
         position_variable.set("") # default value
         position_options = OptionMenu(self, position_variable, "", "P", "C", "1B", "2B", "3B", "SS", "LF", "CF", "RF", "DH")
-        position_options.place(x = 160, y = 115)
+        position_options.place(x = 160, y = 120)
 
         team_label = tk.Label(self, text="Team: ", font=("Courier", 18))
-        team_label.place(x = 25, y = 145)
+        team_label.place(x = 35, y = 145)
 
         team_variable = StringVar(self)
         team_variable.set("") # default value
         team_options = OptionMenu(self, team_variable, "", "ARI", "ATL", "BAL", "BOS", "CHC", "CHW", "CIN", "CLE", "COL", "DET", "HOU" , "KCR", "LAA", "LAD", "MIA", "MIL", "MIN", "NYM", "NYY", "OAK", "PHI", "PIT" , "SDP", "SFG", "SEA", "STL", "TBR", "TEX", "TOR", "WAS")
-        team_options.place(x = 160, y = 145)
+        team_options.place(x = 160, y = 150)
 
         lables = [] 
         checkBoxsOG = []
@@ -275,7 +275,7 @@ class PageBatting(tk.Frame):
         # Checkboxes
         for num in range(len(lables) + 2):
             checkBoxsOG.append(Checkbutton(self, text=" ", variable = IntVar()))
-            checkBoxsOG[num].place(x = 0, y = 120 + (30 * num))
+            checkBoxsOG[num].place(x = 0, y = 115 + (30 * num))
 
         also_label = tk.Label(self, text="Also include: ", font=("Courier", 18))
         also_label.place(x = 450, y = 280)
@@ -301,11 +301,11 @@ class PageBatting(tk.Frame):
             lablesVariables.append(gp_variable)
             gp_options = OptionMenu(self, lablesVariables[num], "", "=", "<", ">")
             lablesOptions.append(gp_options)
-            lablesOptions[num].place(x = 160, y = 175 + (30 * num))
+            lablesOptions[num].place(x = 160, y = 180 + (30 * num))
             gp_input = Text(self, height = 1, width = 5)
             lableInput.append(gp_input)
-            lableInput[num].place(x = 210, y = 180 + (30 * num))
-            lables[num].place(x = 25, y = 175 + (30*num))
+            lableInput[num].place(x = 220, y = 180 + (30 * num))
+            lables[num].place(x = 35, y = 175 + (30*num))
 
         batting_go_button = tk.Button(self, text="GO!", command=lambda: [controller.show_frame(StartPage),batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, name)])
         batting_go_button.place(x = 620, y = 650)
@@ -330,32 +330,32 @@ class PagePitching(tk.Frame):
         name = "pitching"
 
         fname_label = tk.Label(self, text="First name: ", font=("Courier", 18))
-        fname_label.place(x = 25, y = 55)
+        fname_label.place(x = 35, y = 55)
 
         fname_input = Text(self, height = 1, width = 30)
         fname_input.place(x = 160, y = 60)
 
         lname_label = tk.Label(self, text="Last name: ", font=("Courier", 18))
-        lname_label.place(x = 25, y = 85)
+        lname_label.place(x = 35, y = 85)
 
         lname_input = Text(self, height = 1, width = 30)
         lname_input.place(x = 160, y = 90)
 
         position_label = tk.Label(self, text="Position: ", font=("Courier", 18))
-        position_label.place(x = 25, y = 115)
+        position_label.place(x = 35, y = 115)
 
         position_variable = StringVar(self)
         position_variable.set("") # default value
         position_options = OptionMenu(self, position_variable, "", "P", "C", "1B", "2B", "3B", "SS", "LF", "CF", "RF", "DH")
-        position_options.place(x = 160, y = 115)
+        position_options.place(x = 160, y = 120)
 
         team_label = tk.Label(self, text="Team: ", font=("Courier", 18))
-        team_label.place(x = 25, y = 145)
+        team_label.place(x = 35, y = 145)
 
         team_variable = StringVar(self)
         team_variable.set("") # default value
         team_options = OptionMenu(self, team_variable, "", "ARI", "ATL", "BAL", "BOS", "CHC", "CHW", "CIN", "CLE", "COL", "DET", "HOU" , "KCR", "LAA", "LAD", "MIA", "MIL", "MIN", "NYM", "NYY", "OAK", "PHI", "PIT" , "SDP", "SFG", "SEA", "STL", "TBR", "TEX", "TOR", "WAS")
-        team_options.place(x = 160, y = 145)
+        team_options.place(x = 160, y = 150)
 
         lables = [] 
         checkBoxs = []
@@ -400,7 +400,7 @@ class PagePitching(tk.Frame):
 
         for num in range(len(lables) + 2):
             checkBoxsOG.append(Checkbutton(self, text=" ", variable = IntVar()))
-            checkBoxsOG[num].place(x = 0, y = 120 + (30 * num))
+            checkBoxsOG[num].place(x = 0, y = 115 + (30 * num))
         for num in range(10):
             checkBoxs[num].place(x = 450, y = 300 + (20 * num))
         for num in range(len(lables)):
@@ -409,11 +409,11 @@ class PagePitching(tk.Frame):
             lablesVariables.append(gp_variable)
             gp_options = OptionMenu(self, lablesVariables[num], "", "=", "<", ">")
             lablesOptions.append(gp_options)
-            lablesOptions[num].place(x = 160, y = 175 + (30 * num))
+            lablesOptions[num].place(x = 160, y = 180 + (30 * num))
             gp_input = Text(self, height = 1, width = 5)
             lableInput.append(gp_input)
-            lableInput[num].place(x = 210, y = 180 + (30 * num))
-            lables[num].place(x = 25, y = 175 + (30*num))
+            lableInput[num].place(x = 220, y = 180 + (30 * num))
+            lables[num].place(x = 35, y = 175 + (30*num))
 
         batting_go_button = tk.Button(self, text="GO!", command=lambda: [controller.show_frame(StartPage),batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, name)])
         batting_go_button.place(x = 620, y = 650)
@@ -435,32 +435,32 @@ class PageFielding(tk.Frame):
         name = "fielding"
 
         fname_label = tk.Label(self, text="First name: ", font=("Courier", 18))
-        fname_label.place(x = 25, y = 55)
+        fname_label.place(x = 35, y = 55)
 
         fname_input = Text(self, height = 1, width = 30)
         fname_input.place(x = 160, y = 60)
 
         lname_label = tk.Label(self, text="Last name: ", font=("Courier", 18))
-        lname_label.place(x = 25, y = 85)
+        lname_label.place(x = 35, y = 85)
 
         lname_input = Text(self, height = 1, width = 30)
         lname_input.place(x = 160, y = 90)
 
         position_label = tk.Label(self, text="Position: ", font=("Courier", 18))
-        position_label.place(x = 25, y = 115)
+        position_label.place(x = 35, y = 115)
 
         position_variable = StringVar(self)
         position_variable.set("") # default value
         position_options = OptionMenu(self, position_variable, "", "P", "C", "1B", "2B", "3B", "SS", "LF", "CF", "RF", "DH")
-        position_options.place(x = 160, y = 115)
+        position_options.place(x = 160, y = 120)
 
         team_label = tk.Label(self, text="Team: ", font=("Courier", 18))
-        team_label.place(x = 25, y = 145)
+        team_label.place(x = 35, y = 145)
 
         team_variable = StringVar(self)
         team_variable.set("") # default value
         team_options = OptionMenu(self, team_variable, "", "ARI", "ATL", "BAL", "BOS", "CHC", "CHW", "CIN", "CLE", "COL", "DET", "HOU" , "KCR", "LAA", "LAD", "MIA", "MIL", "MIN", "NYM", "NYY", "OAK", "PHI", "PIT" , "SDP", "SFG", "SEA", "STL", "TBR", "TEX", "TOR", "WAS")
-        team_options.place(x = 160, y = 145)
+        team_options.place(x = 160, y = 150)
 
         lables = [] 
         checkBoxs = []
@@ -504,7 +504,7 @@ class PageFielding(tk.Frame):
 
         for num in range(len(lables) + 2):
             checkBoxsOG.append(Checkbutton(self, text=" ", variable = IntVar()))
-            checkBoxsOG[num].place(x = 0, y = 120 + (30 * num))
+            checkBoxsOG[num].place(x = 0, y = 115 + (30 * num))
         for num in range(10):
             checkBoxs[num].place(x = 450, y = 300 + (20 * num))
         for num in range(len(lables)):
@@ -513,11 +513,11 @@ class PageFielding(tk.Frame):
             lablesVariables.append(gp_variable)
             gp_options = OptionMenu(self, lablesVariables[num], "", "=", "<", ">")
             lablesOptions.append(gp_options)
-            lablesOptions[num].place(x = 160, y = 175 + (30 * num))
+            lablesOptions[num].place(x = 160, y = 180 + (30 * num))
             gp_input = Text(self, height = 1, width = 5)
             lableInput.append(gp_input)
-            lableInput[num].place(x = 210, y = 180 + (30 * num))
-            lables[num].place(x = 25, y = 175 + (30*num))
+            lableInput[num].place(x = 220, y = 180 + (30 * num))
+            lables[num].place(x = 35, y = 175 + (30*num))
 
         batting_go_button = tk.Button(self, text="GO!", command=lambda: [controller.show_frame(StartPage),batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, name)])
         batting_go_button.place(x = 620, y = 650)
@@ -563,17 +563,44 @@ class PagePirates(tk.Frame):
         action_label = tk.Label(self, text="Select an action:", font=("Courier", 18))
         action_label.place(x = 400, y = 80)
 
-        profile_button = tk.Button(self, text="Profile", command=lambda: controller.show_frame(StartPage))
-        profile_button.place(x = 400, y = 120)
-
         stats_button = tk.Button(self, text="Stats", command=lambda: controller.show_frame(StartPage))
-        stats_button.place(x = 400, y = 170)
+        stats_button.place(x = 400, y = 120)
+
+        profile_button = tk.Button(self, text="Profile", command=lambda: controller.show_frame(StartPage))
+        profile_button.place(x = 400, y = 170)
 
         highlights_button = tk.Button(self, text="Highlights", command=lambda: controller.show_frame(StartPage))
         highlights_button.place(x = 490, y = 120)
 
         music_button = tk.Button(self, text="Music", command=lambda: controller.show_frame(StartPage))
         music_button.place(x = 490, y = 170)
+
+        position_label = tk.Label(self, text="Position: ", font=("Courier", 18))
+        position_label.place(x = 30, y = 315)
+
+        position_variable = StringVar(self)
+        position_variable.set("") # default value
+        position_options = OptionMenu(self, position_variable, "", "Pitcher", "Catcher", "Infielder", "Outfielder")
+        position_options.place(x = 175, y = 320)
+
+        bats_label = tk.Label(self, text="Bats (L/R): ", font=("Courier", 18))
+        bats_label.place(x = 30, y = 345)
+
+        bats_variable = StringVar(self)
+        bats_variable.set("") # default value
+        bats_options = OptionMenu(self, bats_variable, "", "Left", "Right")
+        bats_options.place(x = 175, y = 350)
+
+        throws_label = tk.Label(self, text="Throws (L/R): ", font=("Courier", 18))
+        throws_label.place(x = 30, y = 375)
+
+        throws_variable = StringVar(self)
+        throws_variable.set("") # default value
+        throws_options = OptionMenu(self, throws_variable, "", "Left", "Right")
+        throws_options.place(x = 175, y = 380)
+
+        checkboxes_label = tk.Label(self, text="Also Include: ", font=("Courier", 18))
+        checkboxes_label.place(x = 400, y = 285)
 
         main_button = tk.Button(self, text="Back to Main", command=lambda: controller.show_frame(StartPage))
         main_button.place(x = 280, y = 700)
