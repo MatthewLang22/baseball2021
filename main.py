@@ -6,6 +6,7 @@ import sqlite3
 from sqlite3 import Error
 import tkinter as tk
 from tkinter import *
+import csv
 
 LARGE_FONT= ("Verdana", 12)
 
@@ -100,17 +101,22 @@ def clear_batting_pitching_fielding(self, lablesVariables,lablesOptions,lableInp
         checkBoxsOG[num].deselect()
 def batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, name, lables, checkBoxsAnswOG, checkBoxsAnsw):
     querey = "SELECT FNAME, LNAME"
+    schema = ["FNAME", "LNAME"]
     if checkBoxsAnswOG[0].get() == 1:
         querey += ", POSITION"
+        schema.append("POSITION")
     if checkBoxsAnswOG[1].get() == 1:
         querey += ", teams.TEAM"
+        schema.append("teams.TEAM")
     for num in range(len(checkBoxsAnswOG) - 2):
         if(checkBoxsAnswOG[num + 2].get() == 1):
             querey += ", " + lables[num].cget('text')
+            schema.append(lables[num].cget('text'))
     table2name = ["CITY", "NICKNAME", "LEAGUE", "DIV", "GM","MANAGER", "STADIUM", "CAPACITY","SYEAR", "ADDRESS","PHONE", "WEBSITE"]
     for num in range(12):
         if(checkBoxsAnsw[num].get() == 1):
             querey += ", " + table2name[num]
+            schema.append(table2name[num])
     count = 0
     querey += " from " + name  + " INNER JOIN teams ON (" + name + ".TEAM = teams.TEAM)"
     if(fname_input.get("1.0",'end-1c') != ""):
@@ -147,8 +153,15 @@ def batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, 
 
     users = execute_read_query(connection,querey)
 
+    data = []
     for user in users:
-        print(user) 
+        data.append(user)
+        print(user)
+    with open('out.csv','w') as out:
+        csv_out=csv.writer(out)
+        csv_out.writerow(schema)
+        for row in data:
+            csv_out.writerow(row)
     
 class Baseball(tk.Tk):
 
