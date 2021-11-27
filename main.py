@@ -241,7 +241,7 @@ class StartPage(tk.Frame):
         blank1.config(font =("Courier", 30))
         blank1.pack()
 
-        Button(self, text = 'Click Me !', image = exit_pic, command = self.destroy).pack()
+        Button(self, text = 'Click Me !', image = exit_pic, command =lambda:[quit()]).pack()
 
 
 class PageBatting(tk.Frame):
