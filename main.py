@@ -7,6 +7,8 @@ from sqlite3 import Error
 import tkinter as tk
 from tkinter import *
 import csv
+import webbrowser
+from random import randrange
 
 LARGE_FONT= ("Verdana", 12)
 
@@ -84,13 +86,84 @@ def deselect_all(checkBoxs, checkBoxsOG):
         checkBoxsOG[num].deselect()
 
 def highlights(self, player_variable):
-    splitting = str(player_variable.get()).split(" ", 1)
-    firstname = splitting[0]
-    lastname = splitting[1]
+    if player_variable.get() != "":
+        splitting = str(player_variable.get()).split(" ", 1)
+        firstname = splitting[0]
+        lastname = splitting[1]
 
-    print("First name: ", firstname)
-    print("Last name: ", lastname)
+        string = "SELECT YOUTUBE FROM Pirates WHERE FNAME = '" + str(firstname) + "' AND LNAME = '" + str(lastname) + "'"
+        query = cursor.execute(string).fetchall()
+        
+        link = "".join(str(query))
+        link = link.replace("[", "")
+        link = link.replace("]", "")
+        link = link.replace("(", "")
+        link = link.replace(")", "")
+        link = link.replace(",", "")
+        link = link.replace("'", "")
 
+        if link != "None":
+            webbrowser.open(link, new=2)
+
+        else:
+            print("No available highlights. Watch team highlights instead")
+            webbrowser.open("https://www.youtube.com/watch?v=pSg5NleAULU", new=2)
+
+def profile(self, player_variable):
+    if player_variable.get() != "":
+        splitting = str(player_variable.get()).split(" ", 1)
+        firstname = splitting[0]
+        lastname = splitting[1]
+
+        string = "SELECT PROFILE FROM Pirates WHERE FNAME = '" + str(firstname) + "' AND LNAME = '" + str(lastname) + "'"
+        query = cursor.execute(string).fetchall()
+        
+        link = "".join(str(query))
+        link = link.replace("[", "")
+        link = link.replace("]", "")
+        link = link.replace("(", "")
+        link = link.replace(")", "")
+        link = link.replace(",", "")
+        link = link.replace("'", "")
+
+        webbrowser.open(link, new=2)
+
+def music(self, player_variable):
+
+    if player_variable.get() != "":
+        splitting = str(player_variable.get()).split(" ", 1)
+        firstname = splitting[0]
+        lastname = splitting[1]
+
+        string = "SELECT MUSIC FROM Pirates WHERE FNAME = '" + str(firstname) + "' AND LNAME = '" + str(lastname) + "'"
+        query = cursor.execute(string).fetchall()
+        
+        link = "".join(str(query))
+        link = link.replace("[", "")
+        link = link.replace("]", "")
+        link = link.replace("(", "")
+        link = link.replace(")", "")
+        link = link.replace(",", "")
+        link = link.replace("'", "")
+
+        if link != "None":
+            webbrowser.open(link, new=2)
+
+        else:
+            songarr = []
+            songarr.append("https://open.spotify.com/track/5A6OHHy73AR5tLxgTc98zz?si=196ad2ae82414cb6")
+            songarr.append("https://open.spotify.com/track/2tUBqZG2AbRi7Q0BIrVrEj?si=85c4171e701c4745")
+            songarr.append("https://open.spotify.com/track/6Fba9RZtC6vTY814JToDtP?si=12f6f00580e34db9")
+            songarr.append("https://open.spotify.com/track/7hQJA50XrCWABAu5v6QZ4i?si=2df3529a42f3490f")
+            songarr.append("https://open.spotify.com/track/5NIPsWpDjJTFBoPxCUUeXp?si=dc3c7f4a1f534ab9")
+            songarr.append("https://open.spotify.com/track/7qQnBfwXrw2tZNFG4Uf57N?si=c60c397a274e4006")
+            songarr.append("https://open.spotify.com/track/2DyHhPyCZgZzNXn1IrtsTu?si=f5541fa8ba3e4089")
+            songarr.append("https://open.spotify.com/track/0dOg1ySSI7NkpAe89Zo0b9?si=bfff3d93e93c4f9e")
+            songarr.append("https://open.spotify.com/track/4MhTFsyqIJnjsOweVcU8ug?si=a1849f23610f4051")
+            songarr.append("https://open.spotify.com/track/6FBmHx1FuaSnTnnnaThgbF?si=6357c614b2b54cc1")
+
+            webbrowser.open(songarr[randrange(10)], new=2)
+            print("No available music. Listen to random music instead")
 
 def clear_batting_pitching_fielding(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, checkBoxs, checkBoxsOG):
     fname_input.delete('1.0', END)
@@ -637,13 +710,13 @@ class PagePirates(tk.Frame):
         stats_button = tk.Button(self, text="Stats", command=lambda: controller.show_frame(StartPage))
         stats_button.place(x = 400, y = 120)
 
-        profile_button = tk.Button(self, text="Profile", command=lambda: controller.show_frame(StartPage))
+        profile_button = tk.Button(self, text="Profile", command=lambda:[controller.show_frame(StartPage), profile(self, player_variable)])
         profile_button.place(x = 400, y = 170)
 
         highlights_button = tk.Button(self, text="Highlights", command=lambda:[controller.show_frame(StartPage), highlights(self, player_variable)])
         highlights_button.place(x = 490, y = 120)
 
-        music_button = tk.Button(self, text="Music", command=lambda: controller.show_frame(StartPage))
+        music_button = tk.Button(self, text="Music", command=lambda:[controller.show_frame(StartPage), music(self, player_variable)])
         music_button.place(x = 490, y = 170)
 
 
