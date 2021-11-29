@@ -7,6 +7,8 @@ from sqlite3 import Error
 import tkinter as tk
 from tkinter import *
 import csv
+import webbrowser
+from random import randrange
 
 LARGE_FONT= ("Verdana", 12)
 
@@ -83,6 +85,384 @@ def deselect_all(checkBoxs, checkBoxsOG):
     for num in range(len(checkBoxsOG)):
         checkBoxsOG[num].deselect()
 
+def highlights(self, player_variable):
+    if player_variable.get() != "":
+        splitting = str(player_variable.get()).split(" ", 1)
+        firstname = splitting[0]
+        lastname = splitting[1]
+
+        string = "SELECT YOUTUBE FROM Pirates WHERE FNAME = '" + str(firstname) + "' AND LNAME = '" + str(lastname) + "'"
+        query = cursor.execute(string).fetchall()
+        
+        link = "".join(str(query))
+        link = link.replace("[", "")
+        link = link.replace("]", "")
+        link = link.replace("(", "")
+        link = link.replace(")", "")
+        link = link.replace(",", "")
+        link = link.replace("'", "")
+
+        if link != "None":
+            webbrowser.open(link, new=2)
+
+        else:
+            print("No available highlights. Watch team highlights instead")
+            webbrowser.open("https://www.youtube.com/watch?v=pSg5NleAULU", new=2)
+
+def profile(self, player_variable):
+    if player_variable.get() != "":
+        splitting = str(player_variable.get()).split(" ", 1)
+        firstname = splitting[0]
+        lastname = splitting[1]
+
+        string = "SELECT PROFILE FROM Pirates WHERE FNAME = '" + str(firstname) + "' AND LNAME = '" + str(lastname) + "'"
+        query = cursor.execute(string).fetchall()
+        
+        link = "".join(str(query))
+        link = link.replace("[", "")
+        link = link.replace("]", "")
+        link = link.replace("(", "")
+        link = link.replace(")", "")
+        link = link.replace(",", "")
+        link = link.replace("'", "")
+
+        webbrowser.open(link, new=2)
+
+def music(self, player_variable):
+
+    if player_variable.get() != "":
+        splitting = str(player_variable.get()).split(" ", 1)
+        firstname = splitting[0]
+        lastname = splitting[1]
+
+        string = "SELECT MUSIC FROM Pirates WHERE FNAME = '" + str(firstname) + "' AND LNAME = '" + str(lastname) + "'"
+        query = cursor.execute(string).fetchall()
+        
+        link = "".join(str(query))
+        link = link.replace("[", "")
+        link = link.replace("]", "")
+        link = link.replace("(", "")
+        link = link.replace(")", "")
+        link = link.replace(",", "")
+        link = link.replace("'", "")
+
+        if link != "None":
+            webbrowser.open(link, new=2)
+
+        else:
+            songarr = []
+            songarr.append("https://open.spotify.com/track/5A6OHHy73AR5tLxgTc98zz?si=196ad2ae82414cb6")
+            songarr.append("https://open.spotify.com/track/2tUBqZG2AbRi7Q0BIrVrEj?si=85c4171e701c4745")
+            songarr.append("https://open.spotify.com/track/6Fba9RZtC6vTY814JToDtP?si=12f6f00580e34db9")
+            songarr.append("https://open.spotify.com/track/7hQJA50XrCWABAu5v6QZ4i?si=2df3529a42f3490f")
+            songarr.append("https://open.spotify.com/track/5NIPsWpDjJTFBoPxCUUeXp?si=dc3c7f4a1f534ab9")
+            songarr.append("https://open.spotify.com/track/7qQnBfwXrw2tZNFG4Uf57N?si=c60c397a274e4006")
+            songarr.append("https://open.spotify.com/track/2DyHhPyCZgZzNXn1IrtsTu?si=f5541fa8ba3e4089")
+            songarr.append("https://open.spotify.com/track/0dOg1ySSI7NkpAe89Zo0b9?si=bfff3d93e93c4f9e")
+            songarr.append("https://open.spotify.com/track/4MhTFsyqIJnjsOweVcU8ug?si=a1849f23610f4051")
+            songarr.append("https://open.spotify.com/track/6FBmHx1FuaSnTnnnaThgbF?si=6357c614b2b54cc1")
+
+            webbrowser.open(songarr[randrange(10)], new=2)
+            print("No available music. Listen to random music instead")
+
+def piratestats(self, player_variable):
+
+    if player_variable.get() != "":
+        splitting = str(player_variable.get()).split(" ", 1)
+
+        firstname = splitting[0]
+
+        aspindex = firstname.find("'")
+
+        if aspindex != -1:
+            firstname = firstname[:aspindex] + "'" + firstname[aspindex:]
+
+        lastname = splitting[1]
+
+        aspindex = lastname.find("'")
+
+        if aspindex != -1:
+            lastname = lastname[:aspindex] + "'" + lastname[aspindex:]
+
+        string = "SELECT POSITION FROM Pirates WHERE FNAME = '" + str(firstname) + "' AND LNAME = '" + str(lastname) + "'"
+        query = cursor.execute(string).fetchall()
+        
+        link = "".join(str(query))
+        link = link.replace("[", "")
+        link = link.replace("]", "")
+        link = link.replace("(", "")
+        link = link.replace(")", "")
+        link = link.replace(",", "")
+        link = link.replace("'", "")
+
+        if link == "Pitcher":
+            string = "SELECT * FROM Pitching WHERE FNAME = '" + str(firstname) + "' AND LNAME = '" + str(lastname) + "'"
+            query = cursor.execute(string).fetchall()
+
+            link = "".join(str(query))
+            link = link.replace("[", "")
+            link = link.replace("]", "")
+            link = link.replace("(", "")
+            link = link.replace(")", "")
+            link = link.replace(",", "")
+            link = link.replace("'", "")
+            if link == "":
+                print("No 2021 stats")
+            else: 
+                print(link)
+
+        else:
+            string = "SELECT * FROM Batting WHERE FNAME = '" + str(firstname) + "' AND LNAME = '" + str(lastname) + "'"
+            query = cursor.execute(string).fetchall()
+
+            link = "".join(str(query))
+            link = link.replace("[", "")
+            link = link.replace("]", "")
+            link = link.replace("(", "")
+            link = link.replace(")", "")
+            link = link.replace(",", "")
+            link = link.replace("'", "")
+            if link == "":
+                print("No 2021 stats")
+            else: 
+                print(link)
+
+def pirates_roster(position_variable, bats_variable, throws_variable, rostercheckBoxsAnsw, morerostercheckBoxsAnsw):
+    query = "SELECT FNAME, LNAME, "
+    schema1 = ["JERNUM", "HT", "WT", "DOB"]
+    schema2 = ["POSITION", "BATS", "THROWS"]
+    
+    for x in range(3):
+        if morerostercheckBoxsAnsw[x].get() == 1:
+            query += schema2[x]
+            query += ", "
+    
+    for x in range(4):
+        if rostercheckBoxsAnsw[x].get() == 1:
+            query += schema1[x]
+            query += ", "
+
+    query = query[:len(query) - 2]
+    query += " FROM Pirates"
+
+    
+    count = 0
+
+    if position_variable.get() != "":
+        count += 1
+        if count == 1:
+            query += " where "
+        query += "POSITION = '"
+        query += position_variable.get()
+        query += "'"
+
+    if bats_variable.get() != "":
+        count += 1
+        if count == 1:
+            query += " where "
+        if count > 1:
+            query += " AND "
+        query += "BATS = '"
+        query += bats_variable.get()
+        query += "'"
+
+    if throws_variable.get() != "":
+        count += 1
+        if count == 1:
+            query += " where "
+        if count > 1:
+            query += " AND "
+        query += "THROWS = '"
+        query += throws_variable.get()
+        query += "'"
+
+    answer = cursor.execute(query).fetchall()
+
+    printing = "".join(str(answer))
+    printing = printing.replace("[", "")
+    printing = printing.replace("]", "")
+    printing = printing.replace("(", "")
+    printing = printing.replace(")", "")
+    printing = printing.replace(",", "")
+    printing = printing.replace("'", "")
+
+    print(printing)
+
+def pirates_schedule(location_variable, opp_variable, result_variable, rdiff_variable, inn_variable, schedulecheckBoxsAnsw, moreschedulecheckBoxsAnsw):
+    query = "SELECT GAMEID, "
+    schema1 = ["DATE", "RUNSFOR", "RUNSAGAINST", "RECORD", "DIVRANK", "GB", "WINP", "LOSSP", "SAVE", "TIME", "DN", "ATTENDANCE", "CLI", "STREAK", "BOX"]
+    schema2 = ["LOC", "OPP", "RESULT", "RDIFF", "INN"]
+    
+    for x in range(5):
+        if moreschedulecheckBoxsAnsw[x].get() == 1:
+            query += schema2[x]
+            query += ", "    
+    
+    for x in range(15):
+        if schedulecheckBoxsAnsw[x].get() == 1:
+            query += schema1[x]
+            query += ", "
+
+    query = query[:len(query) - 2]
+    query += " FROM Schedule"
+
+    count = 0
+
+    if location_variable.get() != "":
+        count += 1
+        if count == 1:
+            query += " where "
+        query += "LOC = '"
+        query += location_variable.get()
+        query += "'"
+
+    if opp_variable.get() != "":
+        count += 1
+        if count == 1:
+            query += " where "
+        if count > 1:
+            query += " AND "
+        count += 1
+        query += "OPP = '"
+        query += opp_variable.get()
+        query += "'"
+
+    if result_variable.get() != "":
+        count += 1
+        if count == 1:
+            query += " where "
+        if count > 1:
+            query += " AND "
+        query += "RESULT = '"
+        query += result_variable.get()
+        query += "'"
+
+    if rdiff_variable.get() != "":
+        count += 1
+        if count == 1:
+            query += " where "
+        if count > 1:
+            query += " AND "
+        query += "RDIFF = '"
+        query += rdiff_variable.get()
+        query += "'"
+
+    if inn_variable.get() != "":
+        count += 1
+        if count == 1:
+            query += " where "
+        if count > 1:
+            query += " AND "
+        if inn_variable.get().find("+") != -1:
+            query += "INN > 9"
+            query += ""
+        else:
+            query += "INN = '"
+            query += inn_variable.get()
+            query += "'"
+
+    answer = cursor.execute(query).fetchall()
+
+    printing = "".join(str(answer))
+    printing = printing.replace("[", "")
+    printing = printing.replace("]", "")
+    printing = printing.replace("(", "")
+    printing = printing.replace(")", "")
+    printing = printing.replace(",", "")
+    printing = printing.replace("'", "")
+
+    print(printing)
+
+def pirates_count_schedule(location_variable, opp_variable, result_variable, rdiff_variable, inn_variable):
+    query = "SELECT COUNT (*) FROM Schedule"
+
+    count = 0
+
+    if location_variable.get() != "":
+        count += 1
+        if count == 1:
+            query += " where "
+        query += "LOC = '"
+        query += location_variable.get()
+        query += "'"
+
+    if opp_variable.get() != "":
+        count += 1
+        if count == 1:
+            query += " where "
+        if count > 1:
+            query += " AND "
+        count += 1
+        query += "OPP = '"
+        query += opp_variable.get()
+        query += "'"
+
+    if result_variable.get() != "":
+        count += 1
+        if count == 1:
+            query += " where "
+        if count > 1:
+            query += " AND "
+        query += "RESULT = '"
+        query += result_variable.get()
+        query += "'"
+
+    if rdiff_variable.get() != "":
+        count += 1
+        if count == 1:
+            query += " where "
+        if count > 1:
+            query += " AND "
+        query += "RDIFF = '"
+        query += rdiff_variable.get()
+        query += "'"
+
+    if inn_variable.get() != "":
+        count += 1
+        if count == 1:
+            query += " where "
+        if count > 1:
+            query += " AND "
+        if inn_variable.get().find("+") != -1:
+            query += "INN > 9"
+            query += ""
+        else:
+            query += "INN = '"
+            query += inn_variable.get()
+            query += "'"
+
+    answer = cursor.execute(query).fetchall()
+
+    printing = "".join(str(answer))
+    printing = printing.replace("[", "")
+    printing = printing.replace("]", "")
+    printing = printing.replace("(", "")
+    printing = printing.replace(")", "")
+    printing = printing.replace(",", "")
+    printing = printing.replace("'", "")
+
+    print(printing)
+
+def clear_pirates(self, player_variable, position_variable, bats_variable, throws_variable, location_variable, opp_variable, result_variable, rdiff_variable, inn_variable, rostercheckBoxs, morerostercheckBoxs, schedulecheckBoxs, moreschedulecheckBoxs):
+    player_variable.set("")
+    position_variable.set("")
+    bats_variable.set("")
+    throws_variable.set("")
+    location_variable.set("")
+    opp_variable.set("")
+    result_variable.set("")
+    rdiff_variable.set("")
+    inn_variable.set("")
+    for num in range(4):
+        rostercheckBoxs[num].deselect()
+    for num in range(3):
+        morerostercheckBoxs[num].deselect()
+    for num in range(15):
+        schedulecheckBoxs[num].deselect()
+    for num in range(5):
+        moreschedulecheckBoxs[num].deselect()
+
+
 def clear_batting_pitching_fielding(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, checkBoxs, checkBoxsOG):
     fname_input.delete('1.0', END)
     lname_input.delete('1.0', END)
@@ -148,8 +528,6 @@ def batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, 
             else:
                 count +=1
                 querey += " where " + lables[num].cget('text') + " " + lablesVariables[num].get() + " \'" + lableInput[num].get("1.0",'end-1c') + "\'"
-
-    print("Querey: " , querey)
 
     users = execute_read_query(connection,querey)
 
@@ -357,7 +735,7 @@ class PageBatting(tk.Frame):
             lableInput[num].place(x = 220, y = 180 + (30 * num))
             lables[num].place(x = 35, y = 175 + (30*num))
 
-        batting_go_button = tk.Button(self, text="GO!", command=lambda: [controller.show_frame(StartPage),batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, name,lables, checkBoxsAnswOG, checkBoxsAnsw)])
+        batting_go_button = tk.Button(self, text="GO!", command=lambda: [batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, name,lables, checkBoxsAnswOG, checkBoxsAnsw)])
         batting_go_button.place(x = 620, y = 650)
 
 
@@ -455,7 +833,7 @@ class PagePitching(tk.Frame):
         for num in range(len(lables) + 2):
             checkBoxsAnswOG.append(IntVar())
             checkBoxsOG.append(Checkbutton(self, text=" ", variable = checkBoxsAnswOG[num]))
-            checkBoxsOG[num].place(x = 0, y = 115 + (30 * num)) # hefgiouehwfioewhfioehfoiehfioehfeiohfeiohfoiehfoiefheoifheiofwhieo
+            checkBoxsOG[num].place(x = 0, y = 115 + (30 * num)) 
         for num in range(12):
             checkBoxs[num].place(x = 450, y = 300 + (20 * num))
         for num in range(len(lables)):
@@ -470,7 +848,7 @@ class PagePitching(tk.Frame):
             lableInput[num].place(x = 220, y = 180 + (30 * num))
             lables[num].place(x = 35, y = 175 + (30*num))
 
-        batting_go_button = tk.Button(self, text="GO!", command=lambda: [controller.show_frame(StartPage),batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, name, lables, checkBoxsAnswOG, checkBoxsAnsw)])
+        batting_go_button = tk.Button(self, text="GO!", command=lambda: [batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, name, lables, checkBoxsAnswOG, checkBoxsAnsw)])
         batting_go_button.place(x = 620, y = 650)
         selectALL = tk.Button(self, text=" Select All ", command=lambda:  select_all(checkBoxs,checkBoxsOG))
         selectALL.place(x = 450, y = 130)
@@ -564,7 +942,7 @@ class PageFielding(tk.Frame):
         for num in range(len(lables) + 2):
             checkBoxsAnswOG.append(IntVar())
             checkBoxsOG.append(Checkbutton(self, text=" ", variable = checkBoxsAnswOG[num]))
-            checkBoxsOG[num].place(x = 0, y = 115 + (30 * num)) # woeufhewuoifheuiwfhoeifheoihfioehfioehfiohewoifheiofheiofheiofhioew
+            checkBoxsOG[num].place(x = 0, y = 115 + (30 * num))
         for num in range(12):
             checkBoxs[num].place(x = 450, y = 300 + (20 * num))
         for num in range(len(lables)):
@@ -579,7 +957,7 @@ class PageFielding(tk.Frame):
             lableInput[num].place(x = 220, y = 180 + (30 * num))
             lables[num].place(x = 35, y = 175 + (30*num))
 
-        batting_go_button = tk.Button(self, text="GO!", command=lambda: [controller.show_frame(StartPage),batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, name, lables, checkBoxsAnswOG, checkBoxsAnsw)])
+        batting_go_button = tk.Button(self, text="GO!", command=lambda: [batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, name, lables, checkBoxsAnswOG, checkBoxsAnsw)])
         batting_go_button.place(x = 620, y = 650)
 
         selectALL = tk.Button(self, text=" Select All ", command=lambda:  select_all(checkBoxs,checkBoxsOG))
@@ -625,16 +1003,16 @@ class PagePirates(tk.Frame):
         action_label = tk.Label(self, text="Select an action:", font=("Courier", 18))
         action_label.place(x = 400, y = 80)
 
-        stats_button = tk.Button(self, text="Stats", command=lambda: controller.show_frame(StartPage))
+        stats_button = tk.Button(self, text="Stats", command=lambda:[piratestats(self, player_variable)])
         stats_button.place(x = 400, y = 120)
 
-        profile_button = tk.Button(self, text="Profile", command=lambda: controller.show_frame(StartPage))
+        profile_button = tk.Button(self, text="Profile", command=lambda:[profile(self, player_variable)])
         profile_button.place(x = 400, y = 170)
 
-        highlights_button = tk.Button(self, text="Highlights", command=lambda: controller.show_frame(StartPage))
+        highlights_button = tk.Button(self, text="Highlights", command=lambda:[highlights(self, player_variable)])
         highlights_button.place(x = 490, y = 120)
 
-        music_button = tk.Button(self, text="Music", command=lambda: controller.show_frame(StartPage))
+        music_button = tk.Button(self, text="Music", command=lambda:[music(self, player_variable)])
         music_button.place(x = 490, y = 170)
 
 
@@ -652,7 +1030,7 @@ class PagePirates(tk.Frame):
 
         bats_variable = StringVar(self)
         bats_variable.set("") # default value
-        bats_options = OptionMenu(self, bats_variable, "", "Left", "Right", "Switch")
+        bats_options = OptionMenu(self, bats_variable, "", "L", "R", "S")
         bats_options.place(x = 160, y = 350)
 
         throws_label = tk.Label(self, text="Throws: ", font=("Courier", 18))
@@ -660,7 +1038,7 @@ class PagePirates(tk.Frame):
 
         throws_variable = StringVar(self)
         throws_variable.set("") # default value
-        throws_options = OptionMenu(self, throws_variable, "", "Left", "Right")
+        throws_options = OptionMenu(self, throws_variable, "", "L", "R")
         throws_options.place(x = 160, y = 380)
 
         checkboxes_label = tk.Label(self, text="Also Include: ", font=("Courier", 18))
@@ -668,60 +1046,71 @@ class PagePirates(tk.Frame):
 
         rostercheckBoxs = []
         rostercheckBoxsAnsw = []
-        for num in range(5):
+        for num in range(4):
             rostercheckBoxsAnsw.append(IntVar())
         rostercheckBoxs.append(Checkbutton(self, text="Jersey Number", variable = rostercheckBoxsAnsw[0]))
         rostercheckBoxs.append(Checkbutton(self, text="Height", variable = rostercheckBoxsAnsw[1]))
         rostercheckBoxs.append(Checkbutton(self, text="Weight", variable = rostercheckBoxsAnsw[2]))
         rostercheckBoxs.append(Checkbutton(self, text="Date of Birth", variable = rostercheckBoxsAnsw[3]))
-        rostercheckBoxs.append(Checkbutton(self, text="2021 Stats", variable = rostercheckBoxsAnsw[4]))
 
-        for num in range(5):
+        for num in range(4):
             rostercheckBoxs[num].place(x = 400, y = 330 + (20 * num))
 
-        roster_go_button = tk.Button(self, text="GO!", command=lambda: [controller.show_frame(StartPage),batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, name, lables, checkBoxsAnswOG, checkBoxsAnsw)])
+        morerostercheckBoxs = []
+        morerostercheckBoxsAnsw = []
+
+        for num in range(3):
+            morerostercheckBoxsAnsw.append(IntVar())
+        morerostercheckBoxs.append(Checkbutton(self, text="", variable = morerostercheckBoxsAnsw[0]))
+        morerostercheckBoxs.append(Checkbutton(self, text="", variable = morerostercheckBoxsAnsw[1]))
+        morerostercheckBoxs.append(Checkbutton(self, text="", variable = morerostercheckBoxsAnsw[2]))
+
+        for num in range(3):
+            morerostercheckBoxs[num].place(x = 0, y = 315 + (30 * num))
+        
+        roster_go_button = tk.Button(self, text="GO!", command=lambda: [pirates_roster(position_variable, bats_variable, throws_variable, rostercheckBoxsAnsw, morerostercheckBoxsAnsw)])
         roster_go_button.place(x = 600, y = 400)
 
         # ------ Section 3 -------
         location_label = tk.Label(self, text="Location: ", font=("Courier", 18))
-        location_label.place(x = 30, y = 515)
+        location_label.place(x = 30, y = 530)
 
         location_variable = StringVar(self)
         location_variable.set("") # default value
-        location_options = OptionMenu(self, location_variable, "", "Home", "Away")
-        location_options.place(x = 160, y = 518)
+        location_options = OptionMenu(self, location_variable, "", "H", "A")
+        location_options.place(x = 160, y = 533)
 
         opp_label = tk.Label(self, text="Opponent: ", font=("Courier", 18))
-        opp_label.place(x = 30, y = 545)
+        opp_label.place(x = 30, y = 560)
 
         opp_variable = StringVar(self)
         opp_variable.set("") # default value
         opp_options = OptionMenu(self, opp_variable, "", "ARI", "ATL", "CHC", "CHW", "CIN", "CLE", "COL", "DET", "KCR", "LAD", "MIA", "MIL", "MIN", "NYM", "PHI", "SDP", "SFG", "STL", "WAS")
-        opp_options.place(x = 160, y = 548)
+        opp_options.place(x = 160, y = 563)
 
         result_label = tk.Label(self, text="Result: ", font=("Courier", 18))
-        result_label.place(x = 30, y = 575)
+        result_label.place(x = 30, y = 590)
 
         result_variable = StringVar(self)
         result_variable.set("") # default value
-        result_options = OptionMenu(self, result_variable, "", "Win", "Loss")
-        result_options.place(x = 160, y = 578)
+        result_options = OptionMenu(self, result_variable, "", "W", "L")
+        result_options.place(x = 160, y = 593)
 
         rdiff_label = tk.Label(self, text="Run Diff: ", font=("Courier", 18))
-        rdiff_label.place(x = 30, y = 605)
+        rdiff_label.place(x = 30, y = 620)
 
         rdiff_variable = StringVar(self)
         rdiff_variable.set("") # default value
         rdiff_options = OptionMenu(self, rdiff_variable, "", "-19", "-13", "-12", "-11", "-10", "-9", "-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1", "1", "2", "3", "4", "5", "6", "7", "8", "10")
-        rdiff_options.place(x = 160, y = 608)
+        rdiff_options.place(x = 160, y = 623)
 
         inn_label = tk.Label(self, text="Innings: ", font=("Courier", 18))
-        inn_label.place(x = 30, y = 635)
+        inn_label.place(x = 30, y = 650)
 
         inn_variable = StringVar(self)
         inn_variable.set("") # default value
         inn_options = OptionMenu(self, inn_variable, "", "7", "8", "9", "9+")
-        inn_options.place(x = 160, y = 638)
+        inn_options.place(x = 160, y = 653)
 
         checkboxes_label = tk.Label(self, text="Also Include: ", font=("Courier", 18))
         checkboxes_label.place(x = 300, y = 525)
@@ -759,16 +1148,30 @@ class PagePirates(tk.Frame):
             schedulecheckBoxs[num2].place(x = 490, y = 560 + (20 * count))
             count += 1
 
-        schedule_count_button = tk.Button(self, text="Count!", command=lambda: [controller.show_frame(StartPage),batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, name, lables, checkBoxsAnswOG, checkBoxsAnsw)])
+        moreschedulecheckBoxs = []
+        moreschedulecheckBoxsAnsw = []
+
+        for num in range(5):
+            moreschedulecheckBoxsAnsw.append(IntVar())
+        moreschedulecheckBoxs.append(Checkbutton(self, text="", variable = moreschedulecheckBoxsAnsw[0]))
+        moreschedulecheckBoxs.append(Checkbutton(self, text="", variable = moreschedulecheckBoxsAnsw[1]))
+        moreschedulecheckBoxs.append(Checkbutton(self, text="", variable = moreschedulecheckBoxsAnsw[2]))
+        moreschedulecheckBoxs.append(Checkbutton(self, text="", variable = moreschedulecheckBoxsAnsw[3]))
+        moreschedulecheckBoxs.append(Checkbutton(self, text="", variable = moreschedulecheckBoxsAnsw[4]))
+
+        for num in range(5):
+            moreschedulecheckBoxs[num].place(x = 0, y = 530 + (30 * num))
+
+        schedule_count_button = tk.Button(self, text="Count!", command=lambda: [pirates_count_schedule(location_variable, opp_variable, result_variable, rdiff_variable, inn_variable)])
         schedule_count_button.place(x = 600, y = 600)
 
-        schedule_go_button = tk.Button(self, text="GO!", command=lambda: [controller.show_frame(StartPage),batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, name, lables, checkBoxsAnswOG, checkBoxsAnsw)])
+        schedule_go_button = tk.Button(self, text="GO!", command=lambda: [pirates_schedule(location_variable, opp_variable, result_variable, rdiff_variable, inn_variable, schedulecheckBoxsAnsw, moreschedulecheckBoxsAnsw)])
         schedule_go_button.place(x = 600, y = 630)
 
-        main_button = tk.Button(self, text="Back to Main", command=lambda: controller.show_frame(StartPage))
+        main_button = tk.Button(self, text="Back to Main", command=lambda:[controller.show_frame(StartPage), clear_pirates(self, player_variable, position_variable, bats_variable, throws_variable, location_variable, opp_variable, result_variable, rdiff_variable, inn_variable, rostercheckBoxs, morerostercheckBoxs, schedulecheckBoxs, moreschedulecheckBoxs)])
         main_button.place(x = 220, y = 700)
 
-        clear_button = tk.Button(self, text="Clear All", command=lambda: controller.show_frame(StartPage))
+        clear_button = tk.Button(self, text="Clear All", command=lambda:[clear_pirates(self, player_variable, position_variable, bats_variable, throws_variable, location_variable, opp_variable, result_variable, rdiff_variable, inn_variable, rostercheckBoxs, morerostercheckBoxs, schedulecheckBoxs, moreschedulecheckBoxs)])
         clear_button.place(x = 340, y = 700)
         
 
