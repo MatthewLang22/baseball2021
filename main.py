@@ -497,21 +497,37 @@ def batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, 
         if(checkBoxsAnsw[num].get() == 1):
             querey += ", " + table2name[num]
             schema.append(table2name[num])
-    count = 0
 
     firstname = fname_input.get("1.0",'end-1c')
-
-    aspindex = firstname.find("'")
-
-    if aspindex != -1:
-        firstname = firstname[:aspindex] + "'" + firstname[aspindex:]
-
+    fname = ""
+    aspindex = firstname.split("'")
+    aspindexSize = len(aspindex)
+    count = 0
+    for x in aspindex:
+        fname += x
+        if count != aspindexSize - 1:
+            fname += "''"
+        count += 1
+    firstname = fname
+   
     lastname = lname_input.get("1.0",'end-1c')
 
     aspindexlast = lastname.find("'")
 
     if aspindexlast != -1:
         lname_input = lname_input[:aspindexlast] + "'" + lname_input[aspindexlast:]
+
+    lastname = lname_input.get("1.0",'end-1c')
+    lname = ""
+    aspindexlast = lastname.split("'")
+    aspindexSize = len(aspindexlast)
+    count = 0
+    for x in aspindexlast:
+        lname += x
+        if count != aspindexSize - 1:
+            lname += "''"
+        count += 1
+    lastname = lname
 
     querey += " from " + name  + " INNER JOIN teams ON (" + name + ".TEAM = teams.TEAM)"
     if(fname_input.get("1.0",'end-1c') != ""):
