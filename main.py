@@ -498,17 +498,32 @@ def batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, 
             querey += ", " + table2name[num]
             schema.append(table2name[num])
     count = 0
+
+    firstname = fname_input.get("1.0",'end-1c')
+
+    aspindex = firstname.find("'")
+
+    if aspindex != -1:
+        firstname = firstname[:aspindex] + "'" + firstname[aspindex:]
+
+    lastname = lname_input.get("1.0",'end-1c')
+
+    aspindexlast = lastname.find("'")
+
+    if aspindexlast != -1:
+        lname_input = lname_input[:aspindexlast] + "'" + lname_input[aspindexlast:]
+
     querey += " from " + name  + " INNER JOIN teams ON (" + name + ".TEAM = teams.TEAM)"
     if(fname_input.get("1.0",'end-1c') != ""):
-        querey += (" where FNAME = " + "\'" + fname_input.get("1.0",'end-1c') + "\'")
+        querey += (" where FNAME = " + "\'" + firstname + "\'")
         count += 1
     if(lname_input.get("1.0",'end-1c') != ""):
         if(count != 0):
             querey += " AND LNAME = "
-            querey += ("\'" +lname_input.get("1.0",'end-1c') + "\'")
+            querey += ("\'" +lastname + "\'")
         else:
             count += 1
-            querey += (" where LNAME = " + "\'" + lname_input.get("1.0",'end-1c') + "\'")
+            querey += (" where LNAME = " + "\'" + lastname + "\'")
     if position_variable.get() != "":
         if(count != 0) :
             querey += " AND POSITION = " + "\'" + position_variable.get() +"\'"
