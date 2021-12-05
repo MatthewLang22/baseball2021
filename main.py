@@ -692,7 +692,7 @@ class PageBatting(tk.Frame):
         position_variable = StringVar(self)
         position_variable.set("") # default value
         position_options = OptionMenu(self, position_variable, "", "P", "C", "1B", "2B", "3B", "SS", "LF", "CF", "RF", "DH")
-        position_options.place(x = 160, y = 120)
+        position_options.place(x = 160, y = 115)
 
         team_label = tk.Label(self, text="Team: ", font=("Courier", 18))
         team_label.place(x = 35, y = 145)
@@ -700,7 +700,7 @@ class PageBatting(tk.Frame):
         team_variable = StringVar(self)
         team_variable.set("") # default value
         team_options = OptionMenu(self, team_variable, "", "ARI", "ATL", "BAL", "BOS", "CHC", "CHW", "CIN", "CLE", "COL", "DET", "HOU" , "KCR", "LAA", "LAD", "MIA", "MIL", "MIN", "NYM", "NYY", "OAK", "PHI", "PIT" , "SDP", "SFG", "SEA", "STL", "TBR", "TEX", "TOR", "WAS")
-        team_options.place(x = 160, y = 150)
+        team_options.place(x = 160, y = 145)
 
         lables = [] 
         checkBoxsOG = []
@@ -731,7 +731,7 @@ class PageBatting(tk.Frame):
         for num in range(len(lables) + 2):
             checkBoxsAnswOG.append(IntVar())
             checkBoxsOG.append(Checkbutton(self, text=" ", variable = checkBoxsAnswOG[num]))
-            checkBoxsOG[num].place(x = 0, y = 115 + (30 * num)) # ohwefioheoifehiofehfoiehfioehfioefheoifheoifheiohfeoifheiowf
+            checkBoxsOG[num].place(x = 0, y = 120 + (30 * num)) # ohwefioheoifehiofehfoiehfioehfioefheoifheoifheiohfeoifheiowf
 
         also_label = tk.Label(self, text="Also include: ", font=("Courier", 18))
         also_label.place(x = 450, y = 280)
@@ -760,7 +760,7 @@ class PageBatting(tk.Frame):
             lablesVariables.append(gp_variable)
             gp_options = OptionMenu(self, lablesVariables[num], "", "=", "<", ">")
             lablesOptions.append(gp_options)
-            lablesOptions[num].place(x = 160, y = 180 + (30 * num))
+            lablesOptions[num].place(x = 160, y = 175 + (30 * num))
             gp_input = Text(self, height = 1, width = 5)
             lableInput.append(gp_input)
             lableInput[num].place(x = 220, y = 180 + (30 * num))
@@ -806,7 +806,7 @@ class PagePitching(tk.Frame):
         position_variable = StringVar(self)
         position_variable.set("") # default value
         position_options = OptionMenu(self, position_variable, "", "P", "C", "1B", "2B", "3B", "SS", "LF", "CF", "RF", "DH")
-        position_options.place(x = 160, y = 120)
+        position_options.place(x = 160, y = 115)
 
         team_label = tk.Label(self, text="Team: ", font=("Courier", 18))
         team_label.place(x = 35, y = 145)
@@ -814,7 +814,7 @@ class PagePitching(tk.Frame):
         team_variable = StringVar(self)
         team_variable.set("") # default value
         team_options = OptionMenu(self, team_variable, "", "ARI", "ATL", "BAL", "BOS", "CHC", "CHW", "CIN", "CLE", "COL", "DET", "HOU" , "KCR", "LAA", "LAD", "MIA", "MIL", "MIN", "NYM", "NYY", "OAK", "PHI", "PIT" , "SDP", "SFG", "SEA", "STL", "TBR", "TEX", "TOR", "WAS")
-        team_options.place(x = 160, y = 150)
+        team_options.place(x = 160, y = 145)
 
         lables = [] 
         checkBoxs = []
@@ -873,7 +873,7 @@ class PagePitching(tk.Frame):
             lablesVariables.append(gp_variable)
             gp_options = OptionMenu(self, lablesVariables[num], "", "=", "<", ">")
             lablesOptions.append(gp_options)
-            lablesOptions[num].place(x = 160, y = 180 + (30 * num))
+            lablesOptions[num].place(x = 160, y = 175 + (30 * num))
             gp_input = Text(self, height = 1, width = 5)
             lableInput.append(gp_input)
             lableInput[num].place(x = 220, y = 180 + (30 * num))
@@ -916,7 +916,7 @@ class PageFielding(tk.Frame):
         position_variable = StringVar(self)
         position_variable.set("") # default value
         position_options = OptionMenu(self, position_variable, "", "P", "C", "1B", "2B", "3B", "SS", "LF", "CF", "RF", "DH")
-        position_options.place(x = 160, y = 120)
+        position_options.place(x = 160, y = 115)
 
         team_label = tk.Label(self, text="Team: ", font=("Courier", 18))
         team_label.place(x = 35, y = 145)
@@ -924,7 +924,7 @@ class PageFielding(tk.Frame):
         team_variable = StringVar(self)
         team_variable.set("") # default value
         team_options = OptionMenu(self, team_variable, "", "ARI", "ATL", "BAL", "BOS", "CHC", "CHW", "CIN", "CLE", "COL", "DET", "HOU" , "KCR", "LAA", "LAD", "MIA", "MIL", "MIN", "NYM", "NYY", "OAK", "PHI", "PIT" , "SDP", "SFG", "SEA", "STL", "TBR", "TEX", "TOR", "WAS")
-        team_options.place(x = 160, y = 150)
+        team_options.place(x = 160, y = 145)
 
         lables = [] 
         checkBoxs = []
@@ -982,7 +982,7 @@ class PageFielding(tk.Frame):
             lablesVariables.append(gp_variable)
             gp_options = OptionMenu(self, lablesVariables[num], "", "=", "<", ">")
             lablesOptions.append(gp_options)
-            lablesOptions[num].place(x = 160, y = 180 + (30 * num))
+            lablesOptions[num].place(x = 160, y = 175 + (30 * num))
             gp_input = Text(self, height = 1, width = 5)
             lableInput.append(gp_input)
             lableInput[num].place(x = 220, y = 180 + (30 * num))
