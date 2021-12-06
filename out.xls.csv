@@ -1,0 +1,880 @@
+FNAME,LNAME,POSITION,GP,GS,IP,W,SVO,R,CITY,NICKNAME,GM,STADIUM,CAPACITY,SYEAR,ADDRESS,WEBSITE
+Bryan,Shaw,RP,81,0,77.1,6,8,33,Cleveland,Indians,Mike Chernoff,Progressive Field,34788,1994,"2401 Ontario Street, Cleveland, OH 44115",indians.com
+Tyler,Rogers,RP,80,0,81,7,19,23,San Francisco,Giants,Scott Harris,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",SFGiants.com
+Tim,Hill,RP,78,0,59.2,6,5,34,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+Yusmeiro,Petit,RP,78,0,78,8,8,35,Oakland,Athletics,David Forst,RingCentral Coliseum,46847,1966,"7000 Coliseum Way, Oakland, CA 94621",athletics.com
+Steve,Cishek,RP,74,0,68.1,0,4,32,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Hector,Neris,RP,74,0,74.1,4,19,34,Philadelphia,Phillies,Sam Fuld,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",phillies.com
+Giovanny,Gallegos,RP,73,0,80.1,6,22,28,St. Louis,Cardinals,Mike Girsch,Busch Stadium,45494,2006,"700 Clark Street, St. Louis, MO 63102",cardinals.com
+Jacob,Brentz,RP,72,0,64,5,7,32,Kansas City,Royals,J. J. Picollo,Kauffman Stadium,37903,1973,"One Royal Way, Kansas City, MO 64129",royals.com
+Adam,Cimber,RP,72,0,71.2,3,1,24,Toronto,Blue Jays,Ross Atkins,Rogers Centre,49282,1989,"1 Blue Jays Way, Suite 3200, Toronto, Ontario, Canada M5V1J1",bluejays.com
+Mike,Mayers,RP,72,2,75,5,5,32,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Hansel,Robles,RP,72,0,69,3,16,39,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Ryne,Stanek,RP,72,0,68.1,3,4,32,Houston,Astros,James Click,Minute Maid Park,41168,2000,"501 Crawford Street, Houston, TX 77002",astros.com
+Blake,Treinen,RP,72,0,72.1,6,11,20,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Scott,Barlow,RP,71,0,74.1,5,22,20,Kansas City,Royals,J. J. Picollo,Kauffman Stadium,37903,1973,"One Royal Way, Kansas City, MO 64129",royals.com
+Brad,Boxberger,RP,71,0,64.2,5,9,26,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+Genesis,Cabrera,RP,71,0,70,4,3,31,St. Louis,Cardinals,Mike Girsch,Busch Stadium,45494,2006,"700 Clark Street, St. Louis, MO 63102",cardinals.com
+Andrew,Chafin,RP,71,0,68.2,2,8,14,Oakland,Athletics,David Forst,RingCentral Coliseum,46847,1966,"7000 Coliseum Way, Oakland, CA 94621",athletics.com
+Emmanuel,Clase,RP,71,0,69.2,4,29,18,Cleveland,Indians,Mike Chernoff,Progressive Field,34788,1994,"2401 Ontario Street, Cleveland, OH 44115",indians.com
+Lou,Trivino,RP,71,0,73.2,7,26,32,Oakland,Athletics,David Forst,RingCentral Coliseum,46847,1966,"7000 Coliseum Way, Oakland, CA 94621",athletics.com
+Anthony,Bass,RP,70,1,61.1,3,4,33,Miami,Marlins,Kim Ng,Marlins Park,36742,2012,"501 Marlins Way, Miami, FL 33125",marlins.com
+Tyler,Kinley,RP,70,0,70.1,3,4,37,Colorado,Rockies,Bill Schmidt,Coors Field,50445,1995,"2001 Blake Street, Denver, CO 80205-2000",Rockies.com
+Miguel,Castro,RP,69,2,70.1,3,2,30,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Liam,Hendriks,RP,69,0,71,8,44,23,Chicago,White Sox,Rick Hahn,Guaranteed Rate Field,40615,1991,"333 West 35th Street, Chicago, IL 60616",whitesox.com
+Clay,Holmes,RP,69,0,70,8,2,32,New York,Yankees,Brian Cashman,Yankee Stadium,47309,2009,"One East 161st Street, Bronx, NY 10451",yankees.com
+Kenley,Jansen,RP,69,0,69,4,43,21,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Adam,Ottavino,RP,69,0,62,7,17,31,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Alex,Reyes,RP,69,0,72.1,10,34,32,St. Louis,Cardinals,Mike Girsch,Busch Stadium,45494,2006,"700 Clark Street, St. Louis, MO 63102",cardinals.com
+Richard,Bleier,RP,68,0,58,3,6,20,Miami,Marlins,Kim Ng,Marlins Park,36742,2012,"501 Marlins Way, Miami, FL 33125",marlins.com
+Kyle,Finnegan,RP,68,0,66,5,14,39,Washington,Nationals,Mike Rizzo,Nationals Park,41339,2008,"1500 South Capitol Street, SE, Washington, DC 20003-1507",nationals.com
+Dylan,Floro,RP,68,0,64,6,21,25,Miami,Marlins,Kim Ng,Marlins Park,36742,2012,"501 Marlins Way, Miami, FL 33125",marlins.com
+Brad,Hand,RP,68,0,64.2,6,29,39,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Trevor,May,RP,68,0,62.2,7,7,29,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Chris,Stratton,RP,68,0,79.1,7,13,34,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Jose,Alvarez,RP,67,1,64.2,5,0,23,San Francisco,Giants,Scott Harris,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",SFGiants.com
+Daniel,Bard,RP,67,0,65.2,7,28,41,Colorado,Rockies,Bill Schmidt,Coors Field,50445,1995,"2001 Blake Street, Denver, CO 80205-2000",Rockies.com
+Jose,Cisnero,RP,67,0,61.2,4,8,34,Detroit,Tigers,Al Avila,Comerica Park,41083,2000,"2100 Woodward Avenue, Detroit, MI 48201",tigers.com
+Alex,Colome,RP,67,0,65,4,24,41,Minnesota,Twins,Thad Levine,Target Field,38544,2010,"1 Twins Way, Minneapolis, MN 55403",twinsbaseball.com
+Jake,Diekman,RP,67,0,60.2,3,14,29,Oakland,Athletics,David Forst,RingCentral Coliseum,46847,1966,"7000 Coliseum Way, Oakland, CA 94621",athletics.com
+Chad,Green,RP,67,0,83.2,10,12,32,New York,Yankees,Brian Cashman,Yankee Stadium,47309,2009,"One East 161st Street, Bronx, NY 10451",yankees.com
+Emilio,Pagan,RP,67,0,63.1,4,5,35,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+Craig,Stammen,RP,67,4,88.1,6,2,31,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+Brett,Martin,RP,66,0,62.1,4,2,31,Texas,Rangers,Chris Young,Globe Life Field,40300,2020,"1000 Ballpark Way, Arlington, TX 76011",texasrangers.com
+Anthony,Misiewicz,RP,66,0,54.2,5,5,30,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+Sergio,Romo,RP,66,0,61.2,1,7,33,Oakland,Athletics,David Forst,RingCentral Coliseum,46847,1966,"7000 Coliseum Way, Oakland, CA 94621",athletics.com
+Austin,Adams,RP,65,0,52.2,3,1,28,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+Jeurys,Familia,RP,65,0,59.1,9,7,31,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Aaron,Loup,RP,65,2,56.2,6,4,9,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Codi,Heuer,RP,65,0,67.1,7,5,34,Chicago,Cubs,Carter Hawkins,Wrigley Field,41649,1914,"1060 West Addison, Chicago, IL 60613-4397",cubs.com
+Raisel,Iglesias,RP,65,0,70,7,39,25,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Phil,Maton,RP,65,1,66.2,6,4,36,Houston,Astros,James Click,Minute Maid Park,41168,2000,"501 Crawford Street, Houston, TX 77002",astros.com
+Ryan,Tepera,RP,65,0,61.1,0,5,19,Chicago,White Sox,Rick Hahn,Guaranteed Rate Field,40615,1991,"333 West 35th Street, Chicago, IL 60616",whitesox.com
+Jose,Alvarado,RP,64,0,55.2,7,8,30,Philadelphia,Phillies,Sam Fuld,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",phillies.com
+Tyler,Duffey,RP,64,0,62.1,3,5,25,Minnesota,Twins,Thad Levine,Target Field,38544,2010,"1 Twins Way, Minneapolis, MN 55403",twinsbaseball.com
+Carlos,Estevez,RP,64,0,61.2,3,17,32,Colorado,Rockies,Bill Schmidt,Coors Field,50445,1995,"2001 Blake Street, Denver, CO 80205-2000",Rockies.com
+Mark,Melancon,RP,64,0,64.2,4,45,21,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+Ryan,Pressly,RP,64,0,64,5,28,19,Houston,Astros,James Click,Minute Maid Park,41168,2000,"501 Crawford Street, Houston, TX 77002",astros.com
+Josh,Staumont,RP,64,0,65.2,4,5,24,Kansas City,Royals,J. J. Picollo,Kauffman Stadium,37903,1973,"One Royal Way, Kansas City, MO 64129",royals.com
+Edwin,Diaz,RP,63,0,62.2,5,38,27,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Amir,Garrett,RP,63,0,47.2,0,11,34,Cincinnati,Reds,Nick Krall,Great American Ball Park,42319,2003,"100 Main Street, Cincinnati, OH 45202-4109",reds.com
+Pierce,Johnson,RP,63,2,58.2,3,2,21,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+Craig,Kimbrel,RP,63,0,59.2,4,29,19,Chicago,White Sox,Rick Hahn,Guaranteed Rate Field,40615,1991,"333 West 35th Street, Chicago, IL 60616",whitesox.com
+Zack,Littell,RP,63,2,61.2,4,6,24,San Francisco,Giants,Scott Harris,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",SFGiants.com
+Josh,Sborz,RP,63,0,59,4,4,29,Texas,Rangers,Chris Young,Globe Life Field,40300,2020,"1000 Ballpark Way, Arlington, TX 76011",texasrangers.com
+Aaron,Bummer,RP,62,0,56.1,5,8,28,Chicago,White Sox,Rick Hahn,Guaranteed Rate Field,40615,1991,"333 West 35th Street, Chicago, IL 60616",whitesox.com
+Yimi,Garcia,RP,62,0,57.2,4,18,33,Houston,Astros,James Click,Minute Maid Park,41168,2000,"501 Crawford Street, Houston, TX 77002",astros.com
+Jake,McGee,RP,62,0,59.2,3,36,25,San Francisco,Giants,Scott Harris,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",SFGiants.com
+Jordan,Romano,RP,62,0,63,7,24,17,Toronto,Blue Jays,Ross Atkins,Rogers Centre,49282,1989,"1 Blue Jays Way, Suite 3200, Toronto, Ontario, Canada M5V1J1",bluejays.com
+Tanner,Scott,RP,62,0,54,5,2,34,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Paul,Sewald,RP,62,0,64.2,10,16,24,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+Gregory,Soto,RP,62,0,63.2,6,19,30,Detroit,Tigers,Al Avila,Comerica Park,41083,2000,"2100 Woodward Avenue, Detroit, MI 48201",tigers.com
+Drew,Steckenrider,RP,62,0,67.2,5,17,16,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+Dillon,Tate,RP,62,0,67.2,0,5,35,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Tony,Watson,RP,62,0,57.1,7,3,26,San Francisco,Giants,Scott Harris,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",SFGiants.com
+David,Bednar,RP,61,0,60.2,3,5,15,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Diego,Castillo,RP,61,0,58.1,5,22,23,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+Aroldis,Chapman,RP,61,0,56.1,6,34,23,New York,Yankees,Brian Cashman,Yankee Stadium,47309,2009,"One East 161st Street, Bronx, NY 10451",yankees.com
+Tim,Mayza,RP,61,0,53,5,4,21,Toronto,Blue Jays,Ross Atkins,Rogers Centre,49282,1989,"1 Blue Jays Way, Suite 3200, Toronto, Ontario, Canada M5V1J1",bluejays.com
+Brent,Suter,RP,61,1,73.1,12,9,34,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+Josh,Taylor,RP,61,0,47.2,1,1,18,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Matt,Barnes,RP,60,0,54.2,6,30,25,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Anthony,Bender,RP,60,1,61.1,3,5,22,Miami,Marlins,Kim Ng,Marlins Park,36742,2012,"501 Marlins Way, Miami, FL 33125",marlins.com
+Josh,Hader,RP,60,0,58.2,4,35,8,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+James,Karinchak,RP,60,0,55.1,7,16,27,Cleveland,Indians,Mike Chernoff,Progressive Field,34788,1994,"2401 Ontario Street, Cleveland, OH 44115",indians.com
+Cole,Sulser,RP,60,0,63.1,5,11,20,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Nick,Wittgren,RP,60,1,62.1,2,1,38,Cleveland,Indians,Mike Chernoff,Progressive Field,34788,1994,"2401 Ontario Street, Cleveland, OH 44115",indians.com
+Jorge,Alcala,RP,59,0,59.2,3,5,29,Minnesota,Twins,Thad Levine,Target Field,38544,2010,"1 Twins Way, Minneapolis, MN 55403",twinsbaseball.com
+Jose,Ruiz,RP,59,0,65,1,1,26,Chicago,White Sox,Rick Hahn,Guaranteed Rate Field,40615,1991,"333 West 35th Street, Chicago, IL 60616",whitesox.com
+Caleb,Thielbar,RP,59,0,64,7,0,24,Minnesota,Twins,Thad Levine,Target Field,38544,2010,"1 Twins Way, Minneapolis, MN 55403",twinsbaseball.com
+Sam,Clay,RP,58,0,45,0,1,32,Washington,Nationals,Mike Rizzo,Nationals Park,41339,2008,"1500 South Capitol Street, SE, Washington, DC 20003-1507",nationals.com
+Brooks,Raley,RP,58,0,49,2,5,30,Houston,Astros,James Click,Minute Maid Park,41168,2000,"501 Crawford Street, Houston, TX 77002",astros.com
+Devin,Williams,RP,58,0,54,8,6,17,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+Kyle,Funkhouser,RP,57,2,68.1,7,5,32,Detroit,Tigers,Al Avila,Comerica Park,41083,2000,"2100 Woodward Avenue, Detroit, MI 48201",tigers.com
+Greg,Holland,RP,57,0,55.2,3,12,32,Kansas City,Royals,J. J. Picollo,Kauffman Stadium,37903,1973,"One Royal Way, Kansas City, MO 64129",royals.com
+Lucas,Luetge,RP,57,1,72.1,4,3,30,New York,Yankees,Brian Cashman,Yankee Stadium,47309,2009,"One East 161st Street, Bronx, NY 10451",yankees.com
+Chasen,Shreve,RP,57,0,56.1,3,2,20,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Heath,Hembree,RP,60,0,58,2,11,39,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Jarlin,Garcia,RP,58,0,68.2,6,3,26,San Francisco,Giants,Scott Harris,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",SFGiants.com
+Phil,Bickford,RP,57,0,51.1,4,3,18,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Rex,Brothers,RP,57,0,53,3,1,31,Chicago,Cubs,Carter Hawkins,Wrigley Field,41649,1914,"1060 West Addison, Chicago, IL 60613-4397",cubs.com
+Andrew,Kittredge,RP,57,4,71.2,9,9,21,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Dominic,Leone,RP,57,4,53.2,4,4,15,San Francisco,Giants,Scott Harris,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",SFGiants.com
+Jonathan,Loaisiga,RP,57,0,70.2,9,9,19,New York,Yankees,Brian Cashman,Yankee Stadium,47309,2009,"One East 161st Street, Bronx, NY 10451",yankees.com
+Joe,Mantiply,RP,57,0,39.2,0,2,24,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Hunter,Strickland,RP,57,0,58.2,3,0,21,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+Connor,Brogdon,RP,56,1,57.2,5,5,27,Philadelphia,Phillies,Sam Fuld,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",phillies.com
+JT,Chargois,RP,56,0,53.2,6,5,16,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Sean,Doolittle,RP,56,0,49.2,3,5,27,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+Daniel,Norris,RP,56,0,57,2,4,41,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+Wandy,Peralta,RP,56,1,51,5,6,24,New York,Yankees,Brian Cashman,Yankee Stadium,47309,2009,"One East 161st Street, Bronx, NY 10451",yankees.com
+J.P.,Feyereisen,RP,55,0,56,4,6,23,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Ian,Kennedy,RP,55,0,56.1,3,30,21,Philadelphia,Phillies,Sam Fuld,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",phillies.com
+Dennis,Santana,RP,55,0,54.2,2,2,31,Texas,Rangers,Chris Young,Globe Life Field,40300,2020,"1000 Ballpark Way, Arlington, TX 76011",texasrangers.com
+Hirokazu,Sawamura,RP,55,0,53,5,1,24,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Garrett,Crochet,RP,54,0,54.1,3,1,22,Chicago,White Sox,Rick Hahn,Guaranteed Rate Field,40615,1991,"333 West 35th Street, Chicago, IL 60616",whitesox.com
+Mychal,Givens,RP,54,0,51,4,11,22,Cincinnati,Reds,Nick Krall,Great American Ball Park,42319,2003,"100 Main Street, Cincinnati, OH 45202-4109",reds.com
+Sam,Howard,RP,54,1,45,3,1,29,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Daniel,Hudson,RP,54,0,51.2,5,3,22,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+Archie,Bradley,RP,53,0,51,7,5,24,Philadelphia,Phillies,Sam Fuld,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",phillies.com
+Luis,Cessa,RP,53,0,64.2,5,0,24,Cincinnati,Reds,Nick Krall,Great American Ball Park,42319,2003,"100 Main Street, Cincinnati, OH 45202-4109",reds.com
+Ross,Detwiler,RP,53,5,52.1,3,0,28,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+Kendall,Graveman,RP,53,0,56,5,15,15,Houston,Astros,James Click,Minute Maid Park,41168,2000,"501 Crawford Street, Houston, TX 77002",astros.com
+Deolis,Guerra,RP,53,0,65.2,4,0,34,Oakland,Athletics,David Forst,RingCentral Coliseum,46847,1966,"7000 Coliseum Way, Oakland, CA 94621",athletics.com
+Trevor,Richards,RP,53,0,64.1,7,6,26,Toronto,Blue Jays,Ross Atkins,Rogers Centre,49282,1989,"1 Blue Jays Way, Suite 3200, Toronto, Ontario, Canada M5V1J1",bluejays.com
+Paul,Fry,RP,52,0,47.1,4,4,34,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Michael,Fulmer,RP,52,4,69.2,5,18,27,Detroit,Tigers,Al Avila,Comerica Park,41083,2000,"2100 Woodward Avenue, Detroit, MI 48201",tigers.com
+Joe,Jimenez,RP,52,0,45.1,6,2,33,Detroit,Tigers,Al Avila,Comerica Park,41083,2000,"2100 Woodward Avenue, Detroit, MI 48201",tigers.com
+Joely,Rodriguez,RP,52,0,46.1,2,3,27,New York,Yankees,Brian Cashman,Yankee Stadium,47309,2009,"One East 161st Street, Bronx, NY 10451",yankees.com
+Kyle,Zimmer,RP,52,2,54,4,3,32,Kansas City,Royals,J. J. Picollo,Kauffman Stadium,37903,1973,"One Royal Way, Kansas City, MO 64129",royals.com
+Ryan,Helsley,RP,51,0,47.1,6,3,24,St. Louis,Cardinals,Mike Girsch,Busch Stadium,45494,2006,"700 Clark Street, St. Louis, MO 63102",cardinals.com
+Blake,Taylor,RP,51,0,42.2,4,5,19,Houston,Astros,James Click,Minute Maid Park,41168,2000,"501 Crawford Street, Houston, TX 77002",astros.com
+Zach,Pop,RP,50,0,54.2,1,1,29,Miami,Marlins,Kim Ng,Marlins Park,36742,2012,"501 Marlins Way, Miami, FL 33125",marlins.com
+Joe,Smith,RP,50,0,39.2,4,3,23,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+Robert,Stephenson,RP,49,0,46,2,2,20,Colorado,Rockies,Bill Schmidt,Coors Field,50445,1995,"2001 Blake Street, Denver, CO 80205-2000",Rockies.com
+Austin,Voth,RP,49,1,57.1,4,5,35,Washington,Nationals,Mike Rizzo,Nationals Park,41339,2008,"1500 South Capitol Street, SE, Washington, DC 20003-1507",nationals.com
+Yency,Almonte,RP,48,0,47.2,1,3,42,Colorado,Rockies,Bill Schmidt,Coors Field,50445,1995,"2001 Blake Street, Denver, CO 80205-2000",Rockies.com
+Darwinzon,Hernandez,RP,48,0,40,2,4,17,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Joe,Kelly,RP,48,0,44,2,3,16,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Matt,Wisler,RP,48,0,48.2,3,4,24,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Peter,Fairbanks,RP,47,0,42.2,3,7,22,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Blake,Parker,RP,47,0,43.2,2,0,15,Cleveland,Indians,Mike Chernoff,Progressive Field,34788,1994,"2401 Ontario Street, Cleveland, OH 44115",indians.com
+Lucas,Sims,RP,47,0,47,5,10,26,Cincinnati,Reds,Nick Krall,Great American Ball Park,42319,2003,"100 Main Street, Cincinnati, OH 45202-4109",reds.com
+Dan,Winkler,RP,47,0,39.2,1,1,24,Chicago,Cubs,Carter Hawkins,Wrigley Field,41649,1914,"1060 West Addison, Chicago, IL 60613-4397",cubs.com
+Brett,de Geus,RP,47,0,50,3,2,47,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Jhoulys,Chacin,RP,46,1,64.1,3,2,32,Colorado,Rockies,Bill Schmidt,Coors Field,50445,1995,"2001 Blake Street, Denver, CO 80205-2000",Rockies.com
+Seth,Lugo,RP,46,0,46.1,4,4,18,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Lucas,Gilbreath,RP,47,1,42.2,3,1,18,Colorado,Rockies,Bill Schmidt,Coors Field,50445,1995,"2001 Blake Street, Denver, CO 80205-2000",Rockies.com
+J.B.,Wendelken,RP,46,0,43.2,4,3,24,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Garrett,Whitlock,RP,46,0,73.1,8,5,22,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Nabil,Crismatt,RP,45,0,81.1,3,0,40,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+Caleb,Smith,RP,45,13,113.2,4,2,64,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Wander,Suero,RP,45,0,42.2,2,3,35,Washington,Nationals,Mike Rizzo,Nationals Park,41339,2008,"1500 South Capitol Street, SE, Washington, DC 20003-1507",nationals.com
+Victor,Gonzalez,RP,44,1,35.1,3,2,14,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Michael,Kopech,RP,44,4,69.1,4,1,27,Chicago,White Sox,Rick Hahn,Guaranteed Rate Field,40615,1991,"333 West 35th Street, Chicago, IL 60616",whitesox.com
+Rafael,Montero,RP,44,0,49.1,5,13,40,Houston,Astros,James Click,Minute Maid Park,41168,2000,"501 Crawford Street, Houston, TX 77002",astros.com
+Tyler,Wells,RP,44,0,57,2,7,27,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Taylor,Clarke,RP,43,0,43.1,1,1,28,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Jeffrey,Springs,RP,43,0,44.2,5,4,21,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Trevor,Stephan,RP,43,0,63.1,3,1,32,Cleveland,Indians,Mike Chernoff,Progressive Field,34788,1994,"2401 Ontario Street, Cleveland, OH 44115",indians.com
+Duane,Underwood Jr.,RP,43,0,72.2,2,0,40,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Sam,Coonrod,RP,42,2,42.1,2,6,21,Philadelphia,Phillies,Sam Fuld,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",phillies.com
+Taylor,Hearn,RP,42,11,104.1,6,1,58,Texas,Rangers,Chris Young,Globe Life Field,40300,2020,"1000 Ballpark Way, Arlington, TX 76011",texasrangers.com
+Spencer,Patton,RP,42,0,42.1,2,5,20,Texas,Rangers,Chris Young,Globe Life Field,40300,2020,"1000 Ballpark Way, Arlington, TX 76011",texasrangers.com
+Casey,Sadler,RP,42,0,40.1,0,0,4,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+Justin,Wilson,RP,42,0,34,1,1,22,Cincinnati,Reds,Nick Krall,Great American Ball Park,42319,2003,"100 Main Street, Cincinnati, OH 45202-4109",reds.com
+Tyler,Alexander,RP,41,15,106.1,2,0,47,Detroit,Tigers,Al Avila,Comerica Park,41083,2000,"2100 Woodward Avenue, Detroit, MI 48201",tigers.com
+Alex,Claudio,RP,41,0,32.2,1,1,22,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+John,Curtiss,RP,41,3,44.1,3,1,21,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+Junior,Guerra,RP,41,1,65.1,5,2,45,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Joakim,Soria,RP,41,0,37.1,1,9,21,Toronto,Blue Jays,Ross Atkins,Rogers Centre,49282,1989,"1 Blue Jays Way, Suite 3200, Toronto, Ontario, Canada M5V1J1",bluejays.com
+Alex,Vesia,RP,41,0,40,3,2,17,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Wade,Davis,RP,40,0,42.2,0,3,33,Kansas City,Royals,J. J. Picollo,Kauffman Stadium,37903,1973,"One Royal Way, Kansas City, MO 64129",royals.com
+Andres,Machado,RP,40,0,35.2,1,3,17,Washington,Nationals,Mike Rizzo,Nationals Park,41339,2008,"1500 South Capitol Street, SE, Washington, DC 20003-1507",nationals.com
+Andrew,Miller,RP,40,0,36,0,0,19,St. Louis,Cardinals,Mike Girsch,Busch Stadium,45494,2006,"700 Clark Street, St. Louis, MO 63102",cardinals.com
+Cal,Quantrill,SP,40,22,149.2,8,0,55,Cleveland,Indians,Mike Chernoff,Progressive Field,34788,1994,"2401 Ontario Street, Cleveland, OH 44115",indians.com
+Garrett,Richards,SP,40,22,136.2,7,3,86,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Taylor,Rogers,RP,40,0,40.1,2,13,18,Minnesota,Twins,Thad Levine,Target Field,38544,2010,"1 Twins Way, Minneapolis, MN 55403",twinsbaseball.com
+Alex,Young,RP,40,2,52,2,2,43,Cleveland,Indians,Mike Chernoff,Progressive Field,34788,1994,"2401 Ontario Street, Cleveland, OH 44115",indians.com
+Ben,Bowden,RP,39,0,35.2,3,1,30,Colorado,Rockies,Bill Schmidt,Coors Field,50445,1995,"2001 Blake Street, Denver, CO 80205-2000",Rockies.com
+Rafael,Dolis,RP,39,0,32,2,4,21,Toronto,Blue Jays,Ross Atkins,Rogers Centre,49282,1989,"1 Blue Jays Way, Suite 3200, Toronto, Ontario, Canada M5V1J1",bluejays.com
+John,Gant,RP,39,21,110,5,0,56,Minnesota,Twins,Thad Levine,Target Field,38544,2010,"1 Twins Way, Minneapolis, MN 55403",twinsbaseball.com
+Bryan,Garcia,RP,39,0,39.1,3,3,38,Detroit,Tigers,Al Avila,Comerica Park,41083,2000,"2100 Woodward Avenue, Detroit, MI 48201",tigers.com
+Derek,Holland,RP,39,1,49.2,3,0,29,Detroit,Tigers,Al Avila,Comerica Park,41083,2000,"2100 Woodward Avenue, Detroit, MI 48201",tigers.com
+David,Price,RP,39,11,73.2,5,1,35,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Ranger,Suarez,RP,39,12,106,8,7,20,Philadelphia,Phillies,Sam Fuld,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",phillies.com
+Cesar,Valdez,RP,39,0,46,2,13,32,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+T.J.,McFarland,RP,38,0,38.2,4,1,11,St. Louis,Cardinals,Mike Girsch,Busch Stadium,45494,2006,"700 Clark Street, St. Louis, MO 63102",cardinals.com
+Adam,Plutko,RP,38,1,56.1,1,3,43,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Tanner,Rainey,RP,38,0,31.2,1,6,27,Washington,Nationals,Mike Rizzo,Nationals Park,41339,2008,"1500 South Capitol Street, SE, Washington, DC 20003-1507",nationals.com
+Noe,Ramirez,RP,38,0,36,0,3,14,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Ervin,Santana,RP,38,2,65.1,2,0,35,Kansas City,Royals,J. J. Picollo,Kauffman Stadium,37903,1973,"One Royal Way, Kansas City, MO 64129",royals.com
+Trent,Thornton,RP,37,3,49,1,0,33,Toronto,Blue Jays,Ross Atkins,Rogers Centre,49282,1989,"1 Blue Jays Way, Suite 3200, Toronto, Ontario, Canada M5V1J1",bluejays.com
+Buck,Farmer,RP,36,0,35.1,0,1,25,Detroit,Tigers,Al Avila,Comerica Park,41083,2000,"2100 Woodward Avenue, Detroit, MI 48201",tigers.com
+Ryan,Thompson,RP,36,0,34,3,4,11,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Matt,Foster,RP,37,0,39,2,2,27,Chicago,White Sox,Rick Hahn,Guaranteed Rate Field,40615,1991,"333 West 35th Street, Chicago, IL 60616",whitesox.com
+Collin,McHugh,RP,37,7,64,6,3,15,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Joel,Payamps,RP,37,1,50.1,1,0,22,Kansas City,Royals,J. J. Picollo,Kauffman Stadium,37903,1973,"One Royal Way, Kansas City, MO 64129",royals.com
+Ryan,Hendrix,RP,36,0,31.2,5,1,23,Cincinnati,Reds,Nick Krall,Great American Ball Park,42319,2003,"100 Main Street, Cincinnati, OH 45202-4109",reds.com
+Cristian,Javier,RP,36,9,101.1,4,4,41,Houston,Astros,James Click,Minute Maid Park,41168,2000,"501 Crawford Street, Houston, TX 77002",astros.com
+Alex,Lange,RP,36,0,35.2,1,3,18,Detroit,Tigers,Al Avila,Comerica Park,41083,2000,"2100 Woodward Avenue, Detroit, MI 48201",tigers.com
+Martin,Perez,SP,36,22,114,7,0,71,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Brad,Brach,RP,35,0,30,1,3,26,Cincinnati,Reds,Nick Krall,Great American Ball Park,42319,2003,"100 Main Street, Cincinnati, OH 45202-4109",reds.com
+Paolo,Espino,SP,35,19,109.2,5,1,53,Washington,Nationals,Mike Rizzo,Nationals Park,41339,2008,"1500 South Capitol Street, SE, Washington, DC 20003-1507",nationals.com
+Matt,Peacock,RP,35,8,86.1,5,0,55,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Drew,Rasmussen,RP,35,10,76,4,1,27,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Matt,Andriese,RP,34,0,48.1,2,4,35,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+Ryan,Burr,RP,34,1,36.2,2,1,11,Chicago,White Sox,Rick Hahn,Guaranteed Rate Field,40615,1991,"333 West 35th Street, Chicago, IL 60616",whitesox.com
+Luis,Garcia,RP,34,0,33.1,1,3,12,St. Louis,Cardinals,Mike Girsch,Busch Stadium,45494,2006,"700 Clark Street, St. Louis, MO 63102",cardinals.com
+Brusdar,Graterol,RP,34,1,33.1,3,2,18,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Ryne,Harper,RP,34,0,35.2,0,1,16,Washington,Nationals,Mike Rizzo,Nationals Park,41339,2008,"1500 South Capitol Street, SE, Washington, DC 20003-1507",nationals.com
+Adam,Morgan,RP,34,0,25.1,2,4,15,Chicago,Cubs,Carter Hawkins,Wrigley Field,41649,1914,"1060 West Addison, Chicago, IL 60613-4397",cubs.com
+Steven,Okert,RP,34,0,36,3,0,12,Miami,Marlins,Kim Ng,Marlins Park,36742,2012,"501 Marlins Way, Miami, FL 33125",marlins.com
+Nick,Sandlin,RP,34,0,33.2,1,1,15,Cleveland,Indians,Mike Chernoff,Progressive Field,34788,1994,"2401 Ontario Street, Cleveland, OH 44115",indians.com
+Domingo,Tapia,RP,34,0,33.2,4,3,10,Kansas City,Royals,J. J. Picollo,Kauffman Stadium,37903,1973,"One Royal Way, Kansas City, MO 64129",royals.com
+Sandy,Alcantara,SP,33,33,205.2,9,0,85,Miami,Marlins,Kim Ng,Marlins Park,36742,2012,"501 Marlins Way, Miami, FL 33125",marlins.com
+Luis,Castillo,SP,33,33,187.2,8,0,94,Cincinnati,Reds,Nick Krall,Great American Ball Park,42319,2003,"100 Main Street, Cincinnati, OH 45202-4109",reds.com
+Enyel,De Los Santos,RP,33,0,35.1,2,2,32,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Kevin,Gausman,SP,33,33,192,14,0,66,San Francisco,Giants,Scott Harris,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",SFGiants.com
+Jorge,Lopez,SP,33,25,121.2,3,1,83,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Tyler,Mahle,SP,33,33,180,13,0,78,Cincinnati,Reds,Nick Krall,Great American Ball Park,42319,2003,"100 Main Street, Cincinnati, OH 45202-4109",reds.com
+Marcus,Stroman,SP,33,33,179,10,0,70,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Erik,Swanson,RP,33,2,35.1,0,3,18,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+Kolby,Allard,SP,32,17,124.2,3,0,80,Texas,Rangers,Chris Young,Globe Life Field,40300,2020,"1000 Ballpark Way, Arlington, TX 76011",texasrangers.com
+Jose,Berrios,SP,32,32,192,12,0,83,Toronto,Blue Jays,Ross Atkins,Rogers Centre,49282,1989,"1 Blue Jays Way, Suite 3200, Toronto, Ontario, Canada M5V1J1",bluejays.com
+Tyler,Chatwood,RP,32,0,32,1,2,22,San Francisco,Giants,Scott Harris,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",SFGiants.com
+Zach,Davies,SP,32,32,148,6,0,99,Chicago,Cubs,Carter Hawkins,Wrigley Field,41649,1914,"1060 West Addison, Chicago, IL 60613-4397",cubs.com
+Nathan,Eovaldi,SP,32,32,182.1,11,0,81,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Kevin,Ginkel,RP,32,0,28.1,0,1,24,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Kyle,Hendricks,SP,32,32,181,14,0,101,Chicago,Cubs,Carter Hawkins,Wrigley Field,41649,1914,"1060 West Addison, Chicago, IL 60613-4397",cubs.com
+Dallas,Keuchel,SP,32,30,162,9,0,105,Chicago,White Sox,Rick Hahn,Guaranteed Rate Field,40615,1991,"333 West 35th Street, Chicago, IL 60616",whitesox.com
+Jordan,Lyles,SP,32,30,180,10,0,104,Texas,Rangers,Chris Young,Globe Life Field,40300,2020,"1000 Ballpark Way, Arlington, TX 76011",texasrangers.com
+Sean,Manaea,SP,32,32,179.1,11,0,79,Oakland,Athletics,David Forst,RingCentral Coliseum,46847,1966,"7000 Coliseum Way, Oakland, CA 94621",athletics.com
+German,Marquez,SP,32,32,180,12,0,92,Colorado,Rockies,Bill Schmidt,Coors Field,50445,1995,"2001 Blake Street, Denver, CO 80205-2000",Rockies.com
+Keynan,Middleton,RP,32,1,31,1,4,20,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+Frankie,Montas,SP,32,32,187,13,0,79,Oakland,Athletics,David Forst,RingCentral Coliseum,46847,1966,"7000 Coliseum Way, Oakland, CA 94621",athletics.com
+Joe,Musgrove,SP,32,31,181.1,11,0,68,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+Aaron,Nola,SP,32,32,180.2,9,0,95,Philadelphia,Phillies,Sam Fuld,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",phillies.com
+Robbie,Ray,SP,32,32,193.1,13,0,62,Toronto,Blue Jays,Ross Atkins,Rogers Centre,49282,1989,"1 Blue Jays Way, Suite 3200, Toronto, Ontario, Canada M5V1J1",bluejays.com
+Keegan,Thompson,RP,32,6,53.1,3,2,22,Chicago,Cubs,Carter Hawkins,Wrigley Field,41649,1914,"1060 West Addison, Chicago, IL 60613-4397",cubs.com
+Julio,Urias,SP,32,32,185.2,20,0,67,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Will,Vest,RP,32,0,35,1,0,25,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+Walker,Buehler,SP,33,33,207.2,16,0,61,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Dylan,Cease,SP,32,32,165.2,13,0,77,Chicago,White Sox,Rick Hahn,Guaranteed Rate Field,40615,1991,"333 West 35th Street, Chicago, IL 60616",whitesox.com
+Rich,Hill,SP,32,31,158.2,7,0,70,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Cole,Irvin,SP,32,32,178.1,10,0,94,Oakland,Athletics,David Forst,RingCentral Coliseum,46847,1966,"7000 Coliseum Way, Oakland, CA 94621",athletics.com
+Kyle,Keller,RP,32,0,33.1,1,0,27,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Alec,Mills,SP,32,20,119,6,1,75,Chicago,Cubs,Carter Hawkins,Wrigley Field,41649,1914,"1060 West Addison, Chicago, IL 60613-4397",cubs.com
+Eduardo,Rodriguez,SP,32,31,157.2,13,0,87,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Adam,Wainwright,SP,32,32,206.1,17,0,72,St. Louis,Cardinals,Mike Girsch,Busch Stadium,45494,2006,"700 Clark Street, St. Louis, MO 63102",cardinals.com
+Zack,Wheeler,SP,32,32,213.1,14,0,72,Philadelphia,Phillies,Sam Fuld,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",phillies.com
+Bryan,Abreu,RP,31,0,36,3,5,26,Houston,Astros,James Click,Minute Maid Park,41168,2000,"501 Crawford Street, Houston, TX 77002",astros.com
+Tyler,Anderson,SP,31,31,167,7,0,87,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+Shawn,Armstrong,RP,31,0,36,1,1,28,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Joe,Barlow,RP,31,0,29,0,12,9,Texas,Rangers,Chris Young,Globe Life Field,40300,2020,"1000 Ballpark Way, Arlington, TX 76011",texasrangers.com
+Patrick,Corbin,SP,31,31,171.2,9,0,114,Washington,Nationals,Mike Rizzo,Nationals Park,41339,2008,"1500 South Capitol Street, SE, Washington, DC 20003-1507",nationals.com
+Stefan,Crichton,RP,31,0,23.1,0,4,22,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Anthony,DeSclafani,SP,31,31,167.2,13,0,61,San Francisco,Giants,Scott Harris,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",SFGiants.com
+Chris,Flexen,SP,31,31,179.2,14,0,74,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+Kyle,Gibson,SP,31,30,182,10,0,78,Philadelphia,Phillies,Sam Fuld,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",phillies.com
+Lucas,Giolito,SP,31,31,178.2,11,0,74,Chicago,White Sox,Rick Hahn,Guaranteed Rate Field,40615,1991,"333 West 35th Street, Chicago, IL 60616",whitesox.com
+Jeff,Hoffman,RP,31,11,73,3,0,41,Cincinnati,Reds,Nick Krall,Great American Ball Park,42319,2003,"100 Main Street, Cincinnati, OH 45202-4109",reds.com
+Nick,Pivetta,SP,31,30,155,9,1,80,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Hyun-Jin,Ryu,SP,31,31,169,14,0,85,Toronto,Blue Jays,Ross Atkins,Rogers Centre,49282,1989,"1 Blue Jays Way, Suite 3200, Toronto, Ontario, Canada M5V1J1",bluejays.com
+Tarik,Skubal,SP,31,29,149.1,8,0,76,Detroit,Tigers,Al Avila,Comerica Park,41083,2000,"2100 Woodward Avenue, Detroit, MI 48201",tigers.com
+Drew,Smith,RP,31,1,41.1,3,0,13,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Burch,Smith,RP,31,0,43.1,1,1,27,Oakland,Athletics,David Forst,RingCentral Coliseum,46847,1966,"7000 Coliseum Way, Oakland, CA 94621",athletics.com
+Mason,Thompson,RP,31,0,24.2,1,3,15,Washington,Nationals,Mike Rizzo,Nationals Park,41339,2008,"1500 South Capitol Street, SE, Washington, DC 20003-1507",nationals.com
+Tyler,Zuber,RP,31,0,27.1,0,0,20,Kansas City,Royals,J. J. Picollo,Kauffman Stadium,37903,1973,"One Royal Way, Kansas City, MO 64129",royals.com
+Gerrit,Cole,SP,30,30,181.1,16,0,69,New York,Yankees,Brian Cashman,Yankee Stadium,47309,2009,"One East 161st Street, Bronx, NY 10451",yankees.com
+Jake,Cousins,RP,30,0,30,1,0,9,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+Yu,Darvish,SP,30,30,166.1,8,0,81,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+Luis,Garcia,SP,30,28,155.1,11,0,62,Houston,Astros,James Click,Minute Maid Park,41168,2000,"501 Crawford Street, Houston, TX 77002",astros.com
+J.A.,Happ,SP,30,30,152.1,10,0,100,St. Louis,Cardinals,Mike Girsch,Busch Stadium,45494,2006,"700 Clark Street, St. Louis, MO 63102",cardinals.com
+Andrew,Heaney,RP,30,23,129.2,8,1,85,New York,Yankees,Brian Cashman,Yankee Stadium,47309,2009,"One East 161st Street, Bronx, NY 10451",yankees.com
+Sam,Hentges,RP,30,12,68.2,1,0,54,Cleveland,Indians,Mike Chernoff,Progressive Field,34788,1994,"2401 Ontario Street, Cleveland, OH 44115",indians.com
+Nick,Mears,RP,30,0,23.1,1,5,14,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Casey,Mize,SP,30,30,150.1,7,0,64,Detroit,Tigers,Al Avila,Comerica Park,41083,2000,"2100 Woodward Avenue, Detroit, MI 48201",tigers.com
+Jordan,Montgomery,SP,30,30,157.1,6,0,73,New York,Yankees,Brian Cashman,Yankee Stadium,47309,2009,"One East 161st Street, Bronx, NY 10451",yankees.com
+Max,Scherzer,SP,30,30,179.1,15,0,53,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Taijuan,Walker,SP,30,29,159,7,0,84,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Ryan,Weathers,SP,30,18,94.2,4,1,57,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+Brandon,Woodruff,SP,30,30,179.1,9,0,54,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+Ryan,Yarbrough,SP,30,21,155,9,0,96,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Danny,Coulombe,RP,29,1,34.1,3,1,17,Minnesota,Twins,Thad Levine,Target Field,38544,2010,"1 Twins Way, Minneapolis, MN 55403",twinsbaseball.com
+Camilo,Doval,RP,29,0,27,5,6,10,San Francisco,Giants,Scott Harris,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",SFGiants.com
+Jon,Gray,SP,29,29,149,8,0,83,Colorado,Rockies,Bill Schmidt,Coors Field,50445,1995,"2001 Blake Street, Denver, CO 80205-2000",Rockies.com
+Jose,Quintana,RP,29,10,63,0,0,50,San Francisco,Giants,Scott Harris,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",SFGiants.com
+Tayler,Saucedo,RP,29,0,25.2,0,2,14,Toronto,Blue Jays,Ross Atkins,Rogers Centre,49282,1989,"1 Blue Jays Way, Suite 3200, Toronto, Ontario, Canada M5V1J1",bluejays.com
+Brandon,Workman,RP,29,0,28,1,0,20,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Zack,Greinke,SP,30,29,171,11,0,82,Houston,Astros,James Click,Minute Maid Park,41168,2000,"501 Crawford Street, Houston, TX 77002",astros.com
+Jordan,Sheffield,RP,30,0,29.1,0,0,11,Colorado,Rockies,Bill Schmidt,Coors Field,50445,1995,"2001 Blake Street, Denver, CO 80205-2000",Rockies.com
+Adbert,Alzolay,SP,29,21,125.2,5,1,66,Chicago,Cubs,Carter Hawkins,Wrigley Field,41649,1914,"1060 West Addison, Chicago, IL 60613-4397",cubs.com
+Jacob,Barnes,RP,29,0,28.2,1,2,20,Toronto,Blue Jays,Ross Atkins,Rogers Centre,49282,1989,"1 Blue Jays Way, Suite 3200, Toronto, Ontario, Canada M5V1J1",bluejays.com
+Kris,Bubic,SP,29,20,130,6,0,67,Kansas City,Royals,J. J. Picollo,Kauffman Stadium,37903,1973,"One Royal Way, Kansas City, MO 64129",royals.com
+Austin,Davis,RP,29,0,26.1,1,3,17,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Erick,Fedde,SP,29,27,133.1,7,1,90,Washington,Nationals,Mike Rizzo,Nationals Park,41339,2008,"1500 South Capitol Street, SE, Washington, DC 20003-1507",nationals.com
+Yusei,Kikuchi,SP,29,29,157,7,0,82,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+Brandon,Kintzler,RP,29,1,29.2,2,2,23,Philadelphia,Phillies,Sam Fuld,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",phillies.com
+Steven,Matz,SP,29,29,150.2,14,0,70,Toronto,Blue Jays,Ross Atkins,Rogers Centre,49282,1989,"1 Blue Jays Way, Suite 3200, Toronto, Ontario, Canada M5V1J1",bluejays.com
+Juan,Minaya,RP,29,0,40,2,0,12,Minnesota,Twins,Thad Levine,Target Field,38544,2010,"1 Twins Way, Minneapolis, MN 55403",twinsbaseball.com
+Aaron,Slegers,RP,29,0,31,2,2,24,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Jameson,Taillon,SP,29,29,144.1,8,0,73,New York,Yankees,Brian Cashman,Yankee Stadium,47309,2009,"One East 161st Street, Bronx, NY 10451",yankees.com
+Michael,Wacha,SP,29,23,124.2,3,0,73,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Albert,Abreu,RP,28,0,36.2,2,1,21,New York,Yankees,Brian Cashman,Yankee Stadium,47309,2009,"One East 161st Street, Bronx, NY 10451",yankees.com
+Brandon,Bielak,RP,28,2,50,3,2,29,Houston,Astros,James Click,Minute Maid Park,41168,2000,"501 Crawford Street, Houston, TX 77002",astros.com
+Corbin,Burnes,SP,28,28,167,11,0,47,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+Shane,Greene,RP,28,0,23.2,0,2,19,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Matt,Harvey,SP,28,28,127.2,6,0,96,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Adrian,Houser,SP,28,26,142.1,10,0,61,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+Chad,Kuhl,SP,28,14,80.1,5,2,50,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Jon,Lester,SP,28,28,141.1,7,0,84,St. Louis,Cardinals,Mike Girsch,Busch Stadium,45494,2006,"700 Clark Street, St. Louis, MO 63102",cardinals.com
+Lance,Lynn,SP,28,28,157,11,0,52,Chicago,White Sox,Rick Hahn,Guaranteed Rate Field,40615,1991,"333 West 35th Street, Chicago, IL 60616",whitesox.com
+Dillon,Maples,RP,28,0,31.1,1,0,10,Chicago,Cubs,Carter Hawkins,Wrigley Field,41649,1914,"1060 West Addison, Chicago, IL 60613-4397",cubs.com
+Lance,McCullers,SP,28,28,162.1,13,0,59,Houston,Astros,James Click,Minute Maid Park,41168,2000,"501 Crawford Street, Houston, TX 77002",astros.com
+Trevor,Megill,RP,28,0,23.2,1,0,24,Chicago,Cubs,Carter Hawkins,Wrigley Field,41649,1914,"1060 West Addison, Chicago, IL 60613-4397",cubs.com
+Wade,Miley,SP,28,28,163,12,0,64,Cincinnati,Reds,Nick Krall,Great American Ball Park,42319,2003,"100 Main Street, Cincinnati, OH 45202-4109",reds.com
+Mike,Minor,SP,28,28,158.2,8,0,92,Kansas City,Royals,J. J. Picollo,Kauffman Stadium,37903,1973,"One Royal Way, Kansas City, MO 64129",royals.com
+Jimmy,Nelson,RP,28,1,29,1,1,8,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Freddy,Peralta,SP,28,27,144.1,10,0,47,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+Miguel,Sanchez,RP,28,0,26,2,1,14,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+Antonio,Senzatela,SP,28,28,156.2,4,0,84,Colorado,Rockies,Bill Schmidt,Coors Field,50445,1995,"2001 Blake Street, Denver, CO 80205-2000",Rockies.com
+Phillips,Valdez,RP,28,0,40,2,1,29,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Chris,Bassitt,SP,27,27,157.1,12,0,55,Oakland,Athletics,David Forst,RingCentral Coliseum,46847,1966,"7000 Coliseum Way, Oakland, CA 94621",athletics.com
+Kyle,Crick,RP,27,0,24.1,1,1,14,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Ralph,Garza,RP,27,0,30.1,1,2,15,Minnesota,Twins,Thad Levine,Target Field,38544,2010,"1 Twins Way, Minneapolis, MN 55403",twinsbaseball.com
+Louis,Head,RP,27,2,35,2,0,10,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Merrill,Kelly,SP,27,27,158,7,0,82,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Kwang,Hyun Kim,SP,27,21,106.2,7,1,46,St. Louis,Cardinals,Mike Girsch,Busch Stadium,45494,2006,"700 Clark Street, St. Louis, MO 63102",cardinals.com
+John,King,RP,27,0,46,7,1,24,Texas,Rangers,Chris Young,Globe Life Field,40300,2020,"1000 Ballpark Way, Arlington, TX 76011",texasrangers.com
+Corey,Knebel,RP,27,4,25.2,4,5,8,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Michael,Lorenzen,RP,27,0,29,1,4,18,Cincinnati,Reds,Nick Krall,Great American Ball Park,42319,2003,"100 Main Street, Cincinnati, OH 45202-4109",reds.com
+Evan,Marshall,RP,27,0,27.1,0,4,17,Chicago,White Sox,Rick Hahn,Guaranteed Rate Field,40615,1991,"333 West 35th Street, Chicago, IL 60616",whitesox.com
+Kyle,McGowin,RP,27,0,30,0,0,14,Washington,Nationals,Mike Rizzo,Nationals Park,41339,2008,"1500 South Capitol Street, SE, Washington, DC 20003-1507",nationals.com
+Tommy,Nance,RP,27,0,28.2,1,0,23,Chicago,Cubs,Carter Hawkins,Wrigley Field,41649,1914,"1060 West Addison, Chicago, IL 60613-4397",cubs.com
+Drew,Pomeranz,RP,27,0,25.2,1,0,6,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+Brady,Singer,SP,27,27,128.1,5,0,81,Kansas City,Royals,J. J. Picollo,Kauffman Stadium,37903,1973,"One Royal Way, Kansas City, MO 64129",royals.com
+Blake,Snell,SP,27,27,128.2,7,0,61,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+Anthony,Banda,RP,30,0,33.2,2,3,18,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Mike,Foltynewicz,SP,28,24,139,2,0,86,Texas,Rangers,Chris Young,Globe Life Field,40300,2020,"1000 Ballpark Way, Arlington, TX 76011",texasrangers.com
+Dane,Dunning,SP,27,25,117.2,5,0,61,Texas,Rangers,Chris Young,Globe Life Field,40300,2020,"1000 Ballpark Way, Arlington, TX 76011",texasrangers.com
+Logan,Webb,SP,27,26,148.1,11,0,53,San Francisco,Giants,Scott Harris,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",SFGiants.com
+Cam,Bedrosian,RP,26,1,25,0,1,14,Philadelphia,Phillies,Sam Fuld,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",phillies.com
+Madison,Bumgarner,SP,26,26,146.1,7,0,82,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Tyler,Clippard,RP,26,0,25.1,1,9,12,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Wil,Crowe,SP,26,25,116.2,4,0,75,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Josh,Fleming,RP,26,11,104.1,10,1,60,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Sonny,Gray,SP,26,26,135.1,7,0,67,Cincinnati,Reds,Nick Krall,Great American Ball Park,42319,2003,"100 Main Street, Cincinnati, OH 45202-4109",reds.com
+Brad,Keller,SP,26,26,133.2,8,0,89,Kansas City,Royals,J. J. Picollo,Kauffman Stadium,37903,1973,"One Royal Way, Kansas City, MO 64129",royals.com
+John,Means,SP,26,26,146.2,6,0,64,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Jose,Quijada,RP,26,0,25.2,0,0,14,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Tony,Santillan,RP,26,4,43.1,1,0,15,Cincinnati,Reds,Nick Krall,Great American Ball Park,42319,2003,"100 Main Street, Cincinnati, OH 45202-4109",reds.com
+Zach,Thompson,SP,26,14,75,3,0,35,Miami,Marlins,Kim Ng,Marlins Park,36742,2012,"501 Marlins Way, Miami, FL 33125",marlins.com
+Jose,Urena,SP,26,18,100.2,4,0,70,Detroit,Tigers,Al Avila,Comerica Park,41083,2000,"2100 Woodward Avenue, Detroit, MI 48201",tigers.com
+Art,Warren,RP,26,0,21,3,0,3,Cincinnati,Reds,Nick Krall,Great American Ball Park,42319,2003,"100 Main Street, Cincinnati, OH 45202-4109",reds.com
+Alex,Wood,SP,26,26,138.2,10,0,63,San Francisco,Giants,Scott Harris,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",SFGiants.com
+Jake,Woodford,RP,26,8,67.2,3,0,32,St. Louis,Cardinals,Mike Girsch,Busch Stadium,45494,2006,"700 Clark Street, St. Louis, MO 63102",cardinals.com
+Caleb,Baragar,RP,25,0,23,2,3,7,San Francisco,Giants,Scott Harris,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",SFGiants.com
+Anthony,Castro,RP,25,0,24.2,1,2,15,Toronto,Blue Jays,Ross Atkins,Rogers Centre,49282,1989,"1 Blue Jays Way, Suite 3200, Toronto, Ontario, Canada M5V1J1",bluejays.com
+Miguel,Diaz,RP,25,2,42,3,1,19,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+Demarcus,Evans,RP,25,0,26.1,0,2,16,Texas,Rangers,Chris Young,Globe Life Field,40300,2020,"1000 Ballpark Way, Arlington, TX 76011",texasrangers.com
+Marco,Gonzales,SP,25,25,143.1,10,0,64,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+Jesus,Luzardo,SP,25,18,95.1,6,0,73,Miami,Marlins,Kim Ng,Marlins Park,36742,2012,"501 Marlins Way, Miami, FL 33125",marlins.com
+Shane,McClanahan,SP,25,25,123.1,10,0,49,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Triston,McKenzie,SP,25,24,120,5,0,66,Cleveland,Indians,Mike Chernoff,Progressive Field,34788,1994,"2401 Ontario Street, Cleveland, OH 44115",indians.com
+Cionel,Perez,RP,25,0,24,1,0,21,Cincinnati,Reds,Nick Krall,Great American Ball Park,42319,2003,"100 Main Street, Cincinnati, OH 45202-4109",reds.com
+Zach,Plesac,SP,25,25,142.2,10,0,79,Cleveland,Indians,Mike Chernoff,Progressive Field,34788,1994,"2401 Ontario Street, Cleveland, OH 44115",indians.com
+Yohan,Ramirez,RP,25,0,27.2,1,2,14,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+Trevor,Rogers,SP,25,25,133,7,0,46,Miami,Marlins,Kim Ng,Marlins Park,36742,2012,"501 Marlins Way, Miami, FL 33125",marlins.com
+Vince,Velasquez,SP,25,21,94.1,3,0,68,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+Kodi,Whitley,RP,25,0,25.1,0,0,8,St. Louis,Cardinals,Mike Girsch,Busch Stadium,45494,2006,"700 Clark Street, St. Louis, MO 63102",cardinals.com
+Keegan,Akin,SP,24,17,95,2,0,70,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Jake,Arrieta,SP,24,24,98.2,5,0,91,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+Ryan,Borucki,RP,24,0,23.2,3,1,14,Toronto,Blue Jays,Ross Atkins,Rogers Centre,49282,1989,"1 Blue Jays Way, Suite 3200, Toronto, Ontario, Canada M5V1J1",bluejays.com
+J.T.,Brubaker,SP,24,24,124.1,5,0,75,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Logan,Gilbert,SP,24,24,119.1,6,0,63,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+Chi Chi,Gonzalez,SP,24,18,101.2,3,0,74,Colorado,Rockies,Bill Schmidt,Coors Field,50445,1995,"2001 Blake Street, Denver, CO 80205-2000",Rockies.com
+Carlos,Hernandez,RP,24,11,85.2,6,0,36,Kansas City,Royals,J. J. Picollo,Kauffman Stadium,37903,1973,"One Royal Way, Kansas City, MO 64129",royals.com
+James,Kaprielian,SP,24,21,119.1,8,0,55,Oakland,Athletics,David Forst,RingCentral Coliseum,46847,1966,"7000 Coliseum Way, Oakland, CA 94621",athletics.com
+Travis,Lakins,RP,24,1,28,1,1,20,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Eric,Lauer,SP,24,20,118.2,7,0,46,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+Matt,Moore,SP,24,13,73,2,0,54,Philadelphia,Phillies,Sam Fuld,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",phillies.com
+Jake,Odorizzi,SP,24,23,104.2,6,0,51,Houston,Astros,James Click,Minute Maid Park,41168,2000,"501 Crawford Street, Houston, TX 77002",astros.com
+Daniel,Ponce de Leon,RP,24,2,33.1,1,3,24,St. Louis,Cardinals,Mike Girsch,Busch Stadium,45494,2006,"700 Clark Street, St. Louis, MO 63102",cardinals.com
+Carlos,Rodon,SP,24,24,132.2,13,0,39,Chicago,White Sox,Rick Hahn,Guaranteed Rate Field,40615,1991,"333 West 35th Street, Chicago, IL 60616",whitesox.com
+Riley,Smith,RP,24,6,67.1,1,1,46,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Ross,Stripling,SP,24,19,101.1,5,0,55,Toronto,Blue Jays,Ross Atkins,Rogers Centre,49282,1989,"1 Blue Jays Way, Suite 3200, Toronto, Ontario, Canada M5V1J1",bluejays.com
+Patrick,Murphy,RP,25,0,28,0,0,18,Washington,Nationals,Mike Rizzo,Nationals Park,41339,2008,"1500 South Capitol Street, SE, Washington, DC 20003-1507",nationals.com
+Sam,Selman,RP,25,0,25,0,1,17,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Brett,Anderson,SP,24,24,96,4,0,52,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+Conner,Greene,RP,24,1,25.1,1,4,20,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Sean,Poppen,RP,24,0,22.2,1,1,18,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Tejay,Antone,RP,23,0,33.2,2,7,8,Cincinnati,Reds,Nick Krall,Great American Ball Park,42319,2003,"100 Main Street, Cincinnati, OH 45202-4109",reds.com
+Dylan,Bundy,SP,23,19,90.2,2,0,64,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Jharel,Cotton,RP,23,0,30.2,2,0,12,Texas,Rangers,Chris Young,Globe Life Field,40300,2020,"1000 Ballpark Way, Arlington, TX 76011",texasrangers.com
+Marcos,Diplan,RP,23,0,30,2,0,16,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Jake,Faria,RP,23,3,32.2,0,0,21,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Kyle,Freeland,SP,23,23,120.2,7,0,59,Colorado,Rockies,Bill Schmidt,Coors Field,50445,1995,"2001 Blake Street, Denver, CO 80205-2000",Rockies.com
+Zac,Gallen,SP,23,23,121.1,4,0,61,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Austin,Gomber,SP,23,23,115.1,9,0,64,Colorado,Rockies,Bill Schmidt,Coors Field,50445,1995,"2001 Blake Street, Denver, CO 80205-2000",Rockies.com
+Jay,Jackson,RP,23,1,21.2,2,2,9,San Francisco,Giants,Scott Harris,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",SFGiants.com
+Mitch,Keller,SP,23,23,100.2,5,0,69,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Justin,Miller,RP,23,0,19,1,1,13,St. Louis,Cardinals,Mike Girsch,Busch Stadium,45494,2006,"700 Clark Street, St. Louis, MO 63102",cardinals.com
+Shohei,Ohtani,DH,23,23,130.1,9,0,48,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Chris,Paddack,SP,23,22,108.1,7,0,67,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+Yacksel,Rios,RP,23,0,27.1,3,0,13,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Jose,Suarez,SP,23,14,98.1,8,0,45,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Taylor,Widener,SP,23,13,70.1,2,0,38,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Trevor,Williams,RP,23,15,91,4,0,51,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Zack,Britton,RP,22,0,18.1,0,4,14,New York,Yankees,Brian Cashman,Yankee Stadium,47309,2009,"One East 161st Street, Bronx, NY 10451",yankees.com
+Garrett,Cleavinger,RP,22,1,18,2,1,11,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Nestor,Cortes,SP,22,14,93,2,0,32,New York,Yankees,Brian Cashman,Yankee Stadium,47309,2009,"One East 161st Street, Bronx, NY 10451",yankees.com
+Johnny,Cueto,SP,22,21,114.2,7,0,57,San Francisco,Giants,Scott Harris,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",SFGiants.com
+Bailey,Falter,RP,22,1,33.2,2,0,21,Philadelphia,Phillies,Sam Fuld,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",phillies.com
+Domingo,German,SP,22,18,98.1,4,0,52,New York,Yankees,Brian Cashman,Yankee Stadium,47309,2009,"One East 161st Street, Bronx, NY 10451",yankees.com
+Vladimir,Gutierrez,SP,22,22,114,9,0,61,Cincinnati,Reds,Nick Krall,Great American Ball Park,42319,2003,"100 Main Street, Cincinnati, OH 45202-4109",reds.com
+Clayton,Kershaw,SP,22,22,121.2,10,0,51,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Michael,King,RP,22,6,63.1,2,0,29,New York,Yankees,Brian Cashman,Yankee Stadium,47309,2009,"One East 161st Street, Bronx, NY 10451",yankees.com
+Dinelson,Lamet,RP,22,9,47,2,0,24,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+Luis,Oviedo,RP,22,1,29.2,1,0,32,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Michael,Pineda,SP,22,21,109.1,9,0,49,Minnesota,Twins,Thad Levine,Target Field,38544,2010,"1 Twins Way, Minneapolis, MN 55403",twinsbaseball.com
+Framber,Valdez,SP,22,22,134.2,11,0,52,Houston,Astros,James Click,Minute Maid Park,41168,2000,"501 Crawford Street, Houston, TX 77002",astros.com
+Tyler,Webb,RP,22,0,16.1,0,0,26,St. Louis,Cardinals,Mike Girsch,Busch Stadium,45494,2006,"700 Clark Street, St. Louis, MO 63102",cardinals.com
+Rowan,Wick,RP,22,0,23,0,8,12,Chicago,Cubs,Carter Hawkins,Wrigley Field,41649,1914,"1060 West Addison, Chicago, IL 60613-4397",cubs.com
+Justin,Bruihl,RP,21,2,18.2,0,0,7,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+J.B.,Bukauskas,RP,21,0,17.1,2,1,19,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Aaron,Civale,SP,21,21,124.1,12,0,56,Cleveland,Indians,Mike Chernoff,Progressive Field,34788,1994,"2401 Ontario Street, Cleveland, OH 44115",indians.com
+Michael,Feliz,RP,21,0,20,0,1,17,Oakland,Athletics,David Forst,RingCentral Coliseum,46847,1966,"7000 Coliseum Way, Oakland, CA 94621",athletics.com
+Justin,Garza,RP,21,0,28.2,2,1,16,Cleveland,Indians,Mike Chernoff,Progressive Field,34788,1994,"2401 Ontario Street, Cleveland, OH 44115",indians.com
+Kenta,Maeda,SP,21,21,106.1,6,0,60,Minnesota,Twins,Thad Levine,Target Field,38544,2010,"1 Twins Way, Minneapolis, MN 55403",twinsbaseball.com
+Justus,Sheffield,SP,21,15,80.1,7,0,69,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+Andrew,Wantz,RP,21,0,27.1,1,1,17,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Mitch,White,RP,21,4,46.2,1,2,28,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Carson,Fulmer,RP,20,0,25.2,0,0,20,Cincinnati,Reds,Nick Krall,Great American Ball Park,42319,2003,"100 Main Street, Cincinnati, OH 45202-4109",reds.com
+JD,Hammer,RP,20,0,20,1,0,11,Philadelphia,Phillies,Sam Fuld,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",phillies.com
+Joe,Ross,SP,20,19,108,5,0,57,Washington,Nationals,Mike Rizzo,Nationals Park,41339,2008,"1500 South Capitol Street, SE, Washington, DC 20003-1507",nationals.com
+Michael,Rucker,RP,20,0,28.1,0,2,25,Chicago,Cubs,Carter Hawkins,Wrigley Field,41649,1914,"1060 West Addison, Chicago, IL 60613-4397",cubs.com
+Yennsy,Diaz,RP,20,0,25,0,0,16,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Luke,Farrell,RP,20,1,24.2,1,0,13,Minnesota,Twins,Thad Levine,Target Field,38544,2010,"1 Twins Way, Minneapolis, MN 55403",twinsbaseball.com
+Nate,Jones,RP,20,0,19,0,1,15,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Reynaldo,Lopez,RP,20,9,57.2,4,0,27,Chicago,White Sox,Rick Hahn,Guaranteed Rate Field,40615,1991,"333 West 35th Street, Chicago, IL 60616",whitesox.com
+Pablo,Lopez,SP,20,20,102.2,5,0,37,Miami,Marlins,Kim Ng,Marlins Park,36742,2012,"501 Marlins Way, Miami, FL 33125",marlins.com
+Richard,Lovelady,RP,20,0,20.2,2,1,9,Kansas City,Royals,J. J. Picollo,Kauffman Stadium,37903,1973,"One Royal Way, Kansas City, MO 64129",royals.com
+Alek,Manoah,SP,20,20,111.2,9,0,44,Toronto,Blue Jays,Ross Atkins,Rogers Centre,49282,1989,"1 Blue Jays Way, Suite 3200, Toronto, Ontario, Canada M5V1J1",bluejays.com
+Bailey,Ober,SP,20,20,92.1,3,0,45,Minnesota,Twins,Thad Levine,Target Field,38544,2010,"1 Twins Way, Minneapolis, MN 55403",twinsbaseball.com
+Manuel,Rodriguez,RP,20,0,17.2,3,1,18,Chicago,Cubs,Carter Hawkins,Wrigley Field,41649,1914,"1060 West Addison, Chicago, IL 60613-4397",cubs.com
+Justin,Steele,RP,20,9,57,4,0,29,Chicago,Cubs,Carter Hawkins,Wrigley Field,41649,1914,"1060 West Addison, Chicago, IL 60613-4397",cubs.com
+Jose,Urquidy,SP,20,20,107,8,0,43,Houston,Astros,James Click,Minute Maid Park,41168,2000,"501 Crawford Street, Houston, TX 77002",astros.com
+Spencer,Howard,SP,19,15,49.2,0,0,45,Texas,Rangers,Chris Young,Globe Life Field,40300,2020,"1000 Ballpark Way, Arlington, TX 76011",texasrangers.com
+Justin,Lawrence,RP,19,0,16.2,1,1,16,Colorado,Rockies,Bill Schmidt,Coors Field,50445,1995,"2001 Blake Street, Denver, CO 80205-2000",Rockies.com
+Hoby,Milner,RP,19,0,21.2,0,0,15,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+Luis,Patino,SP,19,15,77.1,5,0,40,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Wily,Peralta,SP,19,18,93.2,4,0,41,Detroit,Tigers,Al Avila,Comerica Park,41083,2000,"2100 Woodward Avenue, Detroit, MI 48201",tigers.com
+Angel,Perdomo,RP,19,0,17,1,0,12,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+Sal,Romano,RP,19,0,25,0,0,20,New York,Yankees,Brian Cashman,Yankee Stadium,47309,2009,"One East 161st Street, Bronx, NY 10451",yankees.com
+Scott,Alexander,RP,18,0,15.1,0,1,6,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+John,Brebbia,RP,18,0,18.1,0,0,13,San Francisco,Giants,Scott Harris,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",SFGiants.com
+Ryan,Buchter,RP,18,0,16.1,0,1,13,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Alex,Cobb,SP,18,18,93.1,8,0,46,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Zach,Eflin,SP,18,18,105.2,4,0,52,Philadelphia,Phillies,Sam Fuld,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",phillies.com
+Junior,Fernandez,RP,18,0,20.2,1,0,13,St. Louis,Cardinals,Mike Girsch,Busch Stadium,45494,2006,"700 Clark Street, St. Louis, MO 63102",cardinals.com
+Jimmy,Herget,RP,18,0,18.2,2,2,12,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Tanner,Houck,SP,18,13,69,1,1,32,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Griffin,Jax,SP,18,14,82,4,0,62,Minnesota,Twins,Thad Levine,Target Field,38544,2010,"1 Twins Way, Minneapolis, MN 55403",twinsbaseball.com
+Ian,Krol,RP,18,0,18.2,0,0,10,Detroit,Tigers,Al Avila,Comerica Park,41083,2000,"2100 Woodward Avenue, Detroit, MI 48201",tigers.com
+Wade,LeBlanc,SP,18,9,49,0,0,24,St. Louis,Cardinals,Mike Girsch,Busch Stadium,45494,2006,"700 Clark Street, St. Louis, MO 63102",cardinals.com
+Matt,Manning,SP,18,18,85.1,4,0,59,Detroit,Tigers,Al Avila,Comerica Park,41083,2000,"2100 Woodward Avenue, Detroit, MI 48201",tigers.com
+Tylor,Megill,SP,18,18,89.2,4,0,46,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Elijah,Morgan,SP,18,18,89.1,5,0,54,Cleveland,Indians,Mike Chernoff,Progressive Field,34788,1994,"2401 Ontario Street, Cleveland, OH 44115",indians.com
+Andre,Scrubb,RP,18,0,19.2,1,2,11,Houston,Astros,James Click,Minute Maid Park,41168,2000,"501 Crawford Street, Houston, TX 77002",astros.com
+Trevor,Bauer,SP,17,17,107.2,8,0,36,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Adam,Conley,RP,17,0,19.2,0,0,5,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Jack,Flaherty,SP,17,15,78.1,9,0,35,St. Louis,Cardinals,Mike Girsch,Busch Stadium,45494,2006,"700 Clark Street, St. Louis, MO 63102",cardinals.com
+Robert,Gsellman,RP,17,1,28.2,0,0,14,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+David,Hale,RP,17,1,26.2,0,1,20,Philadelphia,Phillies,Sam Fuld,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",phillies.com
+Jean-Carlos,Mejia,SP,17,11,52.1,1,0,48,Cleveland,Indians,Mike Chernoff,Progressive Field,34788,1994,"2401 Ontario Street, Cleveland, OH 44115",indians.com
+Josh,Osich,RP,17,0,14.1,2,3,9,Cincinnati,Reds,Nick Krall,Great American Ball Park,42319,2003,"100 Main Street, Cincinnati, OH 45202-4109",reds.com
+Erasmo,Ramirez,RP,17,0,26.2,1,0,17,Detroit,Tigers,Al Avila,Comerica Park,41083,2000,"2100 Woodward Avenue, Detroit, MI 48201",tigers.com
+Patrick,Sandoval,SP,17,14,87,3,1,38,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Eric,Yardley,RP,17,0,18.2,0,1,15,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+Fernando,Abad,RP,16,0,17.2,0,0,12,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Shaun,Anderson,RP,16,0,23.1,0,0,30,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+Jake,Junis,RP,16,6,39.1,2,2,24,Kansas City,Royals,J. J. Picollo,Kauffman Stadium,37903,1973,"One Royal Way, Kansas City, MO 64129",royals.com
+Carlos,Martinez,SP,16,16,82.1,4,0,58,St. Louis,Cardinals,Mike Girsch,Busch Stadium,45494,2006,"700 Clark Street, St. Louis, MO 63102",cardinals.com
+Ryan,Sherriff,RP,16,0,14.2,0,2,11,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Matt,Shoemaker,SP,16,11,60.1,3,0,56,San Francisco,Giants,Scott Harris,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",SFGiants.com
+Shane,Bieber,SP,16,16,96.2,7,0,36,Cleveland,Indians,Mike Chernoff,Progressive Field,34788,1994,"2401 Ontario Street, Cleveland, OH 44115",indians.com
+Paul,Campbell,RP,16,1,26.2,2,0,24,Miami,Marlins,Kim Ng,Marlins Park,36742,2012,"501 Marlins Way, Miami, FL 33125",marlins.com
+Ashton,Goudeau,RP,16,1,34.1,2,0,16,Colorado,Rockies,Bill Schmidt,Coors Field,50445,1995,"2001 Blake Street, Denver, CO 80205-2000",Rockies.com
+Corey,Kluber,SP,16,16,80,5,0,37,New York,Yankees,Brian Cashman,Yankee Stadium,47309,2009,"One East 161st Street, Bronx, NY 10451",yankees.com
+Austin,Warren,RP,16,0,20.1,3,1,5,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Spenser,Watkins,SP,16,10,54.2,2,0,50,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Bryse,Wilson,SP,16,16,74,3,0,45,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Matthew,Boyd,SP,15,15,78.2,3,0,37,Detroit,Tigers,Al Avila,Comerica Park,41083,2000,"2100 Woodward Avenue, Detroit, MI 48201",tigers.com
+Tony,Gonsolin,SP,15,13,55.2,4,0,20,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+David,Hess,RP,15,1,20,2,2,24,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Daniel,Lynch,SP,15,15,68,4,0,46,Kansas City,Royals,J. J. Picollo,Kauffman Stadium,37903,1973,"One Royal Way, Kansas City, MO 64129",royals.com
+David,Peterson,SP,15,15,66.2,2,0,44,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Cody,Ponce,RP,15,2,38.1,0,0,34,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Chris,Rodriguez,RP,15,2,29.2,2,1,14,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Cody,Stashak,RP,15,0,15.2,0,0,12,Minnesota,Twins,Thad Levine,Target Field,38544,2010,"1 Twins Way, Minneapolis, MN 55403",twinsbaseball.com
+Brad,Wieck,RP,15,0,17,0,0,0,Chicago,Cubs,Carter Hawkins,Wrigley Field,41649,1914,"1060 West Addison, Chicago, IL 60613-4397",cubs.com
+Jacob,deGrom,SP,15,15,92,7,0,14,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Logan,Allen,SP,14,11,50.1,2,0,39,Cleveland,Indians,Mike Chernoff,Progressive Field,34788,1994,"2401 Ontario Street, Cleveland, OH 44115",indians.com
+Chase,Anderson,SP,14,9,48,2,0,36,Texas,Rangers,Chris Young,Globe Life Field,40300,2020,"1000 Ballpark Way, Arlington, TX 76011",texasrangers.com
+Alberto,Baldonado,RP,14,0,10.2,0,4,10,Washington,Nationals,Mike Rizzo,Nationals Park,41339,2008,"1500 South Capitol Street, SE, Washington, DC 20003-1507",nationals.com
+Griffin,Canning,SP,14,13,62.2,5,0,41,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Humberto,Castellanos,RP,14,7,45.2,2,1,26,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Randy,Dobnak,RP,14,6,50.2,1,1,44,Minnesota,Twins,Thad Levine,Target Field,38544,2010,"1 Twins Way, Minneapolis, MN 55403",twinsbaseball.com
+Scott,Effross,RP,14,0,14.2,2,1,6,Chicago,Cubs,Carter Hawkins,Wrigley Field,41649,1914,"1060 West Addison, Chicago, IL 60613-4397",cubs.com
+Tyler,Glasnow,SP,14,14,88,5,0,26,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Josiah,Gray,SP,14,13,70.2,2,0,44,Washington,Nationals,Mike Rizzo,Nationals Park,41339,2008,"1500 South Capitol Street, SE, Washington, DC 20003-1507",nationals.com
+Sean,Guenther,RP,14,0,20.1,0,0,22,Miami,Marlins,Kim Ng,Marlins Park,36742,2012,"501 Marlins Way, Miami, FL 33125",marlins.com
+Jandel,Gustave,RP,14,0,18.1,1,1,10,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+Chris,Mazza,RP,14,0,27.1,0,1,14,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Johan,Oviedo,SP,14,13,62.1,0,0,39,St. Louis,Cardinals,Mike Girsch,Busch Stadium,45494,2006,"700 Clark Street, St. Louis, MO 63102",cardinals.com
+Jefry,Rodriguez,RP,14,1,24.1,0,0,16,Washington,Nationals,Mike Rizzo,Nationals Park,41339,2008,"1500 South Capitol Street, SE, Washington, DC 20003-1507",nationals.com
+James,Sherfy,RP,14,0,15,2,0,8,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Edwin,Uceta,RP,14,1,20.1,0,0,18,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Bruce,Zimmermann,SP,14,13,64.1,4,0,37,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Jaime,Barria,SP,13,11,56.2,2,0,29,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Wes,Benjamin,RP,13,2,22.2,0,1,23,Texas,Rangers,Chris Young,Globe Life Field,40300,2020,"1000 Ballpark Way, Arlington, TX 76011",texasrangers.com
+Ryan,Brasier,RP,13,0,12,1,0,5,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Austin,Brice,RP,13,0,13.2,0,0,10,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Danny,Duffy,SP,13,12,61,4,0,19,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Jordan,Holloway,RP,13,4,36,2,0,19,Miami,Marlins,Kim Ng,Marlins Park,36742,2012,"501 Marlins Way, Miami, FL 33125",marlins.com
+Dean,Kremer,SP,13,13,53.2,0,0,46,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Yoan,Lopez,RP,13,0,12.1,0,3,10,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Nick,Ramirez,RP,13,0,20.1,1,0,15,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+Kyle,Ryan,RP,13,0,13.1,0,1,10,Chicago,Cubs,Carter Hawkins,Wrigley Field,41649,1914,"1060 West Addison, Chicago, IL 60613-4397",cubs.com
+Hector,Santiago,RP,13,1,26.1,1,0,10,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+Anthony,Swarzak,RP,13,0,12.1,0,0,13,Kansas City,Royals,J. J. Picollo,Kauffman Stadium,37903,1973,"One Royal Way, Kansas City, MO 64129",royals.com
+Luke,Weaver,SP,13,13,65.2,3,0,34,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Mike,Wright,RP,13,0,18,0,0,12,Chicago,White Sox,Rick Hahn,Guaranteed Rate Field,40615,1991,"333 West 35th Street, Chicago, IL 60616",whitesox.com
+Keone,Kela,RP,12,0,10.2,2,2,8,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+Aaron,Ashby,RP,13,4,31.2,3,1,20,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+Julian,Merryweather,RP,13,1,13,0,2,7,Toronto,Blue Jays,Ross Atkins,Rogers Centre,49282,1989,"1 Blue Jays Way, Suite 3200, Toronto, Ontario, Canada M5V1J1",bluejays.com
+Shelby,Miller,RP,13,0,12.2,0,0,13,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Jason,Adam,RP,12,0,10.2,1,0,7,Chicago,Cubs,Carter Hawkins,Wrigley Field,41649,1914,"1060 West Addison, Chicago, IL 60613-4397",cubs.com
+Carlos,Carrasco,SP,12,12,53.2,1,0,39,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Robert,Dugger,RP,12,4,25.2,0,0,24,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+Reiss,Knehr,RP,12,5,29,1,0,16,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+Adam,Kolarek,RP,12,0,9,0,0,10,Oakland,Athletics,David Forst,RingCentral Coliseum,46847,1966,"7000 Coliseum Way, Oakland, CA 94621",athletics.com
+Brooks,Kriske,RP,12,0,11.1,2,1,19,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Sam,Long,RP,12,5,40.2,2,0,27,San Francisco,Giants,Scott Harris,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",SFGiants.com
+Darren,O'Day,RP,12,0,10.2,0,0,4,New York,Yankees,Brian Cashman,Yankee Stadium,47309,2009,"One East 161st Street, Bronx, NY 10451",yankees.com
+Enoli,Paredes,RP,12,0,8.2,0,0,10,Houston,Astros,James Click,Minute Maid Park,41168,2000,"501 Crawford Street, Houston, TX 77002",astros.com
+Nate,Pearson,RP,12,1,15,1,0,8,Toronto,Blue Jays,Ross Atkins,Rogers Centre,49282,1989,"1 Blue Jays Way, Suite 3200, Toronto, Ontario, Canada M5V1J1",bluejays.com
+A.J.,Puk,RP,12,0,13.1,0,2,9,Oakland,Athletics,David Forst,RingCentral Coliseum,46847,1966,"7000 Coliseum Way, Oakland, CA 94621",athletics.com
+Cody,Reed,RP,12,0,9.2,0,0,5,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Sean,Reid-Foley,RP,12,0,20.2,2,0,15,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+David,Robertson,RP,12,1,12,0,2,7,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Hyun-jong,Yang,RP,12,4,35.1,0,0,24,Texas,Rangers,Chris Young,Globe Life Field,40300,2020,"1000 Ballpark Way, Arlington, TX 76011",texasrangers.com
+Justin,Dunn,SP,11,11,50.1,1,0,21,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+Seth,Elledge,RP,11,0,11.2,0,0,6,St. Louis,Cardinals,Mike Girsch,Busch Stadium,45494,2006,"700 Clark Street, St. Louis, MO 63102",cardinals.com
+Jason,Foley,RP,11,0,10.1,0,0,3,Detroit,Tigers,Al Avila,Comerica Park,41083,2000,"2100 Woodward Avenue, Detroit, MI 48201",tigers.com
+Edgar,Garcia,RP,11,0,14.2,0,1,22,Minnesota,Twins,Thad Levine,Target Field,38544,2010,"1 Twins Way, Minneapolis, MN 55403",twinsbaseball.com
+Reymin,Guduan,RP,11,0,14.1,0,1,11,Oakland,Athletics,David Forst,RingCentral Coliseum,46847,1966,"7000 Coliseum Way, Oakland, CA 94621",athletics.com
+Elieser,Hernandez,SP,11,10,51.2,1,0,26,Miami,Marlins,Kim Ng,Marlins Park,36742,2012,"501 Marlins Way, Miami, FL 33125",marlins.com
+Anthony,Kay,RP,11,5,33.2,1,0,22,Toronto,Blue Jays,Ross Atkins,Rogers Centre,49282,1989,"1 Blue Jays Way, Suite 3200, Toronto, Ontario, Canada M5V1J1",bluejays.com
+Gabe,Klobosits,RP,11,0,11.1,0,0,8,Washington,Nationals,Mike Rizzo,Nationals Park,41339,2008,"1500 South Capitol Street, SE, Washington, DC 20003-1507",nationals.com
+Joey,Lucchesi,SP,11,8,38.1,1,0,20,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Wyatt,Mills,RP,11,0,12.2,0,0,14,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+Nick,Nelson,RP,11,2,14.1,0,1,16,New York,Yankees,Brian Cashman,Yankee Stadium,47309,2009,"One East 161st Street, Bronx, NY 10451",yankees.com
+David,Phelps,RP,11,1,10.1,0,0,2,Toronto,Blue Jays,Ross Atkins,Rogers Centre,49282,1989,"1 Blue Jays Way, Suite 3200, Toronto, Ontario, Canada M5V1J1",bluejays.com
+JoJo,Romero,RP,11,0,9,0,0,8,Philadelphia,Phillies,Sam Fuld,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",phillies.com
+Alex,Wells,SP,11,8,42.2,2,0,32,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Taylor,Williams,RP,11,0,11.2,0,0,7,Miami,Marlins,Kim Ng,Marlins Park,36742,2012,"501 Marlins Way, Miami, FL 33125",marlins.com
+Kohei,Arihara,SP,10,10,40.2,2,0,31,Texas,Rangers,Chris Young,Globe Life Field,40300,2020,"1000 Ballpark Way, Arlington, TX 76011",texasrangers.com
+Travis,Bergen,RP,10,1,10.2,2,1,2,Toronto,Blue Jays,Ross Atkins,Rogers Centre,49282,1989,"1 Blue Jays Way, Suite 3200, Toronto, Ontario, Canada M5V1J1",bluejays.com
+Kervin,Castro,RP,10,0,13.1,1,0,1,San Francisco,Giants,Scott Harris,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",SFGiants.com
+Kent,Emanuel,RP,10,0,17.2,1,0,5,Houston,Astros,James Click,Minute Maid Park,41168,2000,"501 Crawford Street, Houston, TX 77002",astros.com
+Jordan,Hicks,RP,10,0,10,0,0,6,St. Louis,Cardinals,Mike Girsch,Busch Stadium,45494,2006,"700 Clark Street, St. Louis, MO 63102",cardinals.com
+Jake,Jewell,RP,10,0,10,0,0,12,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Zac,Lowther,SP,10,6,29.2,1,0,23,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Kyle,Nelson,RP,10,0,9.2,0,0,10,Cleveland,Indians,Mike Chernoff,Progressive Field,34788,1994,"2401 Ontario Street, Cleveland, OH 44115",indians.com
+Sean,Nolin,SP,10,5,26.2,0,0,13,Washington,Nationals,Mike Rizzo,Nationals Park,41339,2008,"1500 South Capitol Street, SE, Washington, DC 20003-1507",nationals.com
+Jake,Reed,RP,10,1,10,0,1,6,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Adrian,Sampson,RP,10,5,35.1,1,0,15,Chicago,Cubs,Carter Hawkins,Wrigley Field,41649,1914,"1060 West Addison, Chicago, IL 60613-4397",cubs.com
+Trevor,Cahill,SP,9,8,37,1,0,29,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Tyler,Gilbert,SP,9,6,40,2,0,17,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+James,Hoyt,RP,9,0,8,0,0,10,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Spencer,Turnbull,SP,9,9,50,4,0,18,Detroit,Tigers,Al Avila,Comerica Park,41083,2000,"2100 Woodward Avenue, Detroit, MI 48201",tigers.com
+Domingo,Acevedo,RP,10,0,11,0,0,4,Oakland,Athletics,David Forst,RingCentral Coliseum,46847,1966,"7000 Coliseum Way, Oakland, CA 94621",athletics.com
+Kyle,Barraclough,RP,10,0,13,2,0,8,Minnesota,Twins,Thad Levine,Target Field,38544,2010,"1 Twins Way, Minneapolis, MN 55403",twinsbaseball.com
+Eric,Hanhold,RP,10,0,10.1,0,1,9,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Miguel,Aguilar,RP,9,0,7,1,0,6,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Drew,Anderson,RP,9,1,22,1,0,8,Texas,Rangers,Chris Young,Globe Life Field,40300,2020,"1000 Ballpark Way, Arlington, TX 76011",texasrangers.com
+Charlie,Barnes,SP,9,8,38,0,0,27,Minnesota,Twins,Thad Levine,Target Field,38544,2010,"1 Twins Way, Minneapolis, MN 55403",twinsbaseball.com
+Paul,Blackburn,SP,9,9,38.1,1,0,26,Oakland,Athletics,David Forst,RingCentral Coliseum,46847,1966,"7000 Coliseum Way, Oakland, CA 94621",athletics.com
+Chase,De Jong,SP,9,9,43.2,1,0,28,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Jose,De Leon,RP,9,2,18.1,0,0,17,Cincinnati,Reds,Nick Krall,Great American Ball Park,42319,2003,"100 Main Street, Cincinnati, OH 45202-4109",reds.com
+Dietrich,Enns,RP,9,0,22.1,2,2,8,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Tom,Eshelman,SP,9,6,27.2,0,0,22,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Hunter,Harvey,RP,9,0,8.2,0,0,4,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Drew,Hutchison,RP,9,2,21.1,3,1,11,Detroit,Tigers,Al Avila,Comerica Park,41083,2000,"2100 Woodward Avenue, Detroit, MI 48201",tigers.com
+Jackson,Kowar,SP,9,8,30.1,0,0,38,Kansas City,Royals,J. J. Picollo,Kauffman Stadium,37903,1973,"One Royal Way, Kansas City, MO 64129",royals.com
+Max,Kranick,SP,9,9,38.2,2,0,28,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Derek,Law,RP,9,0,15,0,0,7,Minnesota,Twins,Thad Levine,Target Field,38544,2010,"1 Twins Way, Minneapolis, MN 55403",twinsbaseball.com
+Miles,Mikolas,SP,9,9,44.2,2,0,24,St. Louis,Cardinals,Mike Girsch,Busch Stadium,45494,2006,"700 Clark Street, St. Louis, MO 63102",cardinals.com
+Connor,Overton,SP,9,3,15.1,0,0,8,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Chris,Sale,SP,9,9,42.2,5,0,19,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Aaron,Sanchez,SP,9,7,35.1,1,0,12,San Francisco,Giants,Scott Harris,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",SFGiants.com
+Brandon,Waddell,RP,9,0,9.1,0,0,8,St. Louis,Cardinals,Mike Girsch,Busch Stadium,45494,2006,"700 Clark Street, St. Louis, MO 63102",cardinals.com
+Jeremy,Beasley,RP,8,0,9.1,0,0,9,Toronto,Blue Jays,Ross Atkins,Rogers Centre,49282,1989,"1 Blue Jays Way, Suite 3200, Toronto, Ontario, Canada M5V1J1",bluejays.com
+Chris,Devenski,RP,8,0,7.1,1,3,7,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Braxton,Garrett,SP,8,7,34,1,0,20,Miami,Marlins,Kim Ng,Marlins Park,36742,2012,"501 Marlins Way, Miami, FL 33125",marlins.com
+Will,Harris,RP,8,0,6,0,0,6,Washington,Nationals,Mike Rizzo,Nationals Park,41339,2008,"1500 South Capitol Street, SE, Washington, DC 20003-1507",nationals.com
+Josh,Lindblom,RP,8,0,16.2,0,0,18,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+Conner,Menez,RP,8,1,14,1,0,10,San Francisco,Giants,Scott Harris,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",SFGiants.com
+Sam,Moll,RP,8,0,10.1,0,0,4,Oakland,Athletics,David Forst,RingCentral Coliseum,46847,1966,"7000 Coliseum Way, Oakland, CA 94621",athletics.com
+Nick,Neidert,SP,8,7,35.2,1,0,18,Miami,Marlins,Kim Ng,Marlins Park,36742,2012,"501 Marlins Way, Miami, FL 33125",marlins.com
+Oliver,Ortega,RP,8,0,9.1,1,0,5,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Ben,Rowen,RP,8,0,11.1,0,0,8,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Cory,Abbott,RP,7,1,17.1,0,0,15,Chicago,Cubs,Carter Hawkins,Wrigley Field,41649,1914,"1060 West Addison, Chicago, IL 60613-4397",cubs.com
+Steven,Brault,SP,7,7,27.2,0,0,18,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Zack,Burdi,RP,7,0,10,0,0,7,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Edward,Cabrera,SP,7,7,26.1,0,0,20,Miami,Marlins,Kim Ng,Marlins Park,36742,2012,"501 Marlins Way, Miami, FL 33125",marlins.com
+Kyle,Cody,RP,7,0,11.1,0,0,11,Texas,Rangers,Chris Young,Globe Life Field,40300,2020,"1000 Ballpark Way, Arlington, TX 76011",texasrangers.com
+Carl,Edwards,RP,7,0,5.2,0,1,7,Toronto,Blue Jays,Ross Atkins,Rogers Centre,49282,1989,"1 Blue Jays Way, Suite 3200, Toronto, Ontario, Canada M5V1J1",bluejays.com
+Geoff,Hartlieb,RP,7,0,9,0,0,11,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Dusten,Knight,RP,7,0,8.2,0,0,10,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Ryan,Meisinger,RP,7,0,7.1,0,0,10,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Packy,Naughton,SP,7,5,22.2,0,0,18,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Cody,Poteet,SP,7,7,30.2,2,0,17,Miami,Marlins,Kim Ng,Marlins Park,36742,2012,"501 Marlins Way, Miami, FL 33125",marlins.com
+Cristopher,Sanchez,RP,7,1,12.2,1,0,8,Philadelphia,Phillies,Sam Fuld,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",phillies.com
+Antonio,Santos,RP,7,0,11.1,0,0,7,Colorado,Rockies,Bill Schmidt,Coors Field,50445,1995,"2001 Blake Street, Denver, CO 80205-2000",Rockies.com
+Kirby,Snead,RP,7,0,7.2,0,0,3,Toronto,Blue Jays,Ross Atkins,Rogers Centre,49282,1989,"1 Blue Jays Way, Suite 3200, Toronto, Ontario, Canada M5V1J1",bluejays.com
+Gabe,Speier,RP,7,0,7.2,0,0,3,Kansas City,Royals,J. J. Picollo,Kauffman Stadium,37903,1973,"One Royal Way, Kansas City, MO 64129",royals.com
+Blake,Taylor,P,7,0,5.1,0,2,5,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Konner,Wade,RP,7,0,12.1,0,0,16,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Jordan,Weems,RP,7,0,5.2,0,1,10,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Evan,Phillips,RP,8,0,13.1,1,1,6,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Chris,Ellis,SP,7,6,29.1,1,0,7,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Ljay,Newsome,RP,7,1,14.2,1,0,14,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+Jake,Petricka,RP,7,0,6,0,1,10,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Ramon,Rosso,RP,7,0,8,0,0,6,Philadelphia,Phillies,Sam Fuld,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",phillies.com
+Nick,Vincent,RP,7,0,12.2,1,0,1,Minnesota,Twins,Thad Levine,Target Field,38544,2010,"1 Twins Way, Minneapolis, MN 55403",twinsbaseball.com
+Nick,Anderson,RP,6,0,6,0,1,3,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Chris,Archer,SP,6,5,19.1,1,0,11,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Beau,Burrows,RP,6,1,11,0,0,18,Minnesota,Twins,Thad Levine,Target Field,38544,2010,"1 Twins Way, Minneapolis, MN 55403",twinsbaseball.com
+Daniel,Camarena,RP,6,0,9.1,0,0,12,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+A.J.,Cole,RP,6,0,8,0,2,1,Toronto,Blue Jays,Ross Atkins,Rogers Centre,49282,1989,"1 Blue Jays Way, Suite 3200, Toronto, Ontario, Canada M5V1J1",bluejays.com
+Julian,Fernandez,RP,6,0,6.2,0,0,8,Colorado,Rockies,Bill Schmidt,Coors Field,50445,1995,"2001 Blake Street, Denver, CO 80205-2000",Rockies.com
+Jace,Fry,RP,6,0,6.2,0,0,8,Chicago,White Sox,Rick Hahn,Guaranteed Rate Field,40615,1991,"333 West 35th Street, Chicago, IL 60616",whitesox.com
+Luis,Gil,SP,6,6,29.1,1,0,11,New York,Yankees,Brian Cashman,Yankee Stadium,47309,2009,"One East 161st Street, Bronx, NY 10451",yankees.com
+Anthony,Gose,RP,6,0,6.2,0,0,1,Cleveland,Indians,Mike Chernoff,Progressive Field,34788,1994,"2401 Ontario Street, Cleveland, OH 44115",indians.com
+Javy,Guerra,RP,6,0,6,0,0,13,Washington,Nationals,Mike Rizzo,Nationals Park,41339,2008,"1500 South Capitol Street, SE, Washington, DC 20003-1507",nationals.com
+Joey,Krehbiel,RP,6,0,8.1,0,0,4,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Sandy,Leon,C,6,0,6,0,0,5,Miami,Marlins,Kim Ng,Marlins Park,36742,2012,"501 Marlins Way, Miami, FL 33125",marlins.com
+Mauricio,Llovera,RP,6,0,6.2,1,0,7,Philadelphia,Phillies,Sam Fuld,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",phillies.com
+Luis,Madero,RP,6,0,12,0,0,12,Miami,Marlins,Kim Ng,Marlins Park,36742,2012,"501 Marlins Way, Miami, FL 33125",marlins.com
+Tommy,Milone,RP,6,1,14,1,1,10,Toronto,Blue Jays,Ross Atkins,Rogers Centre,49282,1989,"1 Blue Jays Way, Suite 3200, Toronto, Ontario, Canada M5V1J1",bluejays.com
+Darien,Nunez,RP,6,1,7.2,0,1,8,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Glenn,Otto,SP,6,6,23.1,0,0,24,Texas,Rangers,Chris Young,Globe Life Field,40300,2020,"1000 Ballpark Way, Arlington, TX 76011",texasrangers.com
+Dillon,Peters,SP,6,6,26.2,1,0,12,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Austin,Pruitt,RP,6,0,7.1,0,0,3,Miami,Marlins,Kim Ng,Marlins Park,36742,2012,"501 Marlins Way, Miami, FL 33125",marlins.com
+Josh,Rogers,SP,6,6,35.2,2,0,13,Washington,Nationals,Mike Rizzo,Nationals Park,41339,2008,"1500 South Capitol Street, SE, Washington, DC 20003-1507",nationals.com
+Peter,Solomon,RP,6,0,14,1,0,2,Houston,Astros,James Click,Minute Maid Park,41168,2000,"501 Crawford Street, Houston, TX 77002",astros.com
+Matt,Strahm,RP,6,1,6.2,0,1,6,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+Daniel,Castano,SP,5,4,20.1,0,0,12,Miami,Marlins,Kim Ng,Marlins Park,36742,2012,"501 Marlins Way, Miami, FL 33125",marlins.com
+Miguel,Del Pozo,RP,5,0,5.1,0,0,2,Detroit,Tigers,Al Avila,Comerica Park,41083,2000,"2100 Woodward Avenue, Detroit, MI 48201",tigers.com
+Jerad,Eickhoff,SP,5,4,19.2,0,0,24,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Neftali,Feliz,RP,5,0,4,0,1,4,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Jesse,Hahn,RP,5,0,3.1,0,3,5,Kansas City,Royals,J. J. Picollo,Kauffman Stadium,37903,1973,"One Royal Way, Kansas City, MO 64129",royals.com
+Daulton,Jefferies,RP,5,1,15,1,0,6,Oakland,Athletics,David Forst,RingCentral Coliseum,46847,1966,"7000 Coliseum Way, Oakland, CA 94621",athletics.com
+Scott,Kazmir,SP,5,4,11.1,0,0,9,San Francisco,Giants,Scott Harris,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",SFGiants.com
+Nick,Margevicius,SP,5,3,12,0,0,16,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+Corbin,Martin,SP,5,3,16,0,0,19,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Dustin,May,SP,5,5,23,1,0,8,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Jovani,Moran,RP,5,0,8,0,0,7,Minnesota,Twins,Thad Levine,Target Field,38544,2010,"1 Twins Way, Minneapolis, MN 55403",twinsbaseball.com
+Aaron,Northcraft,RP,5,0,8,1,0,2,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+Oliver,Perez,RP,5,0,3.2,0,0,1,Cleveland,Indians,Mike Chernoff,Progressive Field,34788,1994,"2401 Ontario Street, Cleveland, OH 44115",indians.com
+Joe,Ryan,SP,5,5,26.2,2,0,12,Minnesota,Twins,Thad Levine,Target Field,38544,2010,"1 Twins Way, Minneapolis, MN 55403",twinsbaseball.com
+Mac,Sceroler,RP,5,0,7.2,0,0,15,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Brandyn,Sittinger,RP,5,0,4.2,0,2,4,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Eric,Sogard,2B,5,0,4.1,0,0,3,Chicago,Cubs,Carter Hawkins,Wrigley Field,41649,1914,"1060 West Addison, Chicago, IL 60613-4397",cubs.com
+Stephen,Strasburg,SP,5,5,21.2,1,0,12,Washington,Nationals,Mike Rizzo,Nationals Park,41339,2008,"1500 South Capitol Street, SE, Washington, DC 20003-1507",nationals.com
+Ty,Tice,RP,5,0,8,0,0,4,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Nick,Tropeano,RP,5,0,8,1,0,3,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Kyle,Tyler,RP,5,0,12.1,0,0,4,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Hunter,Wood,RP,5,0,5,0,0,2,Texas,Rangers,Chris Young,Globe Life Field,40300,2020,"1000 Ballpark Way, Arlington, TX 76011",texasrangers.com
+Andrew,Albers,SP,5,3,19,1,0,16,Minnesota,Twins,Thad Levine,Target Field,38544,2010,"1 Twins Way, Minneapolis, MN 55403",twinsbaseball.com
+A.J.,Alexy,SP,5,4,23,3,0,12,Texas,Rangers,Chris Young,Globe Life Field,40300,2020,"1000 Ballpark Way, Arlington, TX 76011",texasrangers.com
+Dylan,Coleman,RP,5,0,6.1,0,0,1,Kansas City,Royals,J. J. Picollo,Kauffman Stadium,37903,1973,"One Royal Way, Kansas City, MO 64129",royals.com
+Reid,Detmers,SP,5,5,20.2,1,0,17,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Josh,James,RP,5,0,5,0,0,3,Houston,Astros,James Click,Minute Maid Park,41168,2000,"501 Crawford Street, Houston, TX 77002",astros.com
+Humberto,Mejia,SP,5,5,22.1,0,0,19,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+James,Norwood,RP,5,0,5,0,0,0,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+Stephen,Ridings,RP,5,0,5,0,0,2,New York,Yankees,Brian Cashman,Yankee Stadium,47309,2009,"One East 161st Street, Bronx, NY 10451",yankees.com
+Jhon,Romero,RP,5,0,4,0,0,2,Washington,Nationals,Mike Rizzo,Nationals Park,41339,2008,"1500 South Capitol Street, SE, Washington, DC 20003-1507",nationals.com
+Shea,Spitzbarth,RP,5,0,5,0,0,2,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Lewis,Thorpe,SP,5,4,15.1,0,0,11,Minnesota,Twins,Thad Levine,Target Field,38544,2010,"1 Twins Way, Minneapolis, MN 55403",twinsbaseball.com
+T.J.,Zeuch,SP,5,3,15,0,0,16,St. Louis,Cardinals,Mike Girsch,Busch Stadium,45494,2006,"700 Clark Street, St. Louis, MO 63102",cardinals.com
+Willians,Astudillo,3B,4,0,4,0,0,1,Minnesota,Twins,Thad Levine,Target Field,38544,2010,"1 Twins Way, Minneapolis, MN 55403",twinsbaseball.com
+Luis,Avilan,RP,4,0,5,0,0,7,Washington,Nationals,Mike Rizzo,Nationals Park,41339,2008,"1500 South Capitol Street, SE, Washington, DC 20003-1507",nationals.com
+Pedro,Baez,RP,4,0,4.1,0,0,1,Houston,Astros,James Click,Minute Maid Park,41168,2000,"501 Crawford Street, Houston, TX 77002",astros.com
+Alec,Bettinger,RP,4,1,10,0,0,15,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+Alex,Blandino,1B,4,0,3.2,0,0,5,Cincinnati,Reds,Nick Krall,Great American Ball Park,42319,2003,"100 Main Street, Cincinnati, OH 45202-4109",reds.com
+Matt,Bush,RP,4,0,4,0,0,3,Texas,Rangers,Chris Young,Globe Life Field,40300,2020,"1000 Ballpark Way, Arlington, TX 76011",texasrangers.com
+Drew,Carlton,RP,4,0,3.2,0,0,2,Detroit,Tigers,Al Avila,Comerica Park,41083,2000,"2100 Woodward Avenue, Detroit, MI 48201",tigers.com
+Jon,Duplantier,SP,4,4,13,0,0,19,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Aaron,Fletcher,RP,4,0,3.2,0,0,5,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+Seth,Frankoff,SP,4,3,14.2,0,0,15,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Javy,Guerra,RP,4,0,3.2,0,0,2,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+Tommy,Hunter,RP,4,1,8,0,0,0,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+D.J.,Johnson,RP,4,0,4.1,0,0,1,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Janson,Junk,SP,4,4,16.1,0,0,11,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Jimmy,Lambert,SP,4,3,13,1,0,9,Chicago,White Sox,Rick Hahn,Guaranteed Rate Field,40615,1991,"333 West 35th Street, Chicago, IL 60616",whitesox.com
+Jose,Marte,RP,4,0,4,0,1,5,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Isaac,Mattson,RP,4,0,4.1,0,0,3,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Dauri,Moreta,RP,4,0,3.2,0,0,1,Cincinnati,Reds,Nick Krall,Great American Ball Park,42319,2003,"100 Main Street, Cincinnati, OH 45202-4109",reds.com
+Shawn,Morimando,RP,4,0,10.1,0,0,11,Miami,Marlins,Kim Ng,Marlins Park,36742,2012,"501 Marlins Way, Miami, FL 33125",marlins.com
+Reyes,Moronta,RP,4,0,4,0,0,1,San Francisco,Giants,Scott Harris,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",SFGiants.com
+Jake,Newberry,RP,4,0,4.1,0,0,8,Kansas City,Royals,J. J. Picollo,Kauffman Stadium,37903,1973,"One Royal Way, Kansas City, MO 64129",royals.com
+Francisco,Perez,RP,4,0,6.2,0,0,3,Cleveland,Indians,Mike Chernoff,Progressive Field,34788,1994,"2401 Ontario Street, Cleveland, OH 44115",indians.com
+Nivaldo,Rodriguez,RP,4,0,7.1,0,0,2,Detroit,Tigers,Al Avila,Comerica Park,41083,2000,"2100 Woodward Avenue, Detroit, MI 48201",tigers.com
+Zac,Rosscup,RP,4,0,3,0,0,1,Colorado,Rockies,Bill Schmidt,Coors Field,50445,1995,"2001 Blake Street, Denver, CO 80205-2000",Rockies.com
+Luis,Severino,RP,4,0,6,1,0,0,New York,Yankees,Brian Cashman,Yankee Stadium,47309,2009,"One East 161st Street, Bronx, NY 10451",yankees.com
+Nick,Snyder,RP,4,0,3.2,0,0,2,Texas,Rangers,Chris Young,Globe Life Field,40300,2020,"1000 Ballpark Way, Arlington, TX 76011",texasrangers.com
+Kohl,Stewart,SP,4,3,13.2,1,0,12,Chicago,Cubs,Carter Hawkins,Wrigley Field,41649,1914,"1060 West Addison, Chicago, IL 60613-4397",cubs.com
+Justin,Topa,RP,4,0,3.1,0,0,11,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+Ryan,Weber,RP,4,0,9.2,0,0,13,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+Miguel,Yajure,SP,4,3,15,0,0,14,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Daniel,Zamora,RP,4,0,4.1,2,0,4,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+Ronald,Bolanos,RP,3,0,6.1,0,0,1,Kansas City,Royals,J. J. Picollo,Kauffman Stadium,37903,1973,"One Royal Way, Kansas City, MO 64129",royals.com
+Ian,Gibaut,RP,3,0,6.2,0,0,2,Minnesota,Twins,Thad Levine,Target Field,38544,2010,"1 Twins Way, Minneapolis, MN 55403",twinsbaseball.com
+Seth,Martinez,RP,3,0,3,0,0,5,Houston,Astros,James Click,Minute Maid Park,41168,2000,"501 Crawford Street, Houston, TX 77002",astros.com
+John,Nogowski,1B,3,0,3,0,0,5,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Gregory,Santos,RP,3,0,2,0,0,6,San Francisco,Giants,Scott Harris,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",SFGiants.com
+Patrick,Weigel,RP,3,0,4,0,0,2,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+Adonis,Medina,RP,4,1,7.2,0,0,3,Philadelphia,Phillies,Sam Fuld,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",phillies.com
+AJ,Ramos,RP,4,0,4.2,0,0,0,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Ruben,Alaniz,RP,3,0,2.2,0,0,1,Cincinnati,Reds,Nick Krall,Great American Ball Park,42319,2003,"100 Main Street, Cincinnati, OH 45202-4109",reds.com
+Manny,Barreda,RP,3,0,2.2,1,0,4,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Shane,Baz,SP,3,3,13.1,2,0,3,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Andrew,Bellatti,RP,3,0,3.1,0,0,5,Miami,Marlins,Kim Ng,Marlins Park,36742,2012,"501 Marlins Way, Miami, FL 33125",marlins.com
+Scott,Blewett,RP,3,0,5,0,0,1,Kansas City,Royals,J. J. Picollo,Kauffman Stadium,37903,1973,"One Royal Way, Kansas City, MO 64129",royals.com
+Harold,Castro,SS,3,0,2.2,0,0,0,Detroit,Tigers,Al Avila,Comerica Park,41083,2000,"2100 Woodward Avenue, Detroit, MI 48201",tigers.com
+Jhonathan,Diaz,SP,3,2,13,1,0,6,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Luis,Frias,RP,3,0,3.1,0,0,1,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Stephen,Gonsalves,RP,3,0,4.1,0,0,2,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Thomas,Hatch,SP,3,2,9.1,0,0,7,Toronto,Blue Jays,Ross Atkins,Rogers Centre,49282,1989,"1 Blue Jays Way, Suite 3200, Toronto, Ontario, Canada M5V1J1",bluejays.com
+Jon,Heasley,SP,3,3,14.2,1,0,8,Kansas City,Royals,J. J. Picollo,Kauffman Stadium,37903,1973,"One Royal Way, Kansas City, MO 64129",royals.com
+Brent,Honeywell,SP,3,2,4.1,0,0,4,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Andre,Jackson,RP,3,0,11.2,0,1,3,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Kyle,Lobstein,RP,3,0,1.1,0,0,3,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+Corey,Oswalt,RP,3,1,10.1,1,0,4,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Elvis,Peguero,RP,3,0,2.1,0,0,7,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Robert,Stock,SP,3,3,9,0,0,8,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Asdrubal,Cabrera,1B,2,0,1.1,0,0,0,Cincinnati,Reds,Nick Krall,Great American Ball Park,42319,2003,"100 Main Street, Cincinnati, OH 45202-4109",reds.com
+Hans,Crouse,SP,2,2,7,0,0,4,Philadelphia,Phillies,Sam Fuld,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",phillies.com
+Charlie,Culberson,3B,2,0,2,0,0,0,Texas,Rangers,Chris Young,Globe Life Field,40300,2020,"1000 Ballpark Way, Arlington, TX 76011",texasrangers.com
+Brandon,Dickson,RP,2,0,2,0,0,3,St. Louis,Cardinals,Mike Girsch,Busch Stadium,45494,2006,"700 Clark Street, St. Louis, MO 63102",cardinals.com
+Wilmer,Difo,2B,2,0,2,0,0,8,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Ryan,Feltner,SP,2,2,6.1,0,0,8,Colorado,Rockies,Bill Schmidt,Coors Field,50445,1995,"2001 Blake Street, Denver, CO 80205-2000",Rockies.com
+Mike,Fiers,SP,2,2,9.1,0,0,8,Oakland,Athletics,David Forst,RingCentral Coliseum,46847,1966,"7000 Coliseum Way, Oakland, CA 94621",athletics.com
+Rony,Garcia,RP,2,0,3.2,0,1,1,Detroit,Tigers,Al Avila,Comerica Park,41083,2000,"2100 Woodward Avenue, Detroit, MI 48201",tigers.com
+Deivi,Garcia,SP,2,2,8.1,0,0,7,New York,Yankees,Brian Cashman,Yankee Stadium,47309,2009,"One East 161st Street, Bronx, NY 10451",yankees.com
+Jorge,Guzman,RP,2,0,1.2,0,0,6,Miami,Marlins,Kim Ng,Marlins Park,36742,2012,"501 Marlins Way, Miami, FL 33125",marlins.com
+Trevor,Hildenberger,RP,2,0,2.1,0,0,4,San Francisco,Giants,Scott Harris,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",SFGiants.com
+Dakota,Hudson,SP,2,1,8.2,1,0,2,St. Louis,Cardinals,Mike Girsch,Busch Stadium,45494,2006,"700 Clark Street, St. Louis, MO 63102",cardinals.com
+Brody,Koerner,RP,2,0,3,0,0,1,New York,Yankees,Brian Cashman,Yankee Stadium,47309,2009,"One East 161st Street, Bronx, NY 10451",yankees.com
+Brady,Lail,RP,2,0,2,0,0,3,Philadelphia,Phillies,Sam Fuld,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",phillies.com
+Alex,McRae,RP,2,0,2,0,0,1,Chicago,White Sox,Rick Hahn,Guaranteed Rate Field,40615,1991,"333 West 35th Street, Chicago, IL 60616",whitesox.com
+Francisco,Mejia,C,2,0,2,0,0,6,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Keury,Mella,RP,2,0,1.2,0,0,6,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Bryan,Mitchell,RP,2,0,4,0,0,2,Miami,Marlins,Kim Ng,Marlins Park,36742,2012,"501 Marlins Way, Miami, FL 33125",marlins.com
+Adrian,Morejon,SP,2,2,4.2,0,0,2,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+Brad,Peacock,SP,2,1,5.1,0,0,9,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Felix,Pena,RP,2,0,1.2,0,0,7,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Jace,Peterson,2B,2,0,2,0,0,2,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+Angel,Rondon,RP,2,0,2,0,0,0,St. Louis,Cardinals,Mike Girsch,Busch Stadium,45494,2006,"700 Clark Street, St. Louis, MO 63102",cardinals.com
+Clarke,Schmidt,SP,2,1,6.1,0,0,8,New York,Yankees,Brian Cashman,Yankee Stadium,47309,2009,"One East 161st Street, Bronx, NY 10451",yankees.com
+Max,Schrock,LF,2,0,1.2,0,0,0,Cincinnati,Reds,Nick Krall,Great American Ball Park,42319,2003,"100 Main Street, Cincinnati, OH 45202-4109",reds.com
+Ronald,Torreyes,3B,2,0,2.2,0,0,4,Philadelphia,Phillies,Sam Fuld,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",phillies.com
+Jordan,Zimmermann,RP,2,0,5.2,0,0,5,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+Dan,Altavilla,RP,2,0,1.1,0,0,1,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+Eduard,Bazardo,RP,2,0,3,0,0,0,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Zack,Godley,RP,2,1,3.1,0,1,7,Cleveland,Indians,Mike Chernoff,Progressive Field,34788,1994,"2401 Ontario Street, Cleveland, OH 44115",indians.com
+Preston,Guilmet,RP,2,0,2,0,0,1,Miami,Marlins,Kim Ng,Marlins Park,36742,2012,"501 Marlins Way, Miami, FL 33125",marlins.com
+Peter,Lambert,SP,2,2,5.2,0,0,7,Colorado,Rockies,Bill Schmidt,Coors Field,50445,1995,"2001 Blake Street, Denver, CO 80205-2000",Rockies.com
+Darren,McCaughan,SP,2,1,9,0,0,8,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+Hernan,Perez,2B,2,0,2,0,0,0,Washington,Nationals,Mike Rizzo,Nationals Park,41339,2008,"1500 South Capitol Street, SE, Washington, DC 20003-1507",nationals.com
+Reiver,Sanmartin,SP,2,2,11.2,2,0,2,Cincinnati,Reds,Nick Krall,Great American Ball Park,42319,2003,"100 Main Street, Cincinnati, OH 45202-4109",reds.com
+Pedro,Strop,RP,2,0,2,1,0,0,Chicago,Cubs,Carter Hawkins,Wrigley Field,41649,1914,"1060 West Addison, Chicago, IL 60613-4397",cubs.com
+Pat,Valaika,2B,2,0,1.1,0,0,0,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Andrew,Vasquez,RP,2,0,1.2,0,1,1,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Jordan,Yamamoto,RP,2,1,6.2,1,0,6,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Nick,Allgeyer,RP,1,0,1,0,0,0,Toronto,Blue Jays,Ross Atkins,Rogers Centre,49282,1989,"1 Blue Jays Way, Suite 3200, Toronto, Ontario, Canada M5V1J1",bluejays.com
+Tanner,Anderson,RP,1,0,5,0,0,2,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Bryan,Baker,RP,1,0,1,0,0,0,Toronto,Blue Jays,Ross Atkins,Rogers Centre,49282,1989,"1 Blue Jays Way, Suite 3200, Toronto, Ontario, Canada M5V1J1",bluejays.com
+Tyler,Beede,RP,1,0,1,0,0,3,San Francisco,Giants,Scott Harris,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",SFGiants.com
+Anthony,Bemboom,C,1,0,1,0,0,2,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Akeem,Bostick,RP,1,0,1,0,0,0,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Brandon,Brennan,RP,1,0,3,0,0,0,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Jake,Cronenworth,2B,1,0,0.2,0,0,0,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+Matt,Duffy,3B,1,0,0.1,0,0,0,Chicago,Cubs,Carter Hawkins,Wrigley Field,41649,1914,"1060 West Addison, Chicago, IL 60613-4397",cubs.com
+Adam,Eaton,RF,1,0,1,0,0,0,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Raynel,Espinal,RP,1,0,2,0,0,2,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Josh,Fuentes,3B,1,0,1,0,0,0,Colorado,Rockies,Bill Schmidt,Coors Field,50445,1995,"2001 Blake Street, Denver, CO 80205-2000",Rockies.com
+Luis,Guillorme,3B,1,0,1,0,0,2,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Tyler,Ivey,SP,1,1,4.2,0,0,4,Houston,Astros,James Click,Minute Maid Park,41168,2000,"501 Crawford Street, Houston, TX 77002",astros.com
+Damon,Jones,RP,1,0,0.1,0,0,0,Philadelphia,Phillies,Sam Fuld,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",phillies.com
+Mike,Kickham,RP,1,0,2,0,0,3,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Andrew,Knapp,C,1,0,0.1,0,0,0,Philadelphia,Phillies,Sam Fuld,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",phillies.com
+Jake,Latz,SP,1,1,4.2,0,0,3,Texas,Rangers,Chris Young,Globe Life Field,40300,2020,"1000 Ballpark Way, Arlington, TX 76011",texasrangers.com
+Luke,Maile,C,1,0,1,0,0,1,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+David,Paulino,P,1,0,2,0,0,2,Philadelphia,Phillies,Sam Fuld,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",phillies.com
+James,Paxton,SP,1,1,1.1,0,0,1,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+David,Peralta,LF,1,0,1,0,0,3,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Kevin,Plawecki,C,1,0,1,0,0,0,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Kevin,Quackenbush,RP,1,0,0.1,0,0,1,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Yefry,Ramirez,RP,1,0,2,0,0,0,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Colin,Rea,RP,1,0,6,0,0,5,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+Daniel,Robertson,3B,1,0,1,0,0,0,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+Chaz,Roe,RP,1,0,0.2,0,0,2,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Darin,Ruf,1B,1,0,1,0,0,2,San Francisco,Giants,Scott Harris,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",SFGiants.com
+Jonathan,Stiever,RP,1,0,0,0,0,3,Chicago,White Sox,Rick Hahn,Guaranteed Rate Field,40615,1991,"333 West 35th Street, Chicago, IL 60616",whitesox.com
+Thomas,Szapucki,RP,1,0,3.2,0,0,6,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Stephen,Tarpley,RP,1,0,0,0,0,2,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Mike,Tauchman,LF,1,0,1,0,0,1,San Francisco,Giants,Scott Harris,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",SFGiants.com
+Julio,Teheran,SP,1,1,5,1,0,1,Detroit,Tigers,Al Avila,Comerica Park,41083,2000,"2100 Woodward Avenue, Detroit, MI 48201",tigers.com
+Stevie,Wilkerson,2B,1,0,1,0,0,1,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Austin,Wynns,C,1,0,1,0,0,1,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Angel,Zerpa,SP,1,1,5,0,0,2,Kansas City,Royals,J. J. Picollo,Kauffman Stadium,37903,1973,"One Royal Way, Kansas City, MO 64129",royals.com
+Noah,Syndergaard,SP,2,2,2,0,0,2,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Hanser,Alberto,3B,1,0,0.1,0,0,0,Kansas City,Royals,J. J. Picollo,Kauffman Stadium,37903,1973,"One Royal Way, Kansas City, MO 64129",royals.com
+Sergio,Alcantara,SS,1,0,0.1,0,0,0,Chicago,Cubs,Carter Hawkins,Wrigley Field,41649,1914,"1060 West Addison, Chicago, IL 60613-4397",cubs.com
+Albert,Almora,CF,1,0,1,0,0,3,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Christian,Arroyo,2B,1,0,1,0,0,2,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Pedro,Avila,SP,1,1,4,0,0,2,San Diego,Padres,A. J. Preller,Petco Park,40209,2004,"100 Park Boulevard, San Diego, CA 92101",padres.com
+John,Axford,RP,1,0,0.1,0,0,2,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+Dellin,Betances,RP,1,0,1,0,0,1,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Colten,Brewer,RP,1,0,1,0,0,4,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Andy,Burns,2B,1,0,1,0,0,2,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Matt,Carpenter,2B,1,0,1.1,0,0,0,St. Louis,Cardinals,Mike Girsch,Busch Stadium,45494,2006,"700 Clark Street, St. Louis, MO 63102",cardinals.com
+Ryan,Castellani,SP,1,1,3.1,0,0,2,Colorado,Rockies,Bill Schmidt,Coors Field,50445,1995,"2001 Blake Street, Denver, CO 80205-2000",Rockies.com
+Kutter,Crawford,SP,1,1,2,0,0,5,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Cooper,Criswell,SP,1,1,1.1,0,0,3,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Brandon,Drury,3B,1,0,0.2,0,0,2,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Phillip,Evans,1B,1,0,1,0,0,0,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Mike,Freeman,SS,1,0,0.1,0,0,0,Cincinnati,Reds,Nick Krall,Great American Ball Park,42319,2003,"100 Main Street, Cincinnati, OH 45202-4109",reds.com
+Robel,Garcia,3B,1,0,1,0,0,4,Houston,Astros,James Click,Minute Maid Park,41168,2000,"501 Crawford Street, Houston, TX 77002",astros.com
+Marwin,Gonzalez,3B,1,0,1,0,0,0,Houston,Astros,James Click,Minute Maid Park,41168,2000,"501 Crawford Street, Houston, TX 77002",astros.com
+Romy,Gonzalez,3B,1,0,0.1,0,0,0,Chicago,White Sox,Rick Hahn,Guaranteed Rate Field,40615,1991,"333 West 35th Street, Chicago, IL 60616",whitesox.com
+Blaine,Hardy,RP,1,0,1,0,0,3,Milwaukee,Brewers,Matt Arnold,Miller Park,41900,2001,"One Brewers Way, Milwaukee, WI 53214",brewers.com
+Ryan,Hartman,RP,1,0,2.1,0,0,1,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Bryan,Holaday,C,1,0,1,0,0,1,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Brock,Holt,3B,1,0,1,0,0,0,Texas,Rangers,Chris Young,Globe Life Field,40300,2020,"1000 Ballpark Way, Arlington, TX 76011",texasrangers.com
+Jordan,Luplow,1B,1,0,1,0,0,1,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Wyatt,Mathisen,1B,1,0,1,0,0,0,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+Nick,Maton,2B,1,0,0.1,0,0,0,Philadelphia,Phillies,Sam Fuld,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",phillies.com
+Jack,Mayfield,3B,1,0,0.1,0,0,0,Los Angeles,Angels,Perry Minasian,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",angels.com
+Danny,Mendick,SS,1,0,1,0,0,0,Chicago,White Sox,Rick Hahn,Guaranteed Rate Field,40615,1991,"333 West 35th Street, Chicago, IL 60616",whitesox.com
+Yermin,Mercedes,DH,1,0,1,0,0,1,Chicago,White Sox,Rick Hahn,Guaranteed Rate Field,40615,1991,"333 West 35th Street, Chicago, IL 60616",whitesox.com
+Mitch,Moreland,DH,1,0,1,0,0,0,Oakland,Athletics,David Forst,RingCentral Coliseum,46847,1966,"7000 Coliseum Way, Oakland, CA 94621",athletics.com
+Vinny,Nittoli,RP,1,0,1,0,0,2,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+Stephen,Nogosek,RP,1,0,3,0,0,2,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Riley,O'Brien,SP,1,1,1.1,0,0,2,Cincinnati,Reds,Nick Krall,Great American Ball Park,42319,2003,"100 Main Street, Cincinnati, OH 45202-4109",reds.com
+Kaleb,Ort,RP,1,0,0.1,0,0,0,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Brett,Phillips,CF,1,0,1,0,0,1,Tampa Bay,Rays,Erik Neander,Tropicana Field,25000,1990,"One Tropicana Drive, St. Petersburg, FL 33705",raysbaseball.com
+Kevin,Pillar,CF,1,0,0.1,0,0,0,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Roel,Ramirez,RP,1,0,0.1,0,0,3,New York,Mets,Zack Scott,Citi Field,41922,2009,"120-01 Roosevelt Avenue, Corona, NY 11368",mets.com
+Josh,Reddick,RF,1,0,0.2,0,0,1,Arizona,Diamondbacks,Mike Hazen,Chase Field,48686,1998,"401 East Jefferson Street, Phoenix, AZ 85004",dbacks.com
+Anthony,Rizzo,1B,1,0,0.2,0,0,0,New York,Yankees,Brian Cashman,Yankee Stadium,47309,2009,"One East 161st Street, Bronx, NY 10451",yankees.com
+Andrew,Romine,SS,1,0,1,0,0,1,Chicago,Cubs,Carter Hawkins,Wrigley Field,41649,1914,"1060 West Addison, Chicago, IL 60613-4397",cubs.com
+John,Schreiber,RP,1,0,3,0,0,1,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Connor,Seabold,SP,1,1,3,0,0,2,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Austin,Slater,CF,1,0,0.1,0,0,0,San Francisco,Giants,Scott Harris,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",SFGiants.com
+Devin,Smeltzer,RP,1,0,4.2,0,0,1,Minnesota,Twins,Thad Levine,Target Field,38544,2010,"1 Twins Way, Minneapolis, MN 55403",twinsbaseball.com
+Jesus,Tinoco,RP,1,0,1.1,0,0,5,Colorado,Rockies,Bill Schmidt,Coors Field,50445,1995,"2001 Blake Street, Denver, CO 80205-2000",Rockies.com
+Ka'ai,Tom,LF,1,0,1,0,0,0,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Justin,Turner,3B,1,0,1,0,0,0,Los Angeles,Dodgers,Andrew Friedman,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",dodgers.com
+Asher,Wojciechowski,SP,1,1,4,0,0,2,Seattle,Mariners,Jerry Dipoto,T-Mobile Park,47929,1999,"P.O. Box 4100, Seattle, WA 98104",Mariners.com
+Jonathan,Arauz,SS,1,0,1,0,0,1,Boston,Red Sox,Brian O'Halloran,Fenway Park,37755,1912,"4 Yawkey Way, Boston, MA 02215",redsox.com
+Roansy,Contreras,SP,1,1,3,0,0,0,Pittsburgh,Pirates,Ben Cherington,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",pirates.com
+Kyle,Dohy,RP,1,0,1,0,0,0,Philadelphia,Phillies,Sam Fuld,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",phillies.com
+Bernardo,Flores,RP,1,0,0,0,0,1,Colorado,Rockies,Bill Schmidt,Coors Field,50445,1995,"2001 Blake Street, Denver, CO 80205-2000",Rockies.com
+Mickey,Jannis,RP,1,0,3.1,0,0,7,Baltimore,Orioles,Mike Elias,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",orioles.com
+Jake,Rogers,C,1,0,1,0,0,2,Detroit,Tigers,Al Avila,Comerica Park,41083,2000,"2100 Woodward Avenue, Detroit, MI 48201",tigers.com
