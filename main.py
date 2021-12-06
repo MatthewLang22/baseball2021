@@ -10,6 +10,7 @@ import csv
 import webbrowser
 from random import randrange
 
+
 LARGE_FONT= ("Verdana", 12)
 
 connection = sqlite3.connect("baseball.db")
@@ -1054,7 +1055,7 @@ class PagePirates(tk.Frame):
         position_variable = StringVar(self)
         position_variable.set("") # default value
         position_options = OptionMenu(self, position_variable, "", "Pitcher", "Catcher", "Infielder", "Outfielder")
-        position_options.place(x = 160, y = 320)
+        position_options.place(x = 160, y = 315)
 
         bats_label = tk.Label(self, text="Bats: ", font=("Courier", 18))
         bats_label.place(x = 30, y = 345)
@@ -1062,7 +1063,7 @@ class PagePirates(tk.Frame):
         bats_variable = StringVar(self)
         bats_variable.set("") # default value
         bats_options = OptionMenu(self, bats_variable, "", "L", "R", "S")
-        bats_options.place(x = 160, y = 350)
+        bats_options.place(x = 160, y = 345)
 
         throws_label = tk.Label(self, text="Throws: ", font=("Courier", 18))
         throws_label.place(x = 30, y = 375)
@@ -1070,7 +1071,7 @@ class PagePirates(tk.Frame):
         throws_variable = StringVar(self)
         throws_variable.set("") # default value
         throws_options = OptionMenu(self, throws_variable, "", "L", "R")
-        throws_options.place(x = 160, y = 380)
+        throws_options.place(x = 160, y = 375)
 
         checkboxes_label = tk.Label(self, text="Also Include: ", font=("Courier", 18))
         checkboxes_label.place(x = 400, y = 305)
