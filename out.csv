@@ -1,1 +1,9 @@
-FNAME,LNAME
+FNAME,LNAME,POSITION,teams.TEAM,GP,AVG,AB,R,H,DOU,TRIP,HR,RBI,SB,CS,BB,SO,OBP,SLG,OPS,CITY,NICKNAME,LEAGUE,DIV,GM,MANAGER,STADIUM,CAPACITY,SYEAR,ADDRESS,PHONE,WEBSITE
+Anthony,Rizzo,1B,NYY,141,0.248,496,73,123,23,3,22,61,6,2,52,87,0.344,0.44,0.784,New York,Yankees,AL,East,Brian Cashman,Aaron Boone,Yankee Stadium,47309,2009,"One East 161st Street, Bronx, NY 10451",(718) 293-4300,yankees.com
+Anthony,Santander,RF,BAL,110,0.241,406,54,98,24,0,18,50,1,1,23,101,0.286,0.433,0.719,Baltimore,Orioles,AL,East,Mike Elias,Brandon Hyde,Oriole Park at Camden Yards,45971,1992,"333 West Camden Street, Baltimore, MD 21201",(410) 685-9800,orioles.com
+Anthony,Bender,RP,MIA,61,0.0,2,0,0,0,0,0,0,0,0,0,1,0.0,0.0,0.0,Miami,Marlins,NL,East,Kim Ng,Don Mattingly,Marlins Park,36742,2012,"501 Marlins Way, Miami, FL 33125",(305) 480-1300,marlins.com
+Anthony,Rendon,3B,LAA,58,0.24,217,24,52,13,0,6,34,0,0,29,41,0.329,0.382,0.711,Los Angeles,Angels,AL,West,Perry Minasian,Joe Maddon,Angel Stadium,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806",(714) 940-2000,angels.com
+Anthony,Alford,LF,PIT,49,0.233,133,14,31,6,1,5,11,5,6,12,58,0.311,0.406,0.717,Pittsburgh,Pirates,NL,Central,Ben Cherington,Derek Shelton,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",(412) 323-5000,pirates.com
+Anthony,DeSclafani,SP,SFG,34,0.039,51,2,2,1,0,0,1,0,0,4,33,0.109,0.059,0.168,San Francisco,Giants,NL,West,Scott Harris,Gabe Kapler,Oracle Park,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107",(415) 972-2000,SFGiants.com
+Anthony,Banda,RP,PIT,30,0.0,1,1,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,Pittsburgh,Pirates,NL,Central,Ben Cherington,Derek Shelton,PNC Park,38747,2001,"115 Federal Street, Pittsburgh, PA 15212",(412) 323-5000,pirates.com
+Anthony,Bemboom,C,LAD,8,0.222,27,2,6,0,0,0,2,0,0,1,10,0.25,0.222,0.472,Los Angeles,Dodgers,NL,West,Andrew Friedman,Dave Roberts,Dodger Stadium,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012",866-DODGERS,dodgers.com

@@ -10,12 +10,10 @@ import csv
 import webbrowser
 from random import randrange
 
-LARGE_FONT= ("Verdana", 12)
-
 connection = sqlite3.connect("baseball.db")
 cursor = connection.cursor()
 
-
+# The following four functions were created by Chad Mourning
 def create_connection(path):
     connection = None
     try:
@@ -53,26 +51,6 @@ def execute_read_query(connection, query):
         return result
     except Error as e:
         print(f"The error '{e}' occurred")
-
-def hitting_query():
-    print("Players who hit above .300 and had over 200 At-Bats:")
-    testing = cursor.execute("SELECT FNAME, LNAME, AVG FROM Batting where AVG > .300 AND AB > 200").fetchall()
-    print(testing)
-
-def pitching_query():
-    print("Pitchers who had above 200 strikeouts:")
-    testing = cursor.execute("SELECT FNAME, LNAME, SO from Pitching where SO > 200").fetchall()
-    print(testing)
-
-def fielding_query():
-    print("Fielders with a defensive war above 2: ")
-    testing = cursor.execute("SELECT FNAME, LNAME FROM Fielding where DWAR > 2").fetchall()
-    print(testing)
-
-def pirates_query():
-    print("Pirates 40 man roster: ")
-    testing = cursor.execute("SELECT FNAME, LNAME FROM Pirates").fetchall()
-    print(testing)
 
 def select_all(checkBoxs, checkBoxsOG):
     for num in range(len(checkBoxs)):
@@ -172,17 +150,29 @@ def piratestats(self, player_variable):
 
         firstname = splitting[0]
 
-        aspindex = firstname.find("'")
-
-        if aspindex != -1:
-            firstname = firstname[:aspindex] + "'" + firstname[aspindex:]
+        fname = ""
+        aspindex = firstname.split("'")
+        aspindexSize = len(aspindex)
+        count = 0
+        for x in aspindex:
+            fname += x
+            if count != aspindexSize - 1:
+                fname += "''"
+            count += 1
+        firstname = fname
 
         lastname = splitting[1]
 
-        aspindex = lastname.find("'")
-
-        if aspindex != -1:
-            lastname = lastname[:aspindex] + "'" + lastname[aspindex:]
+        lname = ""
+        aspindex = lastname.split("'")
+        aspindexSize = len(aspindex)
+        count = 0
+        for x in aspindex:
+            lname += x
+            if count != aspindexSize - 1:
+                lname += "''"
+            count += 1
+        lastname = lname
 
         string = "SELECT POSITION FROM Pirates WHERE FNAME = '" + str(firstname) + "' AND LNAME = '" + str(lastname) + "'"
         query = cursor.execute(string).fetchall()
@@ -245,7 +235,6 @@ def pirates_roster(position_variable, bats_variable, throws_variable, rosterchec
     query = query[:len(query) - 2]
     query += " FROM Pirates"
 
-    
     count = 0
 
     if position_variable.get() != "":
@@ -476,7 +465,7 @@ def clear_batting_pitching_fielding(self, lablesVariables,lablesOptions,lableInp
         lablesVariables[num].set("")
         gp_options = OptionMenu(self, lablesVariables[num], "", "=", "<", ">")
         lablesOptions[num]= gp_options
-        lableInput[num].delete('1.0', END)
+        lableInput[num].delete("1.0", END)
     for num in range(len(lablesVariables)+2):
         checkBoxsOG[num].deselect()
 def batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, name, lables, checkBoxsAnswOG, checkBoxsAnsw):
