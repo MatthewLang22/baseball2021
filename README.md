@@ -1,6 +1,5 @@
 # **2021 Major League Baseball Statistical Database Program**
 ### **Created by: Matthew Lang and Alex Heffner**
-<br />
 
 ### **About:**
 For our CS 4620 Final Project, we implemented a Major League Baseball database and program. We created our MLB database from scratch - using Python and SQLite3. We filled our database with a lot of baseball related information that is relevant to one individual Major League Baseball team, specifically for this program, the Pittsburgh Pirates. In our database, we implemented 6 different tables. Our database contains tables of batting, pitching, and fielding statistics of all players who played Major League Baseball in 2021. We also have a table containing information on each MLB Organization - such as their ballpark name, address, general manager’s name, and contact information. There is a table for Pittsburgh Pirate players only, containing their personal information, along with links to their 2021 highlights, profile, and walk up songs. Finally, we implemented a table containing the results of all the Pirates 162 individual games for the 2021 season, including the date, opponent, and final score.  
@@ -19,8 +18,6 @@ Additionally - If on a Windows machine or using wsl:
     https://sourceforge.net/projects/xming/?source=typ_redirect
     add export DISPLAY=:0; to end of .bashrc
     run Xming then run the python code
-
-<br />
 
 ### **Execution:**
 - Clone this repository, and navegate to corresponding folder
