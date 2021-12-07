@@ -554,7 +554,9 @@ def batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, 
     data = []
     for user in users:
         data.append(user)
-        print(user)
+        for x in user:
+            print(x, end = ' ')
+        print("")
     with open('out.csv','w') as out:
         csv_out=csv.writer(out)
         csv_out.writerow(schema)
