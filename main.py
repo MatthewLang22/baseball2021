@@ -266,16 +266,19 @@ def pirates_roster(position_variable, bats_variable, throws_variable, rosterchec
         query += "'"
 
     answer = cursor.execute(query).fetchall()
+    for user in answer:
+        for x in user:
+            print(x, end = ' ')
+        print("")
+    # printing = "".join(str(answer))
+    # printing = printing.replace("[", "")
+    # printing = printing.replace("]", "")
+    # printing = printing.replace("(", "")
+    # printing = printing.replace(")", "")
+    # printing = printing.replace(",", "")
+    # printing = printing.replace("'", "")
 
-    printing = "".join(str(answer))
-    printing = printing.replace("[", "")
-    printing = printing.replace("]", "")
-    printing = printing.replace("(", "")
-    printing = printing.replace(")", "")
-    printing = printing.replace(",", "")
-    printing = printing.replace("'", "")
-
-    print(printing)
+    # print(printing)
 
 def pirates_schedule(location_variable, opp_variable, result_variable, rdiff_variable, inn_variable, schedulecheckBoxsAnsw, moreschedulecheckBoxsAnsw):
     query = "SELECT GAMEID, "
@@ -351,16 +354,19 @@ def pirates_schedule(location_variable, opp_variable, result_variable, rdiff_var
             query += "'"
 
     answer = cursor.execute(query).fetchall()
+    for user in answer:
+        for x in user:
+            print(x, end = ' ')
+        print("")
+    # printing = "".join(str(answer))
+    # printing = printing.replace("[", "")
+    # printing = printing.replace("]", "")
+    # printing = printing.replace("(", "")
+    # printing = printing.replace(")", "")
+    # printing = printing.replace(",", "")
+    # printing = printing.replace("'", "")
 
-    printing = "".join(str(answer))
-    printing = printing.replace("[", "")
-    printing = printing.replace("]", "")
-    printing = printing.replace("(", "")
-    printing = printing.replace(")", "")
-    printing = printing.replace(",", "")
-    printing = printing.replace("'", "")
-
-    print(printing)
+    # print(printing)
 
 def pirates_count_schedule(location_variable, opp_variable, result_variable, rdiff_variable, inn_variable):
     query = "SELECT COUNT (*) FROM Schedule"
