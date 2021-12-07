@@ -456,7 +456,12 @@ def clear_pirates(self, player_variable, position_variable, bats_variable, throw
         schedulecheckBoxs[num].deselect()
     for num in range(5):
         moreschedulecheckBoxs[num].deselect()
-
+def is_float(element) -> bool:
+    try:
+        float(element)
+        return True
+    except ValueError:
+        return False
 
 def clear_batting_pitching_fielding(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, checkBoxs, checkBoxsOG):
     fname_input.delete('1.0', END)
@@ -547,28 +552,34 @@ def batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, 
         else:
             querey += " where teams.TEAM = " + "\'" + team_variable.get() +"\'"
             count += 1
+    isvalid = True
+    # print("lablesize: ", len(lables ))
     for num in range(len(lables)):
         if lablesVariables[num].get() != "":
+            if is_float(lableInput[num].get("1.0",'end-1c')) == False:
+                print("error invalide input", lableInput[num].get("1.0",'end-1c'))
+                isvalid = False
+                break
             if count != 0:
                 querey += " AND " + lables[num].cget('text') + " " + lablesVariables[num].get() + " \'" + lableInput[num].get("1.0",'end-1c') + "\'"
             else:
                 count +=1
                 querey += " where " + lables[num].cget('text') + " " + lablesVariables[num].get() + " \'" + lableInput[num].get("1.0",'end-1c') + "\'"
+    if isvalid:
+        users = execute_read_query(connection,querey)
 
-    users = execute_read_query(connection,querey)
-
-    data = []
-    for user in users:
-        data.append(user)
-        for x in user:
-            print(x, end = ' ')
-        print("")
-    with open('out.csv','w') as out:
-        csv_out=csv.writer(out)
-        csv_out.writerow(schema)
-        for row in data:
-            csv_out.writerow(row)
-    
+        data = []
+        for user in users:
+            data.append(user)
+            for x in user:
+                print(x, end = ' ')
+            print("")
+        with open('out.csv','w') as out:
+            csv_out=csv.writer(out)
+            csv_out.writerow(schema)
+            for row in data:
+                csv_out.writerow(row)
+    isvalid = True
 class Baseball(tk.Tk):
 
     def __init__(self, *args, **kwargs):

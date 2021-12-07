@@ -1,9 +1,4 @@
-FNAME,LNAME,POSITION,GP,AB,H,TRIP,HR,RBI,SB,SO,OBP,SLG,OPS,NICKNAME,LEAGUE,DIV,GM,CAPACITY,SYEAR,ADDRESS
-Anthony,Rizzo,1B,141,496,123,3,22,61,6,87,0.344,0.44,0.784,Yankees,AL,East,Brian Cashman,47309,2009,"One East 161st Street, Bronx, NY 10451"
-Anthony,Santander,RF,110,406,98,0,18,50,1,101,0.286,0.433,0.719,Orioles,AL,East,Mike Elias,45971,1992,"333 West Camden Street, Baltimore, MD 21201"
-Anthony,Bender,RP,61,2,0,0,0,0,0,1,0.0,0.0,0.0,Marlins,NL,East,Kim Ng,36742,2012,"501 Marlins Way, Miami, FL 33125"
-Anthony,Rendon,3B,58,217,52,0,6,34,0,41,0.329,0.382,0.711,Angels,AL,West,Perry Minasian,45517,1966,"2000 Gene Autry Way, Anaheim, CA 92806"
-Anthony,Alford,LF,49,133,31,1,5,11,5,58,0.311,0.406,0.717,Pirates,NL,Central,Ben Cherington,38747,2001,"115 Federal Street, Pittsburgh, PA 15212"
-Anthony,DeSclafani,SP,34,51,2,0,0,1,0,33,0.109,0.059,0.168,Giants,NL,West,Scott Harris,41915,2000,"24 Willie Mays Plaza, San Francisco, CA 94107"
-Anthony,Banda,RP,30,1,0,0,0,0,0,0,0.0,0.0,0.0,Pirates,NL,Central,Ben Cherington,38747,2001,"115 Federal Street, Pittsburgh, PA 15212"
-Anthony,Bemboom,C,8,27,6,0,0,2,0,10,0.25,0.222,0.472,Dodgers,NL,West,Andrew Friedman,56000,1962,"1000 Vin Scully Avenue, Los Angeles, CA 90012"
+FNAME,LNAME,AVG
+Anthony,Bender,0.0
+Anthony,DeSclafani,0.039
+Anthony,Banda,0.0
