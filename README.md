@@ -22,7 +22,6 @@ Additionally - If on a Windows machine or using wsl:
 ### **Execution:**
 - Clone this repository, and navegate to corresponding folder
 - Run command: "python3 main.py"
-<br />
 
 ### **Data credits:**
 Batting: https://www.cbssports.com/mlb/stats/player/batting/mlb/regular/all-pos/all/?sortcol=gp&sortdir=descending 
