@@ -1,4 +1,7 @@
-FNAME,LNAME,AVG
-Anthony,Bender,0.0
-Anthony,DeSclafani,0.039
-Anthony,Banda,0.0
+Game number,LOC,OPP,RESULT,RDIFF,INN,WINP,BOX
+35,H,CIN,W,5,9,Brubaker,https://www.baseball-reference.com/boxes/PIT/PIT202105110.shtml
+144,H,CIN,W,1,9,Peters,https://www.baseball-reference.com/boxes/PIT/PIT202109140.shtml
+145,H,CIN,W,1,9,Stratton,https://www.baseball-reference.com/boxes/PIT/PIT202109150.shtml
+151,A,CIN,W,4,9,Keller,https://www.baseball-reference.com/boxes/CIN/CIN202109210.shtml
+160,H,CIN,W,7,9,Stratton,https://www.baseball-reference.com/boxes/PIT/PIT202110010.shtml
+161,H,CIN,W,2,9,Mears,https://www.baseball-reference.com/boxes/PIT/PIT202110020.shtml

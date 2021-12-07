@@ -280,29 +280,26 @@ def pirates_roster(position_variable, bats_variable, throws_variable, rosterchec
         for x in user:
             print(x, end = ' ')
         print("")
-    # printing = "".join(str(answer))
-    # printing = printing.replace("[", "")
-    # printing = printing.replace("]", "")
-    # printing = printing.replace("(", "")
-    # printing = printing.replace(")", "")
-    # printing = printing.replace(",", "")
-    # printing = printing.replace("'", "")
-
-    # print(printing)
+    if len(answer) == 0:
+        print("No players with given filters were found.")
 
 # Display pirates schedule
 def pirates_schedule(location_variable, opp_variable, result_variable, rdiff_variable, inn_variable, schedulecheckBoxsAnsw, moreschedulecheckBoxsAnsw):
     query = "SELECT GAMEID, "
     schema1 = ["DATE", "RUNSFOR", "RUNSAGAINST", "RECORD", "DIVRANK", "GB", "WINP", "LOSSP", "SAVE", "TIME", "DN", "ATTENDANCE", "CLI", "STREAK", "BOX"]
     schema2 = ["LOC", "OPP", "RESULT", "RDIFF", "INN"]
+
+    csvSchema = ["Game number"]
     
     for x in range(5):
         if moreschedulecheckBoxsAnsw[x].get() == 1:
+            csvSchema.append(schema2[x])
             query += schema2[x]
             query += ", "    
     
     for x in range(15):
         if schedulecheckBoxsAnsw[x].get() == 1:
+            csvSchema.append(schema1[x])
             query += schema1[x]
             query += ", "
 
@@ -369,15 +366,13 @@ def pirates_schedule(location_variable, opp_variable, result_variable, rdiff_var
         for x in user:
             print(x, end = ' ')
         print("")
-    # printing = "".join(str(answer))
-    # printing = printing.replace("[", "")
-    # printing = printing.replace("]", "")
-    # printing = printing.replace("(", "")
-    # printing = printing.replace(")", "")
-    # printing = printing.replace(",", "")
-    # printing = printing.replace("'", "")
-
-    # print(printing)
+    if len(answer) == 0:
+        print("No games with given filters were found.")
+    with open('out.csv','w') as out:
+        csv_out=csv.writer(out)
+        csv_out.writerow(csvSchema)
+        for row in answer:
+            csv_out.writerow(row)
 
 # Display the count of pirates schedule
 def pirates_count_schedule(location_variable, opp_variable, result_variable, rdiff_variable, inn_variable):
@@ -469,6 +464,8 @@ def clear_pirates(self, player_variable, position_variable, bats_variable, throw
         schedulecheckBoxs[num].deselect()
     for num in range(5):
         moreschedulecheckBoxs[num].deselect()
+
+# Determining if the input typed in is a decimal number
 def is_float(element) -> bool:
     try:
         float(element)
@@ -476,6 +473,7 @@ def is_float(element) -> bool:
     except ValueError:
         return False
 
+# Clearing the batting, pitching, and fielding page
 def clear_batting_pitching_fielding(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, checkBoxs, checkBoxsOG):
     fname_input.delete('1.0', END)
     lname_input.delete('1.0', END)
@@ -568,11 +566,10 @@ def batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, 
             querey += " where teams.TEAM = " + "\'" + team_variable.get() +"\'"
             count += 1
     isvalid = True
-    # print("lablesize: ", len(lables ))
     for num in range(len(lables)):
         if lablesVariables[num].get() != "":
             if is_float(lableInput[num].get("1.0",'end-1c')) == False:
-                print("error invalide input", lableInput[num].get("1.0",'end-1c'))
+                print("Error - Invalid Input: ", lableInput[num].get("1.0",'end-1c'))
                 isvalid = False
                 break
             if count != 0:
@@ -594,7 +591,10 @@ def batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, 
             csv_out.writerow(schema)
             for row in data:
                 csv_out.writerow(row)
+        if len(users) == 0:
+            print("No players with given filters were found.")
     isvalid = True
+
 class Baseball(tk.Tk):
 
     def __init__(self, *args, **kwargs):
