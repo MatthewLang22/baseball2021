@@ -1,7 +1,8 @@
-# Matthew Lang and Alex Heffner
-# 11-24-2021
-# CS 4620 Final Project
+# Name:         Matthew Lang and Alex Heffner
+# Date:         12-06-2021
+# Desciption:   CS 4620 Final Project - 2021 Major League Baseball Database and Program
 
+# Imports
 import sqlite3
 from sqlite3 import Error
 import tkinter as tk
@@ -10,10 +11,11 @@ import csv
 import webbrowser
 from random import randrange
 
+# Global database variables
 connection = sqlite3.connect("baseball.db")
 cursor = connection.cursor()
 
-# The following four functions were created by Chad Mourning
+# The following four functions were created by Chad Mourning for query execution using Python and SQLite3
 def create_connection(path):
     connection = None
     try:
@@ -52,17 +54,21 @@ def execute_read_query(connection, query):
     except Error as e:
         print(f"The error '{e}' occurred")
 
+# Selecting all checkboxes
 def select_all(checkBoxs, checkBoxsOG):
     for num in range(len(checkBoxs)):
         checkBoxs[num].select()
     for num in range(len(checkBoxsOG)):
         checkBoxsOG[num].select()
+
+# Deselecting all checkboxes
 def deselect_all(checkBoxs, checkBoxsOG):
     for num in range(len(checkBoxs)):
         checkBoxs[num].deselect()
     for num in range(len(checkBoxsOG)):
         checkBoxsOG[num].deselect()
 
+# Display youtube highlight videos in browser
 def highlights(self, player_variable):
     if player_variable.get() != "":
         splitting = str(player_variable.get()).split(" ", 1)
@@ -87,6 +93,7 @@ def highlights(self, player_variable):
             print("No available highlights. Watch team highlights instead")
             webbrowser.open("https://www.youtube.com/watch?v=pSg5NleAULU", new=2)
 
+# Display MLB profile in browser
 def profile(self, player_variable):
     if player_variable.get() != "":
         splitting = str(player_variable.get()).split(" ", 1)
@@ -106,6 +113,7 @@ def profile(self, player_variable):
 
         webbrowser.open(link, new=2)
 
+# Display / play walk up song in spotify
 def music(self, player_variable):
 
     if player_variable.get() != "":
@@ -143,6 +151,7 @@ def music(self, player_variable):
             webbrowser.open(songarr[randrange(10)], new=2)
             print("No available music. Listen to random music instead")
 
+# Display a pirates player's statistics
 def piratestats(self, player_variable):
 
     if player_variable.get() != "":
@@ -217,6 +226,7 @@ def piratestats(self, player_variable):
             else: 
                 print(link)
 
+# Display a pirates roster
 def pirates_roster(position_variable, bats_variable, throws_variable, rostercheckBoxsAnsw, morerostercheckBoxsAnsw):
     query = "SELECT FNAME, LNAME, "
     schema1 = ["JERNUM", "HT", "WT", "DOB"]
@@ -277,6 +287,7 @@ def pirates_roster(position_variable, bats_variable, throws_variable, rosterchec
 
     print(printing)
 
+# Display pirates schedule
 def pirates_schedule(location_variable, opp_variable, result_variable, rdiff_variable, inn_variable, schedulecheckBoxsAnsw, moreschedulecheckBoxsAnsw):
     query = "SELECT GAMEID, "
     schema1 = ["DATE", "RUNSFOR", "RUNSAGAINST", "RECORD", "DIVRANK", "GB", "WINP", "LOSSP", "SAVE", "TIME", "DN", "ATTENDANCE", "CLI", "STREAK", "BOX"]
@@ -362,6 +373,7 @@ def pirates_schedule(location_variable, opp_variable, result_variable, rdiff_var
 
     print(printing)
 
+# Display the count of pirates schedule
 def pirates_count_schedule(location_variable, opp_variable, result_variable, rdiff_variable, inn_variable):
     query = "SELECT COUNT (*) FROM Schedule"
 
@@ -432,6 +444,7 @@ def pirates_count_schedule(location_variable, opp_variable, result_variable, rdi
 
     print(printing)
 
+# Clear pirates page inputs
 def clear_pirates(self, player_variable, position_variable, bats_variable, throws_variable, location_variable, opp_variable, result_variable, rdiff_variable, inn_variable, rostercheckBoxs, morerostercheckBoxs, schedulecheckBoxs, moreschedulecheckBoxs):
     player_variable.set("")
     position_variable.set("")
@@ -451,7 +464,7 @@ def clear_pirates(self, player_variable, position_variable, bats_variable, throw
     for num in range(5):
         moreschedulecheckBoxs[num].deselect()
 
-
+# Clear batting, pitching, and fielding page inputs
 def clear_batting_pitching_fielding(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, checkBoxs, checkBoxsOG):
     fname_input.delete('1.0', END)
     lname_input.delete('1.0', END)
@@ -468,6 +481,8 @@ def clear_batting_pitching_fielding(self, lablesVariables,lablesOptions,lableInp
         lableInput[num].delete("1.0", END)
     for num in range(len(lablesVariables)+2):
         checkBoxsOG[num].deselect()
+
+# Querying batting, pitching, and fielding page based on inputs
 def batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, name, lables, checkBoxsAnswOG, checkBoxsAnsw):
     querey = "SELECT FNAME, LNAME"
     schema = ["FNAME", "LNAME"]
@@ -560,7 +575,8 @@ def batting_pitching_fielding_q(self, lablesVariables,lablesOptions,lableInput, 
         csv_out.writerow(schema)
         for row in data:
             csv_out.writerow(row)
-    
+
+# Frame declaration
 class Baseball(tk.Tk):
 
     def __init__(self, *args, **kwargs):
@@ -590,7 +606,7 @@ class Baseball(tk.Tk):
         frame = self.frames[cont]
         frame.tkraise()
       
-
+# Frame start page
 class StartPage(tk.Frame):
 
     def __init__(self, parent, controller):
@@ -654,7 +670,7 @@ class StartPage(tk.Frame):
 
         Button(self, text = 'Click Me !', image = exit_pic, command =lambda:[quit()]).pack()
 
-
+# Frame batting page
 class PageBatting(tk.Frame):
 
     def __init__(self, parent, controller):
@@ -761,14 +777,15 @@ class PageBatting(tk.Frame):
 
         selectALL = tk.Button(self, text=" Select All ", command=lambda:  select_all(checkBoxs,checkBoxsOG))
         selectALL.place(x = 450, y = 130)
-        deselectALL = tk.Button(self, text="De Select All", command=lambda:  deselect_all(checkBoxs,checkBoxsOG))
+        deselectALL = tk.Button(self, text="Deselect All", command=lambda:  deselect_all(checkBoxs,checkBoxsOG))
         deselectALL.place(x = 450, y = 160)
         main_button = tk.Button(self, text="Back to Main", command=lambda: [controller.show_frame(StartPage),clear_batting_pitching_fielding(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, checkBoxs, checkBoxsOG)])
         main_button.place(x = 280, y = 700)
 
-        clear_button = tk.Button(self, text="Clear all", command=lambda: clear_batting_pitching_fielding(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, checkBoxs, checkBoxsOG))
+        clear_button = tk.Button(self, text="Clear All", command=lambda: clear_batting_pitching_fielding(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, checkBoxs, checkBoxsOG))
         clear_button.place(x = 450, y = 100)
 
+# Frame pitching page
 class PagePitching(tk.Frame):
 
     def __init__(self, parent, controller):
@@ -872,13 +889,15 @@ class PagePitching(tk.Frame):
         batting_go_button.place(x = 620, y = 650)
         selectALL = tk.Button(self, text=" Select All ", command=lambda:  select_all(checkBoxs,checkBoxsOG))
         selectALL.place(x = 450, y = 130)
-        deselectALL = tk.Button(self, text="De Select All", command=lambda:  deselect_all(checkBoxs,checkBoxsOG))
+        deselectALL = tk.Button(self, text="Deselect All", command=lambda:  deselect_all(checkBoxs,checkBoxsOG))
         deselectALL.place(x = 450, y = 160)
         main_button = tk.Button(self, text="Back to Main", command=lambda: [controller.show_frame(StartPage),clear_batting_pitching_fielding(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, checkBoxs, checkBoxsOG)])
         main_button.place(x = 280, y = 700)
 
-        clear_button = tk.Button(self, text="Clear all", command=lambda: clear_batting_pitching_fielding(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, checkBoxs, checkBoxsOG))
+        clear_button = tk.Button(self, text="Clear All", command=lambda: clear_batting_pitching_fielding(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, checkBoxs, checkBoxsOG))
         clear_button.place(x = 450, y = 100)
+
+# Frame fielding page
 class PageFielding(tk.Frame):
 
     def __init__(self, parent, controller):
@@ -982,14 +1001,15 @@ class PageFielding(tk.Frame):
 
         selectALL = tk.Button(self, text=" Select All ", command=lambda:  select_all(checkBoxs,checkBoxsOG))
         selectALL.place(x = 450, y = 130)
-        deselectALL = tk.Button(self, text="De Select All", command=lambda:  deselect_all(checkBoxs,checkBoxsOG))
+        deselectALL = tk.Button(self, text="Deselect All", command=lambda:  deselect_all(checkBoxs,checkBoxsOG))
         deselectALL.place(x = 450, y = 160)
         main_button = tk.Button(self, text="Back to Main", command=lambda: [controller.show_frame(StartPage),clear_batting_pitching_fielding(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, checkBoxs, checkBoxsOG)])
         main_button.place(x = 280, y = 700)
 
-        clear_button = tk.Button(self, text="Clear all", command=lambda: clear_batting_pitching_fielding(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, checkBoxs, checkBoxsOG))
+        clear_button = tk.Button(self, text="Clear All", command=lambda: clear_batting_pitching_fielding(self, lablesVariables,lablesOptions,lableInput, fname_input, lname_input,position_variable,position_options,team_variable, team_options, checkBoxs, checkBoxsOG))
         clear_button.place(x = 450, y = 100)
 
+# Frame pirates page
 class PagePirates(tk.Frame):
 
     def __init__(self, parent, controller):
@@ -1194,6 +1214,5 @@ class PagePirates(tk.Frame):
         clear_button = tk.Button(self, text="Clear All", command=lambda:[clear_pirates(self, player_variable, position_variable, bats_variable, throws_variable, location_variable, opp_variable, result_variable, rdiff_variable, inn_variable, rostercheckBoxs, morerostercheckBoxs, schedulecheckBoxs, moreschedulecheckBoxs)])
         clear_button.place(x = 340, y = 700)
         
-
 app = Baseball()
 app.mainloop()
