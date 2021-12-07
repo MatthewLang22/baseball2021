@@ -1,10 +1,4 @@
-FNAME,LNAME,POSITION,teams.TEAM,GP,AVG,AB,R,H,DOU,TRIP,HR,RBI,SB,CS,BB,SO,OBP,SLG,OPS,CITY,NICKNAME,LEAGUE,DIV,GM,MANAGER,STADIUM,CAPACITY,SYEAR,ADDRESS,PHONE,WEBSITE
-Andrew,McCutchen,LF,PHI,144,0.222,482,78,107,24,1,27,80,6,1,81,132,0.334,0.444,0.778,Philadelphia,Phillies,NL,East,Sam Fuld,Joe Girardi,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",(215) 463-6000,phillies.com
-Andrew,Benintendi,LF,KCR,134,0.276,493,63,136,27,2,17,73,8,9,36,97,0.324,0.442,0.766,Kansas City,Royals,AL,Central,J. J. Picollo,Mike Matheny,Kauffman Stadium,37903,1973,"One Royal Way, Kansas City, MO 64129",(816) 921-8000,royals.com
-Andrew,Vaughn,LF,CHW,127,0.235,417,56,98,22,0,15,48,1,1,41,101,0.309,0.396,0.705,Chicago,White Sox,AL,Central,Rick Hahn,Rick Renteria,Guaranteed Rate Field,40615,1991,"333 West 35th Street, Chicago, IL 60616",(312) 674-1000,whitesox.com
-Andrew,Stevenson,CF,WAS,109,0.229,192,22,44,6,0,5,23,1,1,13,61,0.294,0.339,0.633,Washington,Nationals,NL,East,Mike Rizzo,Dave Martinez,Nationals Park,41339,2008,"1500 South Capitol Street, SE, Washington, DC 20003-1507",(202) 675-6287,nationals.com
-Andrew,Knizner,C,STL,63,0.174,161,18,28,7,0,1,9,0,0,20,39,0.281,0.236,0.517,St. Louis,Cardinals,NL,Central,Mike Girsch,Mike Shildt,Busch Stadium,45494,2006,"700 Clark Street, St. Louis, MO 63102",(314) 345-9600,cardinals.com
-Andrew,Knapp,C,PHI,62,0.152,145,13,22,3,0,2,11,0,0,10,61,0.215,0.214,0.429,Philadelphia,Phillies,NL,East,Sam Fuld,Joe Girardi,Citizens Bank Park,42792,2004,"One Citizens Bank Way, Philadelphia, PA 19148",(215) 463-6000,phillies.com
-Andrew,Heaney,RP,NYY,30,0.333,3,1,1,0,0,0,0,0,0,1,2,0.5,0.333,0.833,New York,Yankees,AL,East,Brian Cashman,Aaron Boone,Yankee Stadium,47309,2009,"One East 161st Street, Bronx, NY 10451",(718) 293-4300,yankees.com
-Andrew,Velazquez,SS,NYY,28,0.224,67,11,15,4,1,1,6,4,1,1,23,0.235,0.358,0.593,New York,Yankees,AL,East,Brian Cashman,Aaron Boone,Yankee Stadium,47309,2009,"One East 161st Street, Bronx, NY 10451",(718) 293-4300,yankees.com
-Andrew,Romine,SS,CHC,26,0.183,60,7,11,2,0,1,5,0,1,4,24,0.234,0.267,0.501,Chicago,Cubs,NL,Central,Carter Hawkins,David Ross,Wrigley Field,41649,1914,"1060 West Addison, Chicago, IL 60613-4397",(773) 404-2827,cubs.com
+FNAME,LNAME,AVG
+Anthony,Bender,0.0
+Anthony,DeSclafani,0.039
+Anthony,Banda,0.0
